@@ -74,7 +74,18 @@ playground-tailwindcss-agents/
 │   └── js/
 │       └── scripts.js     # JavaScript vanilla opcional
 │
-├── index.html             # 🎯 ARCHIVO PRINCIPAL - Aquí trabajas
+├── solved/                # 📂 Soluciones de ejercicios
+│   ├── ejercicio-responsive-solucion.html
+│   ├── ejercicio-flex-solucion.html
+│   └── ejercicio-grid-solucion.html
+│
+├── index.html             # � Página principal con navegación
+├── responsive.html        # 📱 Guía de Diseño Responsive
+├── flex.html              # ↔️ Guía de Flexbox CSS
+├── grid.html              # ⊞ Guía de Grid CSS
+├── ejercicio-responsive.html  # ✏️ Ejercicio de Responsive
+├── ejercicio-flex.html    # ✏️ Ejercicio de Flexbox
+├── ejercicio-grid.html    # ✏️ Ejercicio de Grid
 ├── package.json           # Dependencias y scripts
 ├── tailwind.config.js     # Configuración de Tailwind
 └── README.md              # Este archivo
@@ -84,7 +95,12 @@ playground-tailwindcss-agents/
 
 | Archivo | Propósito | ¿Puedo modificarlo? |
 |---------|-----------|---------------------|
-| `index.html` | Archivo HTML principal donde creas tu contenido | ✅ **SÍ - Trabaja aquí** |
+| `index.html` | Página principal con navegación a tutoriales | ✅ **SÍ - Landing page** |
+| `responsive.html` | Tutorial interactivo de diseño responsive | ✅ Sí |
+| `flex.html` | Tutorial interactivo de Flexbox | ✅ Sí |
+| `grid.html` | Tutorial interactivo de CSS Grid | ✅ Sí |
+| `ejercicio-*.html` | Ejercicios prácticos para estudiantes | ✅ **SÍ - Completa aquí** |
+| `solved/*.html` | Soluciones de los ejercicios | 📖 Solo lectura |
 | `assets/js/scripts.js` | JavaScript vanilla para interactividad | ✅ Sí |
 | `assets/css/base.css` | Input de Tailwind (directivas @tailwind) | ⚠️ Solo si sabes qué haces |
 | `assets/css/styles.css` | CSS compilado por Tailwind | ❌ **NO - Auto-generado** |
