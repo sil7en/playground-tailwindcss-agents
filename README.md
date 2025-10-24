@@ -83,9 +83,11 @@ playground-tailwindcss-agents/
 ├── responsive.html        # 📱 Guía de Diseño Responsive
 ├── flex.html              # ↔️ Guía de Flexbox CSS
 ├── grid.html              # ⊞ Guía de Grid CSS
+├── api.html               # 🌐 Guía de APIs REST
 ├── ejercicio-responsive.html  # ✏️ Ejercicio de Responsive
 ├── ejercicio-flex.html    # ✏️ Ejercicio de Flexbox
 ├── ejercicio-grid.html    # ✏️ Ejercicio de Grid
+├── ejercicio-api.html     # ✏️ Ejercicio de APIs
 ├── custom.html            # 🎨 Página en blanco para creación libre
 ├── package.json           # Dependencias y scripts
 ├── tailwind.config.js     # Configuración de Tailwind
@@ -102,6 +104,7 @@ playground-tailwindcss-agents/
 | `flex.html` | Tutorial interactivo de Flexbox | ✅ Sí |
 | `grid.html` | Tutorial interactivo de CSS Grid | ✅ Sí |
 | `components.html` | Tutorial interactivo de Web Components | ✅ Sí |
+| `api.html` | Tutorial interactivo de APIs REST | ✅ Sí |
 | `ejercicio-*.html` | Ejercicios prácticos para estudiantes | ✅ **SÍ - Completa aquí** |
 | `solved/*.html` | Soluciones de los ejercicios | 📖 Solo lectura |
 | `assets/js/scripts.js` | JavaScript vanilla para interactividad | ✅ Sí |
@@ -220,6 +223,7 @@ Pide al agente que te ayude a crear:
 2. **Haz un grid responsive** (1 columna → 2 → 3)
 3. **Añade efectos hover** y transiciones
 4. **Crea un formulario** con inputs y botón de envío
+5. **Consume APIs públicas** con fetch() y muestra datos dinámicamente
 
 ### Nivel 3: Avanzado
 
@@ -227,6 +231,7 @@ Pide al agente que te ayude a crear:
 2. **Navbar responsive** con menú hamburguesa funcional
 3. **Galería de imágenes** con modal (lightbox simple)
 4. **Landing page completa** con múltiples secciones
+5. **Aplicación SPA** consumiendo múltiples APIs con manejo de estados
 
 ---
 
@@ -396,7 +401,75 @@ Este proyecto está bajo la licencia ISC. Ver archivo [LICENSE](LICENSE) para m�
 
 ---
 
-## 🎨 Creación Libre
+## � Módulo de APIs REST
+
+### `api.html` - Aprende a Consumir APIs
+
+Módulo completo e interactivo sobre cómo trabajar con APIs públicas:
+
+#### 📋 Contenido del Tutorial
+
+- ✅ **¿Qué son las APIs REST?** - Conceptos fundamentales explicados con analogías
+- ✅ **Anatomía de una Request** - URL, métodos HTTP, headers, body
+- ✅ **Demo 1: PokeAPI** - Busca información de Pokémon en tiempo real
+- ✅ **Demo 2: Weather API** - Consulta el clima de cualquier ciudad
+- ✅ **Estados HTTP** - Tabla completa con códigos 200, 404, 500, etc.
+- ✅ **Manejo de Errores** - Buenas prácticas con try/catch
+- ✅ **Casos de Uso Reales** - Ejemplos de apps del mundo real
+- ✅ **Mejores Prácticas** - Do's y Don'ts al trabajar con APIs
+
+#### 🎯 Ejercicios Prácticos
+
+El archivo `ejercicio-api.html` incluye **3 desafíos** con APIs reales:
+
+1. **Rick & Morty API** 👽
+   - Busca personajes de la serie
+   - API: `https://rickandmortyapi.com/api/character`
+   - Muestra: nombre, especie, estado, imagen, origen
+
+2. **Random User Generator** 👤
+   - Genera usuarios aleatorios
+   - API: `https://randomuser.me/api/`
+   - Muestra: foto, nombre, email, país, edad
+
+3. **Giphy API** 🎬
+   - Busca GIFs animados
+   - API: `https://api.giphy.com/v1/gifs/search`
+   - Muestra: grilla responsive con 6 GIFs
+
+#### 🔑 APIs Gratuitas Incluidas
+
+Todas las APIs usadas son **públicas y gratuitas** (sin necesidad de registro):
+
+- 🎮 **PokeAPI** - Datos de todos los Pokémon
+- 🌤️ **Open-Meteo** - Clima en tiempo real
+- 👽 **Rick & Morty API** - Personajes de la serie
+- 👤 **Random User API** - Usuarios ficticios
+- 🎬 **Giphy** - Millones de GIFs (API key incluida para aprendizaje)
+
+#### 💡 Conceptos que Aprenderás
+
+- `fetch()` con **async/await**
+- Manejo de **promesas**
+- Parsear respuestas **JSON**
+- Validación de datos
+- Estados de **loading**
+- Manejo de **errores** con try/catch
+- Template literals para **HTML dinámico**
+- Acceso a **datos anidados**
+
+#### 🚀 Solución Completa
+
+El archivo `solved/ejercicio-api-solucion.html` incluye:
+- ✅ Implementación completa de los 3 desafíos
+- ✅ Código comentado y explicado
+- ✅ Manejo profesional de errores
+- ✅ UI/UX responsive con Tailwind CSS
+- ✅ Explicaciones de puntos clave en cada desafío
+
+---
+
+## �🎨 Creación Libre
 
 ### `custom.html` - Tu Lienzo en Blanco
 
