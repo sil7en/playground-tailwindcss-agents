@@ -101,6 +101,7 @@ playground-tailwindcss-agents/
 | `responsive.html` | Tutorial interactivo de diseño responsive | ✅ Sí |
 | `flex.html` | Tutorial interactivo de Flexbox | ✅ Sí |
 | `grid.html` | Tutorial interactivo de CSS Grid | ✅ Sí |
+| `components.html` | Tutorial interactivo de Web Components | ✅ Sí |
 | `ejercicio-*.html` | Ejercicios prácticos para estudiantes | ✅ **SÍ - Completa aquí** |
 | `solved/*.html` | Soluciones de los ejercicios | 📖 Solo lectura |
 | `assets/js/scripts.js` | JavaScript vanilla para interactividad | ✅ Sí |
