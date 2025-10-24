@@ -79,13 +79,14 @@ playground-tailwindcss-agents/
 │   ├── ejercicio-flex-solucion.html
 │   └── ejercicio-grid-solucion.html
 │
-├── index.html             # � Página principal con navegación
+├── index.html             # 🏠 Página principal con navegación
 ├── responsive.html        # 📱 Guía de Diseño Responsive
 ├── flex.html              # ↔️ Guía de Flexbox CSS
 ├── grid.html              # ⊞ Guía de Grid CSS
 ├── ejercicio-responsive.html  # ✏️ Ejercicio de Responsive
 ├── ejercicio-flex.html    # ✏️ Ejercicio de Flexbox
 ├── ejercicio-grid.html    # ✏️ Ejercicio de Grid
+├── custom.html            # 🎨 Página en blanco para creación libre
 ├── package.json           # Dependencias y scripts
 ├── tailwind.config.js     # Configuración de Tailwind
 └── README.md              # Este archivo
@@ -96,6 +97,7 @@ playground-tailwindcss-agents/
 | Archivo | Propósito | ¿Puedo modificarlo? |
 |---------|-----------|---------------------|
 | `index.html` | Página principal con navegación a tutoriales | ✅ **SÍ - Landing page** |
+| `custom.html` | Página en blanco para creación libre | ✅ **SÍ - ¡Crea aquí!** |
 | `responsive.html` | Tutorial interactivo de diseño responsive | ✅ Sí |
 | `flex.html` | Tutorial interactivo de Flexbox | ✅ Sí |
 | `grid.html` | Tutorial interactivo de CSS Grid | ✅ Sí |
@@ -390,6 +392,28 @@ Este proyecto está bajo la licencia ISC. Ver archivo [LICENSE](LICENSE) para m�
 **Propósito**: Experimentación práctica con Tailwind CSS  
 **Herramientas**: HTML5, Tailwind CSS, GitHub Copilot  
 **Nivel**: Principiante a Intermedio  
+
+---
+
+## 🎨 Creación Libre
+
+### `custom.html` - Tu Lienzo en Blanco
+
+Este archivo está especialmente diseñado para que los estudiantes puedan **crear libremente** sin restricciones:
+
+- 🎯 **Body completamente vacío** - Empieza desde cero
+- 📝 **Comentarios guía** - Tips y sugerencias dentro del archivo
+- 💡 **Ideas de proyectos** - Inspiración para empezar
+- 🚀 **Desafíos sugeridos** - Desde fácil hasta difícil
+
+**Acceso directo**: Abre `custom.html` y empieza a crear tu proyecto único.
+
+```bash
+# Abre directamente en el navegador
+open custom.html
+# O con el servidor de desarrollo activo, visita:
+http://localhost:3000/custom.html
+```
 
 ---
 
