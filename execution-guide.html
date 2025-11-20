@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía de Ejecución - Tailwind CSS Playground</title>
+    <title>Guía de Ejecución - Frontend & AI Playground</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body class="bg-neo-bg font-sans text-neo-black selection:bg-neo-pink selection:text-white">
@@ -34,7 +34,7 @@
                     Cómo Ejecutar
                 </h1>
                 <p class="text-xl md:text-2xl font-bold border-l-4 border-neo-pink pl-6">
-                    Entiende qué pasa "bajo el capó" cuando ejecutas comandos, qué es Node.js y cómo funciona tu servidor local.
+                    Entiende qué pasa "bajo el capó" cuando ejecutas comandos y cómo usar la IA para resolver errores de entorno.
                 </p>
             </div>
         </div>
@@ -42,6 +42,24 @@
 
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-12">
+
+        <!-- AI Troubleshooting Tip -->
+        <section class="max-w-4xl mx-auto mb-16">
+            <div class="bg-neo-black text-white border-3 border-neo-black p-8 shadow-neo transform -rotate-1">
+                <div class="flex items-start gap-4">
+                    <div class="text-4xl">🤖</div>
+                    <div>
+                        <h2 class="text-2xl font-black uppercase text-neo-yellow mb-2">Tip de Agente IA</h2>
+                        <p class="font-bold text-lg leading-relaxed">
+                            ¿La terminal te arroja un error rojo y feo? No entres en pánico.
+                            <br>
+                            Copia el error completo y pégalo en ChatGPT o Claude con el texto:
+                            <span class="bg-white text-neo-black px-2 py-1 font-mono text-sm ml-1">"Explícame este error y cómo solucionarlo"</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Node.js Context -->
         <section class="max-w-4xl mx-auto mb-16">
@@ -56,7 +74,7 @@
                     <div class="bg-neo-blue border-3 border-neo-black p-6 shadow-neo-sm transform hover:-translate-y-1 transition-transform">
                         <h3 class="font-black text-lg text-white mb-2 uppercase">En Windows 🪟</h3>
                         <p class="text-white text-sm font-bold">
-                            Usa terminales como <strong>PowerShell</strong> o <strong>Git Bash</strong> para ejecutarlo.
+                            Usa terminales como <strong>PowerShell</strong> o <strong>Git Bash</strong>.
                         </p>
                     </div>
                     <div class="bg-neo-black border-3 border-neo-black p-6 shadow-neo-sm transform hover:-translate-y-1 transition-transform">
@@ -118,7 +136,7 @@
                     <strong>Localhost</strong> es "este computador". Es tu entorno seguro de pruebas.
                 </p>
                 <p class="font-bold">
-                    Nadie más en internet puede ver lo que haces aquí.
+                    Nadie más en internet puede ver lo que haces aquí hasta que lo subas a un servidor real.
                 </p>
             </div>
         </section>
@@ -139,8 +157,9 @@
                 <div class="bg-neo-white border-3 border-neo-black p-6 shadow-sm flex gap-4 items-center">
                     <div class="w-12 h-12 bg-neo-black text-white border-2 border-neo-black flex items-center justify-center font-black text-xl flex-shrink-0">2</div>
                     <div>
-                        <h3 class="font-black text-lg uppercase">Instalar (1 vez)</h3>
+                        <h3 class="font-black text-lg uppercase">Instalar Dependencias</h3>
                         <code class="bg-neo-bg border-2 border-neo-black px-2 py-1 text-neo-pink font-mono font-bold text-sm block w-fit mt-1">npm install</code>
+                        <p class="text-sm text-gray-600 mt-1 font-bold">Solo necesitas hacer esto la primera vez.</p>
                     </div>
                 </div>
 

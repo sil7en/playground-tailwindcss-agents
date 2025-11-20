@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía de Diseño Responsive - Tailwind CSS</title>
+    <title>Guía de Diseño Responsive - Frontend & AI Playground</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body class="bg-neo-bg font-sans text-neo-black selection:bg-neo-pink selection:text-white">
@@ -28,13 +28,13 @@
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-3xl">
                 <div class="inline-block px-4 py-2 bg-white border-2 border-neo-black text-neo-black shadow-neo-sm text-sm font-bold mb-6 transform -rotate-2 uppercase">
-                    📱 Periodismo Móvil (MoJo)
+                    📱 Adaptabilidad Total
                 </div>
                 <h1 class="text-5xl md:text-6xl font-black mb-6 uppercase leading-none drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
                     Diseño Responsive
                 </h1>
                 <p class="text-xl md:text-2xl font-bold border-l-4 border-neo-black pl-6">
-                    Asegúrate de que tus historias se lean bien en cualquier lugar: desde el celular en el metro hasta la pantalla grande de la redacción.
+                    Asegúrate de que tu sitio se vea perfecto en cualquier lugar: desde un pequeño celular hasta un monitor gigante 4K.
                 </p>
             </div>
         </div>
@@ -46,14 +46,19 @@
         <!-- Intro Section -->
         <section class="max-w-4xl mx-auto mb-16">
             <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
-                <h2 class="text-4xl font-black text-neo-black mb-6 uppercase">Adaptabilidad Total 📲</h2>
+                <h2 class="text-4xl font-black text-neo-black mb-6 uppercase">La Web es Flexible 📲</h2>
                 <p class="text-lg text-gray-800 mb-8 font-medium leading-relaxed">
-                    El periodismo actual se consume principalmente en móviles. El diseño responsive permite que tu reportaje se <strong>adapte automáticamente</strong>
-                    al tamaño de la pantalla del dispositivo.
+                    La mayoría de los usuarios navegan desde móviles. El diseño responsive no es un "extra", es un requisito fundamental.
+                    Tailwind facilita esto enormemente mediante prefijos.
                 </p>
-                <div class="bg-neo-blue border-3 border-neo-black p-6 shadow-neo-sm transform rotate-1">
-                    <p class="text-white font-bold text-lg">
-                        💡 Dato Periodístico: Si tu noticia no se lee bien en un celular, estás perdiendo a más de la mitad de tu audiencia.
+
+                <!-- AI Tip -->
+                <div class="bg-neo-black border-3 border-neo-black p-6 shadow-neo-sm transform rotate-1">
+                    <h3 class="text-neo-yellow font-bold text-lg uppercase mb-2">🤖 Tip de Agente IA</h3>
+                    <p class="text-white font-medium">
+                        ¿Te cuesta visualizar cómo cambiará el diseño? Pide ayuda:
+                        <br>
+                        <span class="italic text-gray-400">"Tengo 3 tarjetas. Haz que en móvil se vean una debajo de otra, y en desktop las 3 en línea usando Tailwind"</span>
                     </p>
                 </div>
             </div>
@@ -65,7 +70,7 @@
             
             <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8 mb-8">
                 <p class="text-lg text-gray-800 mb-8 font-medium">
-                    Tailwind CSS usa <strong>breakpoints</strong> (puntos de quiebre) para aplicar diferentes estilos según el tamaño de pantalla. 
+                    Tailwind CSS usa <strong>breakpoints</strong> (puntos de quiebre) para aplicar estilos según el ancho de la pantalla.
                 </p>
 
                 <div class="overflow-x-auto border-3 border-neo-black">
@@ -80,9 +85,9 @@
                         </thead>
                         <tbody class="text-neo-black font-bold">
                             <tr class="bg-white border-b-2 border-neo-black">
-                                <td class="border-r-2 border-neo-black px-4 py-3"><code class="bg-gray-200 px-2 py-1 rounded border border-gray-400 text-sm">(ninguno)</code></td>
+                                <td class="border-r-2 border-neo-black px-4 py-3"><code class="bg-gray-200 px-2 py-1 rounded border border-gray-400 text-sm">(base)</code></td>
                                 <td class="border-r-2 border-neo-black px-4 py-3">0px</td>
-                                <td class="border-r-2 border-neo-black px-4 py-3">📱 Móvil pequeño</td>
+                                <td class="border-r-2 border-neo-black px-4 py-3">📱 Móvil (Default)</td>
                                 <td class="px-4 py-3"><code class="text-sm bg-gray-100 px-1">text-sm</code></td>
                             </tr>
                             <tr class="bg-neo-bg border-b-2 border-neo-black">
@@ -117,14 +122,14 @@
             <div class="bg-neo-yellow border-3 border-neo-black p-6 shadow-neo transform -rotate-1">
                 <h3 class="font-black text-neo-black mb-2 uppercase text-xl">⚡ Importante: Mobile-First</h3>
                 <p class="text-neo-black font-medium">
-                    Tailwind usa un enfoque <strong>mobile-first</strong>. Diseña primero para móvil, luego añade prefijos para pantallas más grandes.
+                    Tailwind diseña primero para móvil (sin prefijo), y luego "sobreescribe" para pantallas más grandes con <code class="font-bold">md:</code>, <code class="font-bold">lg:</code>, etc.
                 </p>
             </div>
         </section>
 
         <!-- Demo 1: Texto Responsive -->
         <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">🔤 Demo 1: Texto Responsive</h2>
+            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">🔤 Demo 1: Texto Adaptable</h2>
             
             <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8 mb-8">
                 <h3 class="text-2xl font-black mb-6 uppercase">Ejemplo en Vivo:</h3>
@@ -145,7 +150,7 @@
 
         <!-- Demo 2: Columnas Responsive -->
         <section class="max-w-6xl mx-auto mb-16">
-            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">📦 Demo 2: Grid Responsive</h2>
+            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">📦 Demo 2: Grid Adaptable</h2>
             
             <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8 mb-8">
                 <h3 class="text-2xl font-black mb-4 uppercase">Ejemplo en Vivo:</h3>
@@ -453,8 +458,7 @@
                     <div class="flex-1">
                         <h2 class="text-3xl font-black mb-3 uppercase text-neo-black">¡Hora de Practicar!</h2>
                         <p class="text-gray-800 text-lg mb-6 font-bold">
-                            Pon en práctica todo lo que aprendiste. Completa el ejercicio de TechShop
-                            y luego compara tu solución con la nuestra.
+                            Pon en práctica todo lo que aprendiste. Completa el ejercicio de Cards Responsive.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4">
                             <a href="ejercicio-responsive.html" class="px-6 py-3 bg-neo-green text-neo-black font-bold border-3 border-neo-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-200 text-center uppercase">

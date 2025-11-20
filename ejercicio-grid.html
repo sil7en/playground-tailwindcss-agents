@@ -32,10 +32,10 @@
                     ✏️ Ejercicio
                 </div>
                 <h1 class="text-5xl md:text-6xl font-black mb-6 uppercase leading-none drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">
-                    Diseña una Portada
+                    Diseña un Dashboard
                 </h1>
                 <p class="text-xl md:text-2xl font-bold border-l-4 border-neo-black pl-6">
-                    Usa CSS Grid para organizar los titulares, fotos y columnas de opinión de tu medio digital.
+                    Usa CSS Grid para organizar métricas, gráficos y paneles de control en una interfaz de administración moderna.
                 </p>
             </div>
         </div>
@@ -46,14 +46,14 @@
         <div class="max-w-4xl mx-auto bg-neo-white border-3 border-neo-black shadow-neo p-6">
             <h2 class="text-2xl font-black text-neo-black mb-4 flex items-center gap-2 uppercase">
                 <span class="text-3xl">📝</span>
-                Instrucciones del Editor
+                Instrucciones
             </h2>
             <div class="text-neo-black font-bold space-y-3">
                 <p class="uppercase bg-neo-green text-neo-black inline-block px-2 border-2 border-neo-black transform -rotate-1">Misión:</p>
                 <ol class="list-decimal list-inside space-y-2 ml-4 font-medium">
                     <li>Completa las clases de Grid donde veas <code class="bg-gray-200 px-2 py-1 rounded border border-neo-black">___COMPLETA_AQUI___</code></li>
                     <li>Usa <code class="bg-gray-200 px-2 py-1 rounded border border-neo-black">grid</code>, <code class="bg-gray-200 px-2 py-1 rounded border border-neo-black">grid-cols-{n}</code>, <code class="bg-gray-200 px-2 py-1 rounded border border-neo-black">col-span-{n}</code></li>
-                    <li>Distribuye las noticias principales y secundarias</li>
+                    <li>Distribuye los widgets principales y secundarios</li>
                     <li>Asegúrate que se lea bien en celular (responsive)</li>
                 </ol>
                 <div class="bg-neo-black text-white border-2 border-neo-black p-4 mt-4 shadow-sm">
@@ -73,62 +73,62 @@
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-12">
 
-        <!-- Magazine Header -->
+        <!-- Dashboard Header -->
         <section class="max-w-7xl mx-auto mb-8">
             <!-- EJERCICIO: Grid de 12 columnas con gap de 6 -->
             <div class="___COMPLETA_AQUI___">
                 <!-- EJERCICIO: Esta card debe ocupar 12 columnas (ancho completo) -->
                 <div class="___COMPLETA_AQUI___ bg-neo-purple border-3 border-neo-black p-8 text-white text-center shadow-neo">
-                    <p class="text-neo-yellow font-black tracking-widest mb-2 border-2 border-neo-black inline-block px-2 transform -rotate-1 bg-neo-black uppercase">EDICIÓN SEMANAL</p>
-                    <h1 class="text-5xl md:text-7xl font-black mb-2 uppercase">Cine & Cultura</h1>
-                    <p class="text-white italic font-bold border-b-4 border-neo-yellow inline-block">"Donde las historias cobran vida"</p>
+                    <p class="text-neo-yellow font-black tracking-widest mb-2 border-2 border-neo-black inline-block px-2 transform -rotate-1 bg-neo-black uppercase">PANEL DE CONTROL</p>
+                    <h1 class="text-5xl md:text-7xl font-black mb-2 uppercase">Analítica Web</h1>
+                    <p class="text-white italic font-bold border-b-4 border-neo-yellow inline-block">"Datos en tiempo real"</p>
                 </div>
             </div>
         </section>
 
-        <!-- Top Stories (Titulares Rápidos) -->
+        <!-- KPIs (Indicadores Rápidos) -->
         <section class="max-w-7xl mx-auto mb-8">
-            <!-- EJERCICIO: Grid responsive -->
+            <!-- EJERCICIO: Grid responsive (4 columnas en desktop) -->
             <div class="___COMPLETA_AQUI___">
                 
-                <!-- Story 1 -->
+                <!-- KPI 1 -->
                 <div class="bg-neo-white border-3 border-neo-black p-6 shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
                     <div class="flex items-center justify-between mb-2">
-                        <span class="bg-neo-blue text-white border-2 border-neo-black px-2 py-1 text-xs font-black uppercase">Tecnología</span>
-                        <span class="text-2xl">🤖</span>
+                        <span class="bg-neo-blue text-white border-2 border-neo-black px-2 py-1 text-xs font-black uppercase">Visitas</span>
+                        <span class="text-2xl">👥</span>
                     </div>
-                    <h3 class="font-black text-neo-black uppercase">IA en el Cine</h3>
-                    <p class="text-sm text-gray-800 mt-2 font-bold">Cómo los algoritmos escriben guiones.</p>
+                    <h3 class="font-black text-neo-black text-3xl">24.5K</h3>
+                    <p class="text-sm text-green-600 mt-2 font-bold">▲ 12% vs ayer</p>
                 </div>
 
-                <!-- Story 2 -->
+                <!-- KPI 2 -->
                 <div class="bg-neo-white border-3 border-neo-black p-6 shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
                     <div class="flex items-center justify-between mb-2">
-                        <span class="bg-neo-green text-neo-black border-2 border-neo-black px-2 py-1 text-xs font-black uppercase">Festival</span>
-                        <span class="text-2xl">🎬</span>
+                        <span class="bg-neo-green text-neo-black border-2 border-neo-black px-2 py-1 text-xs font-black uppercase">Ventas</span>
+                        <span class="text-2xl">💰</span>
                     </div>
-                    <h3 class="font-black text-neo-black uppercase">Cannes 2025</h3>
-                    <p class="text-sm text-gray-800 mt-2 font-bold">Los documentales arrasan este año.</p>
+                    <h3 class="font-black text-neo-black text-3xl">$4,200</h3>
+                    <p class="text-sm text-green-600 mt-2 font-bold">▲ 5% vs ayer</p>
                 </div>
 
-                <!-- Story 3 -->
+                <!-- KPI 3 -->
                 <div class="bg-neo-white border-3 border-neo-black p-6 shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
                     <div class="flex items-center justify-between mb-2">
-                        <span class="bg-neo-purple text-white border-2 border-neo-black px-2 py-1 text-xs font-black uppercase">Opinión</span>
-                        <span class="text-2xl">✍️</span>
+                        <span class="bg-neo-purple text-white border-2 border-neo-black px-2 py-1 text-xs font-black uppercase">Rebote</span>
+                        <span class="text-2xl">📉</span>
                     </div>
-                    <h3 class="font-black text-neo-black uppercase">Crítica: "El Vacío"</h3>
-                    <p class="text-sm text-gray-800 mt-2 font-bold">Una obra maestra del silencio.</p>
+                    <h3 class="font-black text-neo-black text-3xl">42%</h3>
+                    <p class="text-sm text-red-600 mt-2 font-bold">▼ 2% vs ayer</p>
                 </div>
 
-                <!-- Story 4 -->
+                <!-- KPI 4 -->
                 <div class="bg-neo-white border-3 border-neo-black p-6 shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
                     <div class="flex items-center justify-between mb-2">
-                        <span class="bg-neo-yellow text-neo-black border-2 border-neo-black px-2 py-1 text-xs font-black uppercase">Entrevista</span>
-                        <span class="text-2xl">🎤</span>
+                        <span class="bg-neo-yellow text-neo-black border-2 border-neo-black px-2 py-1 text-xs font-black uppercase">Activos</span>
+                        <span class="text-2xl">⚡</span>
                     </div>
-                    <h3 class="font-black text-neo-black uppercase">Habla Spielberg</h3>
-                    <p class="text-sm text-gray-800 mt-2 font-bold">"El cine nunca morirá."</p>
+                    <h3 class="font-black text-neo-black text-3xl">156</h3>
+                    <p class="text-sm text-gray-800 mt-2 font-bold">En este momento</p>
                 </div>
 
             </div>
@@ -139,95 +139,94 @@
             <!-- EJERCICIO: Grid de 12 columnas, gap de 6 -->
             <div class="___COMPLETA_AQUI___">
                 
-                <!-- Noticia Principal - EJERCICIO: Ocupa 8 columnas, 2 filas -->
+                <!-- Gráfico Principal - EJERCICIO: Ocupa 8 columnas, 2 filas -->
                 <div class="___COMPLETA_AQUI___ bg-neo-white border-3 border-neo-black p-6 shadow-neo group">
                     <div class="h-64 bg-neo-black border-3 border-neo-black flex items-center justify-center mb-4 relative overflow-hidden">
-                        <span class="text-8xl">🎥</span>
+                        <span class="text-8xl">📊</span>
                         <div class="absolute top-4 right-4">
-                             <span class="text-white text-xs font-black px-3 py-1 bg-red-600 border-2 border-white transform rotate-3 uppercase shadow-sm">EN VIVO</span>
+                             <span class="text-white text-xs font-black px-3 py-1 bg-neo-green border-2 border-white transform rotate-3 uppercase shadow-sm">LIVE</span>
                         </div>
                     </div>
-                    <h2 class="text-3xl font-black text-neo-black mb-2 leading-tight uppercase">El Renacimiento del Cine Independiente</h2>
+                    <h2 class="text-3xl font-black text-neo-black mb-2 leading-tight uppercase">Rendimiento Mensual</h2>
                     <p class="text-gray-800 text-lg font-bold border-l-4 border-neo-blue pl-4">
-                        Directores jóvenes están rompiendo esquemas con presupuestos bajos y mucha creatividad.
-                        Un análisis profundo sobre la nueva ola que sacude Hollywood.
+                        Análisis detallado del tráfico y conversiones durante los últimos 30 días.
                     </p>
                 </div>
 
-                <!-- Flash News - EJERCICIO: Ocupa 4 columnas, 2 filas -->
+                <!-- Alertas - EJERCICIO: Ocupa 4 columnas, 2 filas -->
                 <div class="___COMPLETA_AQUI___ bg-neo-yellow border-3 border-neo-black p-6 shadow-neo">
                     <div class="flex items-center gap-2 mb-4 border-b-3 border-neo-black pb-2">
                         <span class="w-4 h-4 bg-red-500 border-2 border-neo-black rounded-full animate-pulse"></span>
-                        <h2 class="text-xl font-black text-neo-black uppercase">Último Minuto</h2>
+                        <h2 class="text-xl font-black text-neo-black uppercase">Alertas del Sistema</h2>
                     </div>
                     <div class="space-y-4">
                         <div class="flex items-start gap-3 pb-3 border-b-2 border-neo-black border-dashed">
                             <div class="w-10 h-10 bg-white border-2 border-neo-black flex items-center justify-center text-lg flex-shrink-0 font-black">
-                                🌍
+                                ⚠️
                             </div>
                             <div class="flex-1">
-                                <p class="text-sm font-black text-neo-black uppercase">Estreno Mundial</p>
-                                <p class="text-xs text-gray-800 font-bold">La esperada secuela llega a los cines.</p>
+                                <p class="text-sm font-black text-neo-black uppercase">Uso de CPU Alto</p>
+                                <p class="text-xs text-gray-800 font-bold">Servidor US-East al 90%.</p>
                                 <p class="text-xs text-neo-black mt-1 font-mono">Hace 5 min</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3 pb-3 border-b-2 border-neo-black border-dashed">
                             <div class="w-10 h-10 bg-white border-2 border-neo-black flex items-center justify-center text-lg flex-shrink-0 font-black">
-                                🏆
+                                🔄
                             </div>
                             <div class="flex-1">
-                                <p class="text-sm font-black text-neo-black uppercase">Premios Oscar</p>
-                                <p class="text-xs text-gray-800 font-bold">Anunciados los nominados.</p>
+                                <p class="text-sm font-black text-neo-black uppercase">Backup Completado</p>
+                                <p class="text-xs text-gray-800 font-bold">Base de datos respaldada.</p>
                                 <p class="text-xs text-neo-black mt-1 font-mono">Hace 12 min</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3 pb-3 border-b-2 border-neo-black border-dashed">
                             <div class="w-10 h-10 bg-white border-2 border-neo-black flex items-center justify-center text-lg flex-shrink-0 font-black">
-                                📉
+                                🛡️
                             </div>
                             <div class="flex-1">
-                                <p class="text-sm font-black text-neo-black uppercase">Taquilla</p>
-                                <p class="text-xs text-gray-800 font-bold">Caída en ventas de entradas.</p>
+                                <p class="text-sm font-black text-neo-black uppercase">Intento de Login</p>
+                                <p class="text-xs text-gray-800 font-bold">IP bloqueada por firewall.</p>
                                 <p class="text-xs text-neo-black mt-1 font-mono">Hace 25 min</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Más Leídas - EJERCICIO: Ocupa 6 columnas -->
+                <!-- Top Productos - EJERCICIO: Ocupa 6 columnas -->
                 <div class="___COMPLETA_AQUI___ bg-neo-white border-3 border-neo-black p-6 shadow-neo">
-                    <h2 class="text-xl font-black text-neo-black mb-4 uppercase bg-neo-pink inline-block px-2 border-2 border-neo-black text-white">🔥 Lo más leído</h2>
+                    <h2 class="text-xl font-black text-neo-black mb-4 uppercase bg-neo-pink inline-block px-2 border-2 border-neo-black text-white">🔥 Top Productos</h2>
                     <div class="space-y-3">
                         <div class="flex items-center justify-between p-3 border-2 border-neo-black bg-gray-50 hover:bg-neo-blue hover:text-white transition-colors cursor-pointer group">
                             <div class="flex items-center gap-3">
                                 <span class="text-2xl text-neo-black font-black group-hover:text-white">1</span>
                                 <div>
-                                    <p class="font-black text-neo-black uppercase group-hover:text-white">Los 10 mejores lentes</p>
-                                    <p class="text-sm text-gray-600 font-bold group-hover:text-white">Fotografía</p>
+                                    <p class="font-black text-neo-black uppercase group-hover:text-white">Plan Premium</p>
+                                    <p class="text-sm text-gray-600 font-bold group-hover:text-white">Suscripción</p>
                                 </div>
                             </div>
-                            <span class="text-xs text-neo-black font-mono font-bold bg-white border-2 border-neo-black px-1">5k</span>
+                            <span class="text-xs text-neo-black font-mono font-bold bg-white border-2 border-neo-black px-1">1.2k</span>
                         </div>
                         <div class="flex items-center justify-between p-3 border-2 border-neo-black bg-gray-50 hover:bg-neo-green hover:text-neo-black transition-colors cursor-pointer group">
                             <div class="flex items-center gap-3">
                                 <span class="text-2xl text-neo-black font-black">2</span>
                                 <div>
-                                    <p class="font-black text-neo-black uppercase">Guía de Iluminación</p>
-                                    <p class="text-sm text-gray-600 font-bold group-hover:text-neo-black">Tutoriales</p>
+                                    <p class="font-black text-neo-black uppercase">Ebook React</p>
+                                    <p class="text-sm text-gray-600 font-bold group-hover:text-neo-black">Digital</p>
                                 </div>
                             </div>
-                            <span class="text-xs text-neo-black font-mono font-bold bg-white border-2 border-neo-black px-1">3.2k</span>
+                            <span class="text-xs text-neo-black font-mono font-bold bg-white border-2 border-neo-black px-1">850</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Tendencias - EJERCICIO: Ocupa 6 columnas -->
+                <!-- Metas - EJERCICIO: Ocupa 6 columnas -->
                 <div class="___COMPLETA_AQUI___ bg-neo-white border-3 border-neo-black p-6 shadow-neo">
-                    <h2 class="text-xl font-black text-neo-black mb-4 uppercase bg-neo-blue inline-block px-2 border-2 border-neo-black text-white">📈 Tendencias</h2>
+                    <h2 class="text-xl font-black text-neo-black mb-4 uppercase bg-neo-blue inline-block px-2 border-2 border-neo-black text-white">📈 Metas Mensuales</h2>
                     <div class="space-y-4">
                         <div>
                             <div class="flex justify-between mb-1">
-                                <span class="text-sm font-black text-neo-black uppercase">Estrenos Streaming</span>
+                                <span class="text-sm font-black text-neo-black uppercase">Nuevos Usuarios</span>
                                 <span class="text-sm text-neo-black font-bold font-mono">85%</span>
                             </div>
                             <div class="w-full bg-gray-200 border-2 border-neo-black h-4">
@@ -236,11 +235,11 @@
                         </div>
                         <div>
                             <div class="flex justify-between mb-1">
-                                <span class="text-sm font-black text-neo-black uppercase">Cine Clásico</span>
-                                <span class="text-sm text-neo-black font-bold font-mono">45%</span>
+                                <span class="text-sm font-black text-neo-black uppercase">Retención</span>
+                                <span class="text-sm text-neo-black font-bold font-mono">60%</span>
                             </div>
                             <div class="w-full bg-gray-200 border-2 border-neo-black h-4">
-                                <div class="bg-neo-blue h-full border-r-2 border-neo-black" style="width: 45%"></div>
+                                <div class="bg-neo-blue h-full border-r-2 border-neo-black" style="width: 60%"></div>
                             </div>
                         </div>
                     </div>
@@ -249,77 +248,48 @@
             </div>
         </section>
 
-        <!-- Suscriptores y Cobertura -->
+        <!-- Usuarios Recientes -->
         <section class="max-w-7xl mx-auto mb-8">
             <!-- EJERCICIO: Grid de 12 columnas, gap de 6 -->
             <div class="___COMPLETA_AQUI___">
                 
-                <!-- Suscriptores Nuevos - EJERCICIO: Ocupa 5 columnas -->
+                <!-- Lista Usuarios - EJERCICIO: Ocupa 5 columnas -->
                 <div class="___COMPLETA_AQUI___ bg-neo-black border-3 border-neo-black p-6 shadow-neo">
-                    <h2 class="text-xl font-black text-white mb-4 uppercase">Nuevos Suscriptores</h2>
+                    <h2 class="text-xl font-black text-white mb-4 uppercase">Usuarios Recientes</h2>
                     <div class="space-y-3">
                         <div class="flex items-center gap-3 p-2 border-2 border-white bg-neo-black hover:bg-gray-900 transition-colors">
                             <div class="w-10 h-10 bg-neo-blue border-2 border-white flex items-center justify-center text-white font-black">
-                                AG
+                                JD
                             </div>
                             <div class="flex-1">
-                                <p class="font-black text-white text-sm uppercase">Ana García</p>
-                                <p class="text-xs text-gray-400 font-bold">Estudiante de Cine</p>
+                                <p class="font-black text-white text-sm uppercase">John Doe</p>
+                                <p class="text-xs text-gray-400 font-bold">Hace 2 mins</p>
                             </div>
-                            <span class="text-xs text-neo-black bg-neo-green border-2 border-white px-2 py-1 font-black uppercase">Premium</span>
+                            <span class="text-xs text-neo-black bg-neo-green border-2 border-white px-2 py-1 font-black uppercase">Online</span>
                         </div>
                         <div class="flex items-center gap-3 p-2 border-2 border-white bg-neo-black hover:bg-gray-900 transition-colors">
                             <div class="w-10 h-10 bg-neo-purple border-2 border-white flex items-center justify-center text-white font-black">
-                                CL
+                                JS
                             </div>
                             <div class="flex-1">
-                                <p class="font-black text-white text-sm uppercase">Carlos López</p>
-                                <p class="text-xs text-gray-400 font-bold">Periodista Freelance</p>
+                                <p class="font-black text-white text-sm uppercase">Jane Smith</p>
+                                <p class="text-xs text-gray-400 font-bold">Hace 15 mins</p>
                             </div>
-                            <span class="text-xs text-neo-black bg-white border-2 border-gray-400 px-2 py-1 font-black uppercase">Básico</span>
+                            <span class="text-xs text-neo-black bg-white border-2 border-gray-400 px-2 py-1 font-black uppercase">Offline</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Mapa de Cobertura - EJERCICIO: Ocupa 7 columnas -->
+                <!-- Mapa de Calor - EJERCICIO: Ocupa 7 columnas -->
                 <div class="___COMPLETA_AQUI___ bg-neo-white border-3 border-neo-black p-6 shadow-neo">
-                    <h2 class="text-xl font-black text-neo-black mb-4 uppercase">Lectores por Región</h2>
+                    <h2 class="text-xl font-black text-neo-black mb-4 uppercase">Mapa de Calor</h2>
                     <div class="h-64 bg-neo-blue border-3 border-neo-black flex items-center justify-center relative">
                         <div class="text-center bg-white p-4 border-3 border-neo-black shadow-sm">
                             <div class="text-6xl mb-2">🌎</div>
-                            <p class="text-neo-black font-black uppercase">Mapa de Lectores</p>
-                            <p class="text-xs text-gray-600 font-mono font-bold mt-1">(Latam: 60%, Europa: 25%)</p>
+                            <p class="text-neo-black font-black uppercase">Actividad Global</p>
+                            <p class="text-xs text-gray-600 font-mono font-bold mt-1">(Latam: High, US: Med)</p>
                         </div>
                     </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Gallery -->
-        <section class="max-w-7xl mx-auto">
-            <h2 class="text-2xl font-black text-neo-black mb-6 uppercase border-b-4 border-neo-black inline-block">La Semana en Fotos</h2>
-            
-            <!-- EJERCICIO: Grid responsive -->
-            <div class="___COMPLETA_AQUI___">
-                
-                <div class="aspect-square bg-neo-red border-3 border-neo-black flex items-center justify-center text-white text-4xl shadow-sm hover:bg-red-400 transition-colors bg-red-500">
-                    💻
-                </div>
-                <div class="aspect-square bg-neo-blue border-3 border-neo-black flex items-center justify-center text-white text-4xl shadow-sm hover:bg-blue-400 transition-colors">
-                    📱
-                </div>
-                <div class="aspect-square bg-neo-green border-3 border-neo-black flex items-center justify-center text-neo-black text-4xl shadow-sm hover:bg-green-300 transition-colors">
-                    🎧
-                </div>
-                <div class="aspect-square bg-neo-purple border-3 border-neo-black flex items-center justify-center text-white text-4xl shadow-sm hover:bg-purple-400 transition-colors">
-                    ⌚
-                </div>
-                <div class="aspect-square bg-neo-yellow border-3 border-neo-black flex items-center justify-center text-neo-black text-4xl shadow-sm hover:bg-yellow-300 transition-colors">
-                    📷
-                </div>
-                <div class="aspect-square bg-neo-pink border-3 border-neo-black flex items-center justify-center text-white text-4xl shadow-sm hover:bg-pink-400 transition-colors">
-                    🎮
                 </div>
 
             </div>

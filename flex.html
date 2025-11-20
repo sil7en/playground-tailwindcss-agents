@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía de Flexbox CSS - Tailwind CSS</title>
+    <title>Guía de Flexbox CSS - Frontend & AI Playground</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body class="bg-neo-bg font-sans text-neo-black selection:bg-neo-pink selection:text-white">
@@ -31,10 +31,10 @@
                     📏 Maquetación Flexible
                 </div>
                 <h1 class="text-5xl md:text-6xl font-black mb-6 uppercase leading-none drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">
-                    Flexbox Director
+                    Control Total
                 </h1>
                 <p class="text-xl md:text-2xl font-bold border-l-4 border-neo-black pl-6">
-                    Imagina que eres un director de cine colocando a tus actores en el escenario. Flexbox te permite decirles: "pónganse en fila", "céntrense" o "sepárense".
+                    Domina la alineación de elementos. Flexbox es tu mejor amigo para crear barras de navegación, menús y distribuciones perfectas en una sola dirección.
                 </p>
             </div>
         </div>
@@ -43,12 +43,29 @@
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-12">
 
+        <!-- AI Tip -->
+        <section class="max-w-4xl mx-auto mb-16">
+            <div class="bg-neo-black text-white border-3 border-neo-black p-8 shadow-neo transform -rotate-1">
+                <div class="flex items-start gap-4">
+                    <div class="text-4xl">🤖</div>
+                    <div>
+                        <h2 class="text-2xl font-black uppercase text-neo-purple mb-2">Tip de Agente IA</h2>
+                        <p class="font-bold text-lg leading-relaxed">
+                            ¿No recuerdas si es `justify-center` o `items-center`?
+                            <br>
+                            <span class="bg-white text-neo-black px-2 py-1 font-mono text-sm mt-2 inline-block">"Tengo un div con display flex. ¿Cómo centro su contenido vertical y horizontalmente?"</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Intro Section -->
         <section class="max-w-4xl mx-auto mb-16">
             <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
                 <h2 class="text-4xl font-black text-neo-black mb-6 uppercase">¿Qué es Flexbox? 🤔</h2>
                 <p class="text-lg text-gray-800 mb-8 font-medium leading-relaxed">
-                    Es una herramienta para <strong>alinear cosas</strong>. Si quieres poner un logo al lado de un menú, o centrar un título perfectamente en medio de la pantalla, Flexbox es la solución.
+                    Es una herramienta para <strong>alinear cosas</strong> en una dimensión (fila o columna). Si quieres poner un logo al lado de un menú, o centrar un título, Flexbox es la solución.
                 </p>
                 <div class="bg-neo-blue border-3 border-neo-black p-6 shadow-neo-sm transform -rotate-1 mb-6">
                     <p class="text-white font-bold text-lg">
@@ -58,10 +75,10 @@
                 </div>
                 <div class="bg-neo-yellow border-3 border-neo-black p-6 shadow-neo-sm transform rotate-1">
                     <p class="text-neo-black font-bold text-lg">
-                        📌 Usos Periodísticos:
+                        📌 Casos Comunes:
                         1. Barra de navegación (Logo + Enlaces).
-                        2. Tarjetas de noticias una al lado de la otra.
-                        3. Centrar texto sobre una foto de portada.
+                        2. Tarjetas de producto una al lado de la otra.
+                        3. Centrar texto sobre una imagen.
                     </p>
                 </div>
             </div>
@@ -76,7 +93,7 @@
                     <div class="border-3 border-neo-black p-6 bg-gray-100 shadow-neo-sm">
                         <h3 class="font-black text-lg text-neo-black mb-3 uppercase bg-neo-blue inline-block px-2 text-white border-2 border-neo-black transform -rotate-1">📦 Flex Container (Padre)</h3>
                         <p class="text-gray-800 text-sm mb-4 font-bold">
-                            El elemento que tiene <code class="bg-neo-black text-white px-2 py-1 rounded font-mono">display: flex</code>.
+                            El elemento que tiene <code class="bg-neo-black text-white px-2 py-1 rounded font-mono">flex</code>.
                             Controla cómo se distribuyen sus hijos.
                         </p>
                         <div class="bg-white p-4 border-2 border-gray-300 font-mono text-sm font-bold text-neo-blue">
@@ -87,7 +104,7 @@
                     <div class="border-3 border-neo-black p-6 bg-neo-pink shadow-neo-sm">
                         <h3 class="font-black text-lg text-white mb-3 uppercase bg-neo-black inline-block px-2 border-2 border-white transform rotate-1">🎁 Flex Items (Hijos)</h3>
                         <p class="text-white text-sm mb-4 font-bold">
-                            Los elementos directos dentro del flex container. Se alinean y distribuyen según las reglas del padre.
+                            Los elementos directos dentro del flex container. Se alinean según las reglas del padre.
                         </p>
                         <div class="bg-white p-4 border-2 border-neo-black font-mono text-sm font-bold text-neo-pink">
                             &lt;div&gt;Item 1&lt;/div&gt;
