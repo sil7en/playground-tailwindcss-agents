@@ -6,32 +6,34 @@
     <title>Ejercicio: Flexbox CSS - Tailwind CSS</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body class="bg-gray-50">
+<body class="bg-neo-bg font-sans text-neo-black selection:bg-neo-pink selection:text-white">
     
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-neo-white border-b-3 border-neo-black sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
-                <a href="flex.html" class="flex items-center gap-2 text-indigo-600 hover:text-indigo-700 transition-colors">
+                <a href="flex.html" class="flex items-center gap-2 text-neo-black hover:text-neo-purple transition-colors font-bold uppercase">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
                     </svg>
-                    <span class="font-semibold">Volver a la guía</span>
+                    <span>Volver a la guía</span>
                 </a>
-                <h1 class="text-xl font-bold text-gray-800">✏️ Ejercicio de Flexbox</h1>
+                <h1 class="text-xl font-black uppercase tracking-tight">✏️ Ejercicio Flexbox</h1>
             </div>
         </div>
     </nav>
 
     <!-- Header -->
-    <header class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-12">
-        <div class="container mx-auto px-4">
+    <header class="bg-neo-purple border-b-3 border-neo-black text-white py-12 shadow-neo relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-3xl">
-                <div class="inline-block px-4 py-2 bg-indigo-500 bg-opacity-50 rounded-full text-sm font-semibold mb-4">
-                    ✏️ Ejercicio: Flexbox
+                <div class="inline-block px-4 py-2 bg-neo-yellow border-2 border-neo-black text-neo-black shadow-neo-sm text-sm font-bold mb-6 transform rotate-2 uppercase">
+                    ✏️ Ejercicio
                 </div>
-                <h1 class="text-3xl md:text-4xl font-bold mb-4">Crea tu Portafolio Periodístico</h1>
-                <p class="text-xl text-indigo-100">
+                <h1 class="text-5xl md:text-6xl font-black mb-6 uppercase leading-none drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">
+                    Crea tu Portafolio
+                </h1>
+                <p class="text-xl md:text-2xl font-bold border-l-4 border-neo-black pl-6">
                     Usa Flexbox para organizar tu cabecera, tus artículos destacados y tu biografía.
                 </p>
             </div>
@@ -40,26 +42,26 @@
 
     <!-- Instructions -->
     <section class="container mx-auto px-4 py-8">
-        <div class="max-w-4xl mx-auto bg-purple-50 border-2 border-purple-400 rounded-xl p-6">
-            <h2 class="text-2xl font-bold text-purple-900 mb-4 flex items-center gap-2">
+        <div class="max-w-4xl mx-auto bg-neo-white border-3 border-neo-black shadow-neo p-6">
+            <h2 class="text-2xl font-black text-neo-black mb-4 flex items-center gap-2 uppercase">
                 <span class="text-3xl">📝</span>
                 Instrucciones
             </h2>
-            <div class="text-purple-900 space-y-3">
-                <p class="font-semibold">Desafío:</p>
-                <ol class="list-decimal list-inside space-y-2 ml-4">
+            <div class="text-neo-black font-bold space-y-3">
+                <p class="uppercase bg-neo-blue text-white inline-block px-2 border-2 border-neo-black transform -rotate-1">Desafío:</p>
+                <ol class="list-decimal list-inside space-y-2 ml-4 font-medium">
                     <li>Imagina que eres el editor jefe de tu propia web. Tienes que organizar los elementos.</li>
-                    <li>Busca los huecos con <code class="bg-purple-200 px-2 py-1 rounded">___COMPLETA_AQUI___</code>.</li>
-                    <li>Usa las herramientas de "Director de Escena" (Flexbox) para alinear a tus actores.</li>
+                    <li>Busca los huecos con <code class="bg-gray-200 px-2 py-1 rounded border border-neo-black">___COMPLETA_AQUI___</code>.</li>
+                    <li>Usa las herramientas de "Director de Escena" (Flexbox).</li>
                 </ol>
-                <div class="bg-white rounded-lg p-4 mt-4">
-                    <p class="font-semibold text-purple-900 mb-2">💡 Herramientas del Director:</p>
-                    <ul class="list-disc list-inside space-y-1 text-sm">
-                        <li><code class="bg-gray-200 px-2 py-1 rounded">flex</code> - "¡Acción!" (Activa el modo director)</li>
-                        <li><code class="bg-gray-200 px-2 py-1 rounded">items-center</code> - "Centrense verticalmente"</li>
-                        <li><code class="bg-gray-200 px-2 py-1 rounded">justify-between</code> - "Sepárense a los extremos"</li>
-                        <li><code class="bg-gray-200 px-2 py-1 rounded">flex-col</code> - "Pónganse en fila india (columna)"</li>
-                        <li><code class="bg-gray-200 px-2 py-1 rounded">gap-4</code> - "¡Aire! No se peguen tanto"</li>
+                <div class="bg-neo-black text-white border-2 border-neo-black p-4 mt-4 shadow-sm">
+                    <p class="font-black text-neo-yellow mb-2 uppercase">💡 Herramientas:</p>
+                    <ul class="list-disc list-inside space-y-1 text-sm font-mono">
+                        <li>flex</li>
+                        <li>items-center</li>
+                        <li>justify-between</li>
+                        <li>flex-col</li>
+                        <li>gap-4</li>
                     </ul>
                 </div>
             </div>
@@ -71,27 +73,22 @@
 
         <!-- Navbar -->
         <section class="max-w-6xl mx-auto mb-16">
-            <div class="bg-gray-900 rounded-xl px-6 py-4">
-                <!-- EJERCICIO: Usa flex para poner logo y enlaces en línea -->
-                <!-- EJERCICIO: Centra verticalmente con items-center -->
-                <!-- EJERCICIO: Espacia con justify-between -->
+            <div class="bg-neo-black border-3 border-neo-black rounded-none px-6 py-4 shadow-neo">
                 <div class="___COMPLETA_AQUI___">
                     <!-- Logo -->
-                    <div class="text-white font-bold text-2xl">
+                    <div class="text-white font-black text-2xl uppercase">
                         Juan Pérez | Periodista
                     </div>
                     
-                    <!-- EJERCICIO: Flex para los enlaces en línea, gap para espacio entre ellos -->
-                    <!-- EJERCICIO: items-center para alinear verticalmente -->
                     <nav class="___COMPLETA_AQUI___">
-                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Crónicas</a>
-                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Reportajes</a>
-                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Documentales</a>
-                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Bio</a>
+                        <a href="#" class="text-gray-300 hover:text-neo-yellow transition-colors font-bold uppercase">Crónicas</a>
+                        <a href="#" class="text-gray-300 hover:text-neo-yellow transition-colors font-bold uppercase">Reportajes</a>
+                        <a href="#" class="text-gray-300 hover:text-neo-yellow transition-colors font-bold uppercase">Documentales</a>
+                        <a href="#" class="text-gray-300 hover:text-neo-yellow transition-colors font-bold uppercase">Bio</a>
                     </nav>
                     
                     <!-- Button -->
-                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg transition-colors">
+                    <button class="bg-neo-blue text-white px-4 py-2 border-2 border-white font-bold hover:bg-blue-600 transition-colors shadow-sm">
                         Contactar
                     </button>
                 </div>
@@ -100,32 +97,26 @@
 
         <!-- Hero con Imagen y Texto -->
         <section class="max-w-6xl mx-auto mb-16">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                <!-- EJERCICIO: Flex para poner imagen y contenido lado a lado en desktop -->
-                <!-- EJERCICIO: flex-col en móvil, flex-row en desktop (md:) -->
-                <!-- EJERCICIO: items-center para centrar verticalmente -->
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo overflow-hidden">
                 <div class="___COMPLETA_AQUI___">
                     <!-- Imagen -->
-                    <div class="w-full md:w-1/2 bg-gradient-to-br from-indigo-500 to-purple-600 h-64 md:h-auto flex items-center justify-center">
+                    <div class="w-full md:w-1/2 bg-neo-pink border-b-3 md:border-b-0 md:border-r-3 border-neo-black h-64 md:h-auto flex items-center justify-center">
                         <span class="text-white text-8xl">👨‍💻</span>
                     </div>
                     
                     <!-- Contenido -->
-                    <!-- EJERCICIO: Usa flex-1 para que ocupe el espacio restante -->
-                    <!-- EJERCICIO: Padding de 8 -->
                     <div class="___COMPLETA_AQUI___">
-                        <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                        <h1 class="text-4xl font-black text-neo-black mb-4 uppercase">
                             Contando historias que importan
                         </h1>
-                        <p class="text-xl text-gray-600 mb-6">
+                        <p class="text-xl text-gray-800 mb-6 font-bold">
                             Periodista de investigación y documentalista. Especializado en derechos humanos y medio ambiente.
                         </p>
-                        <!-- EJERCICIO: Flex para los botones en línea, gap para espacio -->
                         <div class="___COMPLETA_AQUI___">
-                            <button class="px-6 py-3 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700">
+                            <button class="px-6 py-3 bg-neo-green text-neo-black border-2 border-neo-black font-black uppercase hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all shadow-neo-sm">
                                 Ver Reportajes
                             </button>
-                            <button class="px-6 py-3 bg-gray-200 text-gray-800 rounded-lg font-semibold hover:bg-gray-300">
+                            <button class="px-6 py-3 bg-gray-200 text-neo-black border-2 border-neo-black font-bold uppercase hover:bg-gray-300">
                                 Ver Reel
                             </button>
                         </div>
@@ -136,65 +127,60 @@
 
         <!-- Skills Cards -->
         <section class="max-w-6xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+            <h2 class="text-3xl font-black text-center text-neo-black mb-12 uppercase">
                 Mis Habilidades
             </h2>
             
-            <!-- EJERCICIO: Flex con wrap para que las cards se ajusten -->
-            <!-- EJERCICIO: gap de 6, justify-center para centrar -->
             <div class="___COMPLETA_AQUI___">
                 
                 <!-- Skill Card 1 -->
-                <!-- EJERCICIO: Flex para icono y texto en línea -->
-                <!-- EJERCICIO: items-center para centrar verticalmente -->
-                <!-- EJERCICIO: gap de 4 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow w-64">
+                <div class="bg-neo-white p-6 border-3 border-neo-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all w-64">
                     <div class="___COMPLETA_AQUI___">
-                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-2xl">
+                        <div class="w-12 h-12 bg-neo-blue border-2 border-neo-black flex items-center justify-center text-2xl shadow-sm text-white">
                             ✍️
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Redacción</h3>
-                            <p class="text-sm text-gray-600">Crónica y Entrevista</p>
+                            <h3 class="font-black text-lg uppercase">Redacción</h3>
+                            <p class="text-sm text-gray-800 font-bold">Crónica y Entrevista</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Skill Card 2 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow w-64">
+                <div class="bg-neo-white p-6 border-3 border-neo-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all w-64">
                     <div class="___COMPLETA_AQUI___">
-                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-2xl">
+                        <div class="w-12 h-12 bg-neo-green border-2 border-neo-black flex items-center justify-center text-2xl shadow-sm text-neo-black">
                             🎬
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Edición</h3>
-                            <p class="text-sm text-gray-600">Premiere & DaVinci</p>
+                            <h3 class="font-black text-lg uppercase">Edición</h3>
+                            <p class="text-sm text-gray-800 font-bold">Premiere & DaVinci</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Skill Card 3 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow w-64">
+                <div class="bg-neo-white p-6 border-3 border-neo-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all w-64">
                     <div class="___COMPLETA_AQUI___">
-                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-2xl">
+                        <div class="w-12 h-12 bg-neo-purple border-2 border-neo-black flex items-center justify-center text-2xl shadow-sm text-white">
                             📷
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Fotografía</h3>
-                            <p class="text-sm text-gray-600">Documental</p>
+                            <h3 class="font-black text-lg uppercase">Fotografía</h3>
+                            <p class="text-sm text-gray-800 font-bold">Documental</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Skill Card 4 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow w-64">
+                <div class="bg-neo-white p-6 border-3 border-neo-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all w-64">
                     <div class="___COMPLETA_AQUI___">
-                        <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center text-2xl">
+                        <div class="w-12 h-12 bg-neo-yellow border-2 border-neo-black flex items-center justify-center text-2xl shadow-sm text-neo-black">
                             🎤
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg">Locución</h3>
-                            <p class="text-sm text-gray-600">Podcast & Radio</p>
+                            <h3 class="font-black text-lg uppercase">Locución</h3>
+                            <p class="text-sm text-gray-800 font-bold">Podcast & Radio</p>
                         </div>
                     </div>
                 </div>
@@ -204,38 +190,33 @@
 
         <!-- Projects Section -->
         <section class="max-w-6xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+            <h2 class="text-3xl font-black text-center text-neo-black mb-12 uppercase">
                 Proyectos Destacados
             </h2>
             
             <div class="space-y-8">
                 
                 <!-- Project 1 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <!-- EJERCICIO: Flex row para desktop, column para móvil -->
+                <div class="bg-neo-white border-3 border-neo-black shadow-neo overflow-hidden">
                     <div class="___COMPLETA_AQUI___">
-                        <div class="w-full md:w-1/3 bg-gradient-to-br from-blue-400 to-cyan-500 h-48 md:h-auto flex items-center justify-center text-white text-5xl">
+                        <div class="w-full md:w-1/3 bg-neo-blue border-b-3 md:border-b-0 md:border-r-3 border-neo-black h-48 md:h-auto flex items-center justify-center text-white text-5xl">
                             🎥
                         </div>
-                        <!-- EJERCICIO: flex-1 para ocupar espacio restante, padding de 6 -->
-                        <!-- EJERCICIO: Usa flex flex-col para organizar contenido verticalmente -->
                         <div class="___COMPLETA_AQUI___">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Documental "El Río"</h3>
-                            <p class="text-gray-600 mb-4">
+                            <h3 class="text-2xl font-black text-neo-black mb-2 uppercase">Documental "El Río"</h3>
+                            <p class="text-gray-800 mb-4 font-bold">
                                 Una investigación visual sobre la sequía en la zona central. Ganador del Premio Periodismo 2024.
                             </p>
-                            <!-- EJERCICIO: Flex para las tecnologías en línea, gap y wrap -->
                             <div class="___COMPLETA_AQUI___ mb-4">
-                                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Dirección</span>
-                                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Guión</span>
-                                <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Cámara</span>
+                                <span class="px-3 py-1 bg-neo-blue text-white border-2 border-neo-black font-bold text-sm shadow-sm">Dirección</span>
+                                <span class="px-3 py-1 bg-neo-green text-neo-black border-2 border-neo-black font-bold text-sm shadow-sm">Guión</span>
+                                <span class="px-3 py-1 bg-neo-purple text-white border-2 border-neo-black font-bold text-sm shadow-sm">Cámara</span>
                             </div>
-                            <!-- EJERCICIO: Flex para botones, gap de 3 -->
                             <div class="___COMPLETA_AQUI___">
-                                <button class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+                                <button class="px-4 py-2 bg-neo-black text-white font-bold hover:bg-gray-800 border-2 border-neo-black">
                                     Ver Tráiler
                                 </button>
-                                <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300">
+                                <button class="px-4 py-2 bg-white text-neo-black font-bold hover:bg-gray-100 border-2 border-neo-black">
                                     Leer Reseña
                                 </button>
                             </div>
@@ -244,26 +225,26 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="bg-neo-white border-3 border-neo-black shadow-neo overflow-hidden">
                     <div class="___COMPLETA_AQUI___">
-                        <div class="w-full md:w-1/3 bg-gradient-to-br from-purple-400 to-pink-500 h-48 md:h-auto flex items-center justify-center text-white text-5xl">
+                        <div class="w-full md:w-1/3 bg-neo-pink border-b-3 md:border-b-0 md:border-r-3 border-neo-black h-48 md:h-auto flex items-center justify-center text-white text-5xl">
                             📝
                         </div>
                         <div class="___COMPLETA_AQUI___">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Crónica: "Voces Ocultas"</h3>
-                            <p class="text-gray-600 mb-4">
+                            <h3 class="text-2xl font-black text-neo-black mb-2 uppercase">Crónica: "Voces Ocultas"</h3>
+                            <p class="text-gray-800 mb-4 font-bold">
                                 Serie de reportajes sobre comunidades aisladas en el sur del país. Publicado en Revista Sábado.
                             </p>
                             <div class="___COMPLETA_AQUI___ mb-4">
-                                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Investigación</span>
-                                <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm">Redacción</span>
-                                <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm">Fotografía</span>
+                                <span class="px-3 py-1 bg-neo-blue text-white border-2 border-neo-black font-bold text-sm shadow-sm">Investigación</span>
+                                <span class="px-3 py-1 bg-neo-red text-white border-2 border-neo-black font-bold text-sm shadow-sm bg-red-500">Redacción</span>
+                                <span class="px-3 py-1 bg-neo-yellow text-neo-black border-2 border-neo-black font-bold text-sm shadow-sm">Fotografía</span>
                             </div>
                             <div class="___COMPLETA_AQUI___">
-                                <button class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700">
+                                <button class="px-4 py-2 bg-neo-black text-white font-bold hover:bg-gray-800 border-2 border-neo-black">
                                     Leer Artículo
                                 </button>
-                                <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300">
+                                <button class="px-4 py-2 bg-white text-neo-black font-bold hover:bg-gray-100 border-2 border-neo-black">
                                     Ver Galería
                                 </button>
                             </div>
@@ -276,60 +257,57 @@
 
         <!-- Testimonials -->
         <section class="max-w-6xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
-                Lo que dicen mis clientes
+            <h2 class="text-3xl font-black text-center text-neo-black mb-12 uppercase">
+                Testimonios
             </h2>
             
-            <!-- EJERCICIO: Flex con wrap, gap de 6, justify-center -->
             <div class="___COMPLETA_AQUI___">
                 
                 <!-- Testimonial 1 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg w-full md:w-80">
-                    <!-- EJERCICIO: Flex para poner foto y nombre en línea -->
-                    <!-- EJERCICIO: items-center, gap de 4, margin bottom de 4 -->
+                <div class="bg-neo-white p-6 border-3 border-neo-black shadow-neo w-full md:w-80">
                     <div class="___COMPLETA_AQUI___">
-                        <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                        <div class="w-12 h-12 bg-neo-blue border-2 border-neo-black rounded-full flex items-center justify-center text-white font-black">
                             JD
                         </div>
                         <div>
-                            <h4 class="font-bold">John Doe</h4>
-                            <p class="text-sm text-gray-600">CEO, TechCorp</p>
+                            <h4 class="font-black uppercase">John Doe</h4>
+                            <p class="text-sm text-gray-800 font-bold">CEO, TechCorp</p>
                         </div>
                     </div>
-                    <p class="text-gray-700 italic">
-                        "Excelente trabajo, entregó todo a tiempo y superó nuestras expectativas. Lo recomiendo 100%."
+                    <p class="text-gray-800 italic font-medium border-l-4 border-neo-blue pl-4">
+                        "Excelente trabajo, entregó todo a tiempo y superó nuestras expectativas."
                     </p>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg w-full md:w-80">
+                <div class="bg-neo-white p-6 border-3 border-neo-black shadow-neo w-full md:w-80">
                     <div class="___COMPLETA_AQUI___">
-                        <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                        <div class="w-12 h-12 bg-neo-purple border-2 border-neo-black rounded-full flex items-center justify-center text-white font-black">
                             MS
                         </div>
                         <div>
-                            <h4 class="font-bold">Maria Silva</h4>
-                            <p class="text-sm text-gray-600">Founder, StartupXYZ</p>
+                            <h4 class="font-black uppercase">Maria Silva</h4>
+                            <p class="text-sm text-gray-800 font-bold">Founder, StartupXYZ</p>
                         </div>
                     </div>
-                    <p class="text-gray-700 italic">
+                    <p class="text-gray-800 italic font-medium border-l-4 border-neo-purple pl-4">
                         "Profesional, creativo y muy responsable. Definitivamente volveré a trabajar con él."
                     </p>
                 </div>
 
                 <!-- Testimonial 3 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg w-full md:w-80">
+                <div class="bg-neo-white p-6 border-3 border-neo-black shadow-neo w-full md:w-80">
                     <div class="___COMPLETA_AQUI___">
-                        <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-bold">
+                        <div class="w-12 h-12 bg-neo-green border-2 border-neo-black rounded-full flex items-center justify-center text-neo-black font-black">
                             PR
                         </div>
                         <div>
-                            <h4 class="font-bold">Pedro Rojas</h4>
-                            <p class="text-sm text-gray-600">CTO, InnovateLab</p>
+                            <h4 class="font-black uppercase">Pedro Rojas</h4>
+                            <p class="text-sm text-gray-800 font-bold">CTO, InnovateLab</p>
                         </div>
                     </div>
-                    <p class="text-gray-700 italic">
-                        "Su código es limpio, bien documentado y fácil de mantener. Un placer trabajar con él."
+                    <p class="text-gray-800 italic font-medium border-l-4 border-neo-green pl-4">
+                        "Su código es limpio, bien documentado y fácil de mantener. Un placer."
                     </p>
                 </div>
 
@@ -338,20 +316,18 @@
 
         <!-- Contact CTA -->
         <section class="max-w-4xl mx-auto">
-            <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-12 text-white text-center">
-                <h2 class="text-3xl font-bold mb-4">
-                    ¿Tienes un proyecto en mente?
+            <div class="bg-neo-purple border-3 border-neo-black p-12 text-white text-center shadow-neo relative overflow-hidden">
+                <h2 class="text-3xl font-black mb-4 uppercase">
+                    ¿Tienes un proyecto?
                 </h2>
-                <p class="text-xl text-indigo-100 mb-8">
+                <p class="text-xl text-white mb-8 font-bold">
                     Trabajemos juntos para hacerlo realidad
                 </p>
-                <!-- EJERCICIO: Flex para centrar botones, gap de 4, justify-center -->
-                <!-- EJERCICIO: Responsive: flex-col en móvil, flex-row en tablet -->
                 <div class="___COMPLETA_AQUI___">
-                    <button class="px-8 py-4 bg-white text-indigo-600 rounded-lg font-bold hover:bg-gray-100 shadow-lg">
+                    <button class="px-8 py-4 bg-white text-neo-purple border-3 border-neo-black font-black uppercase hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all shadow-neo-sm">
                         Enviar Mensaje
                     </button>
-                    <button class="px-8 py-4 bg-indigo-700 text-white rounded-lg font-bold hover:bg-indigo-800">
+                    <button class="px-8 py-4 bg-neo-black text-white border-3 border-neo-black font-black uppercase hover:bg-gray-900">
                         Ver Más Proyectos
                     </button>
                 </div>
@@ -361,31 +337,27 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+    <footer class="bg-neo-black text-white py-12 mt-16 border-t-4 border-neo-black">
         <div class="container mx-auto px-4">
-            <!-- EJERCICIO: Flex para organizar columnas del footer -->
-            <!-- EJERCICIO: justify-between, gap de 8 -->
-            <!-- EJERCICIO: flex-col en móvil, flex-row en desktop -->
             <div class="___COMPLETA_AQUI___ mb-8">
                 
                 <div>
-                    <h3 class="text-white font-bold text-lg mb-4">MiPortafolio</h3>
-                    <p class="text-sm text-gray-400 max-w-xs">
+                    <h3 class="text-white font-black text-lg mb-4 uppercase">MiPortafolio</h3>
+                    <p class="text-sm text-gray-400 max-w-xs font-bold">
                         Desarrollador apasionado por crear soluciones digitales innovadoras.
                     </p>
                 </div>
 
-                <!-- EJERCICIO: Flex para iconos sociales en línea, gap de 4 -->
                 <div>
-                    <h3 class="text-white font-bold text-lg mb-4">Sígueme</h3>
+                    <h3 class="text-white font-black text-lg mb-4 uppercase">Sígueme</h3>
                     <div class="___COMPLETA_AQUI___">
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors">
+                        <a href="#" class="w-10 h-10 bg-neo-blue border-2 border-white hover:bg-blue-600 flex items-center justify-center transition-colors text-white">
                             <span>🐦</span>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors">
+                        <a href="#" class="w-10 h-10 bg-neo-pink border-2 border-white hover:bg-pink-600 flex items-center justify-center transition-colors text-white">
                             <span>💼</span>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gray-700 rounded-full flex items-center justify-center transition-colors">
+                        <a href="#" class="w-10 h-10 bg-neo-green border-2 border-white hover:bg-green-600 flex items-center justify-center transition-colors text-neo-black">
                             <span>🐙</span>
                         </a>
                     </div>
@@ -393,8 +365,8 @@
 
             </div>
 
-            <div class="border-t border-gray-800 pt-8 text-center text-sm">
-                <p>© 2025 Juan Pérez. Todos los derechos reservados.</p>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm font-mono">
+                <p>© 2025 Juan Pérez. Neobrutalismo Activado.</p>
             </div>
         </div>
     </footer>
@@ -403,8 +375,8 @@
     <div class="fixed bottom-4 right-4">
         <button 
             onclick="alert('💡 Consejo: Flexbox es perfecto para alinear elementos en una dirección. Usa items-center para vertical y justify-between/center/end para horizontal!')" 
-            class="bg-indigo-600 hover:bg-indigo-700 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-colors">
-            <span class="text-2xl">💡</span>
+            class="bg-neo-yellow hover:bg-yellow-400 text-neo-black border-3 border-neo-black w-14 h-14 flex items-center justify-center shadow-neo transition-colors font-black text-2xl">
+            💡
         </button>
     </div>
 

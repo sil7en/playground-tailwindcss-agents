@@ -6,32 +6,34 @@
     <title>Ejercicio: Diseño Responsive - Tailwind CSS</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body class="bg-gray-50">
+<body class="bg-neo-bg font-sans text-neo-black selection:bg-neo-pink selection:text-white">
     
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-neo-white border-b-3 border-neo-black sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
-                <a href="responsive.html" class="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors">
+                <a href="responsive.html" class="flex items-center gap-2 text-neo-black hover:text-neo-blue transition-colors font-bold uppercase">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
                     </svg>
-                    <span class="font-semibold">Volver a la guía</span>
+                    <span>Volver a la guía</span>
                 </a>
-                <h1 class="text-xl font-bold text-gray-800">✏️ Ejercicio Práctico</h1>
+                <h1 class="text-xl font-black uppercase tracking-tight">✏️ Ejercicio Responsive</h1>
             </div>
         </div>
     </nav>
 
     <!-- Header -->
-    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-12">
-        <div class="container mx-auto px-4">
+    <header class="bg-neo-blue border-b-3 border-neo-black text-white py-12 shadow-neo relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-3xl">
-                <div class="inline-block px-4 py-2 bg-blue-500 bg-opacity-50 rounded-full text-sm font-semibold mb-4">
-                    ✏️ Ejercicio: Diseño Responsive
+                <div class="inline-block px-4 py-2 bg-neo-yellow border-2 border-neo-black text-neo-black shadow-neo-sm text-sm font-bold mb-6 transform rotate-2 uppercase">
+                    ✏️ Ejercicio
                 </div>
-                <h1 class="text-3xl md:text-4xl font-bold mb-4">Crea tu Blog de Viajes</h1>
-                <p class="text-xl text-blue-100">
+                <h1 class="text-5xl md:text-6xl font-black mb-6 uppercase leading-none drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">
+                    Blog de Viajes
+                </h1>
+                <p class="text-xl md:text-2xl font-bold border-l-4 border-neo-black pl-6">
                     Diseña una portada para tu blog de viajes que se vea increíble en cualquier dispositivo.
                 </p>
             </div>
@@ -40,25 +42,25 @@
 
     <!-- Instructions -->
     <section class="container mx-auto px-4 py-8">
-        <div class="max-w-4xl mx-auto bg-yellow-50 border-2 border-yellow-400 rounded-xl p-6">
-            <h2 class="text-2xl font-bold text-yellow-900 mb-4 flex items-center gap-2">
+        <div class="max-w-4xl mx-auto bg-neo-white border-3 border-neo-black shadow-neo p-6">
+            <h2 class="text-2xl font-black text-neo-black mb-4 flex items-center gap-2 uppercase">
                 <span class="text-3xl">📝</span>
-                Instrucciones del Editor
+                Instrucciones
             </h2>
-            <div class="text-yellow-900 space-y-3">
-                <p class="font-semibold">Objetivo: Maquetar "Aventuras Globales".</p>
-                <ol class="list-decimal list-inside space-y-2 ml-4">
-                    <li>Busca los comentarios <code class="bg-yellow-200 px-2 py-1 rounded"><!-- EJERCICIO: ... --></code></li>
+            <div class="text-neo-black font-bold space-y-3">
+                <p class="uppercase bg-neo-green text-neo-black inline-block px-2 border-2 border-neo-black transform -rotate-1">Objetivo:</p>
+                <ol class="list-decimal list-inside space-y-2 ml-4 font-medium">
+                    <li>Busca los comentarios <code class="bg-gray-200 px-2 py-1 rounded border border-neo-black">___COMPLETA_AQUI___</code></li>
                     <li>Asegúrate de que el texto y las imágenes se adapten a celulares (móvil) y computadoras (desktop).</li>
-                    <li>Usa los prefijos <code class="bg-gray-200 px-2 py-1 rounded">md:</code> y <code class="bg-gray-200 px-2 py-1 rounded">lg:</code> para cambiar el diseño según la pantalla.</li>
+                    <li>Usa los prefijos <code class="bg-gray-200 px-2 py-1 rounded border border-neo-black">md:</code> y <code class="bg-gray-200 px-2 py-1 rounded border border-neo-black">lg:</code> para cambiar el diseño según la pantalla.</li>
                 </ol>
-                <div class="bg-white rounded-lg p-4 mt-4">
-                    <p class="font-semibold text-yellow-900 mb-2">💡 Pistas:</p>
-                    <ul class="list-disc list-inside space-y-1 text-sm">
-                        <li>Usa <code class="bg-gray-200 px-2 py-1 rounded">text-{tamaño}</code> para textos</li>
-                        <li>Usa <code class="bg-gray-200 px-2 py-1 rounded">grid-cols-{n}</code> para columnas</li>
-                        <li>Usa <code class="bg-gray-200 px-2 py-1 rounded">p-{n}</code> y <code class="bg-gray-200 px-2 py-1 rounded">m-{n}</code> para espaciado</li>
-                        <li>No olvides los prefijos responsive: <code class="bg-gray-200 px-2 py-1 rounded">sm:</code>, <code class="bg-gray-200 px-2 py-1 rounded">md:</code>, <code class="bg-gray-200 px-2 py-1 rounded">lg:</code></li>
+                <div class="bg-neo-black text-white border-2 border-neo-black p-4 mt-4 shadow-sm">
+                    <p class="font-black text-neo-yellow mb-2 uppercase">💡 Pistas:</p>
+                    <ul class="list-disc list-inside space-y-1 text-sm font-mono">
+                        <li>text-{tamaño}</li>
+                        <li>grid-cols-{n}</li>
+                        <li>p-{n}, m-{n}</li>
+                        <li>sm:, md:, lg:</li>
                     </ul>
                 </div>
             </div>
@@ -70,22 +72,15 @@
 
         <!-- Hero Section -->
         <section class="max-w-6xl mx-auto mb-16">
-            <!-- EJERCICIO: Añade padding responsive (p-4 en móvil, p-8 en desktop) -->
-            <!-- EJERCICIO: Añade un fondo degradado de azul a púrpura -->
-            <!-- EJERCICIO: Añade bordes redondeados grandes -->
-            <div class="___COMPLETA_AQUI___ text-white">
+            <div class="___COMPLETA_AQUI___ text-white bg-neo-purple border-3 border-neo-black shadow-neo">
                 <div class="max-w-3xl mx-auto text-center">
-                    <!-- EJERCICIO: Haz que este título sea pequeño en móvil (text-2xl) y más grande en desktop (text-5xl) -->
-                    <h2 class="___COMPLETA_AQUI___ font-bold mb-4">
+                    <h2 class="___COMPLETA_AQUI___ font-black mb-4 uppercase">
                         Aventuras por el Mundo
                     </h2>
-                    <!-- EJERCICIO: Ajusta el tamaño del texto: text-base en móvil, text-lg en tablet, text-xl en desktop -->
-                    <p class="___COMPLETA_AQUI___ text-blue-100 mb-8">
+                    <p class="___COMPLETA_AQUI___ text-white font-bold mb-8">
                         Crónicas fotográficas y relatos de viajes desde los rincones más remotos del planeta.
                     </p>
-                    <!-- EJERCICIO: Añade padding (px-8 py-4), fondo blanco, texto azul, bordes redondeados -->
-                    <!-- EJERCICIO: Añade hover effects (hover:bg-gray-100) y transiciones -->
-                    <button class="___COMPLETA_AQUI___ font-semibold">
+                    <button class="___COMPLETA_AQUI___ font-black bg-neo-yellow text-neo-black border-2 border-neo-black shadow-sm hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all uppercase">
                         Leer Última Crónica
                     </button>
                 </div>
@@ -94,45 +89,41 @@
 
         <!-- Features Section -->
         <section class="max-w-6xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+            <h2 class="text-3xl font-black text-center text-neo-black mb-12 uppercase">
                 Tipos de Viaje
             </h2>
             
-            <!-- EJERCICIO: Crea un grid responsive -->
-            <!-- EJERCICIO: 1 columna en móvil, 2 en tablet (md:), 3 en desktop (lg:) -->
-            <!-- EJERCICIO: Añade gap de 6 o 8 entre elementos -->
             <div class="___COMPLETA_AQUI___">
                 
                 <!-- Feature 1 -->
-                <!-- EJERCICIO: Fondo blanco, padding de 6, bordes redondeados, sombra -->
-                <div class="___COMPLETA_AQUI___">
-                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                        <span class="text-2xl">✈️</span>
+                <div class="___COMPLETA_AQUI___ bg-neo-white border-3 border-neo-black shadow-neo p-6">
+                    <div class="w-12 h-12 bg-neo-blue border-2 border-neo-black flex items-center justify-center mb-4 shadow-sm text-white text-2xl">
+                        ✈️
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Guías Locales</h3>
-                    <p class="text-gray-600">
+                    <h3 class="text-xl font-black text-neo-black mb-2 uppercase">Guías Locales</h3>
+                    <p class="text-gray-800 font-bold">
                         Consejos de expertos que viven en la ciudad. Evita las trampas para turistas.
                     </p>
                 </div>
 
                 <!-- Feature 2 -->
-                <div class="___COMPLETA_AQUI___">
-                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                        <span class="text-2xl">📸</span>
+                <div class="___COMPLETA_AQUI___ bg-neo-white border-3 border-neo-black shadow-neo p-6">
+                    <div class="w-12 h-12 bg-neo-green border-2 border-neo-black flex items-center justify-center mb-4 shadow-sm text-neo-black text-2xl">
+                        📸
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Fotografía</h3>
-                    <p class="text-gray-600">
+                    <h3 class="text-xl font-black text-neo-black mb-2 uppercase">Fotografía</h3>
+                    <p class="text-gray-800 font-bold">
                         Los mejores spots para capturar el atardecer y la vida urbana.
                     </p>
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="___COMPLETA_AQUI___">
-                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                        <span class="text-2xl">🗺️</span>
+                <div class="___COMPLETA_AQUI___ bg-neo-white border-3 border-neo-black shadow-neo p-6">
+                    <div class="w-12 h-12 bg-neo-pink border-2 border-neo-black flex items-center justify-center mb-4 shadow-sm text-white text-2xl">
+                        🗺️
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">Rutas Ocultas</h3>
-                    <p class="text-gray-600">
+                    <h3 class="text-xl font-black text-neo-black mb-2 uppercase">Rutas Ocultas</h3>
+                    <p class="text-gray-800 font-bold">
                         Descubre lugares que no aparecen en las guías tradicionales.
                     </p>
                 </div>
@@ -142,29 +133,23 @@
 
         <!-- Articles Grid -->
         <section class="max-w-6xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+            <h2 class="text-3xl font-black text-center text-neo-black mb-12 uppercase">
                 Artículos Recientes
             </h2>
             
-            <!-- EJERCICIO: Grid responsive similar al anterior -->
-            <!-- EJERCICIO: 1 columna en móvil, 2 en tablet, 4 en desktop grande (xl:) -->
             <div class="___COMPLETA_AQUI___">
                 
                 <!-- Article 1 -->
-                <!-- EJERCICIO: Fondo blanco, borde gris, bordes redondeados, sombra, overflow hidden -->
-                <div class="___COMPLETA_AQUI___">
-                    <!-- EJERCICIO: Altura fija (h-48), fondo con degradado azul -->
-                    <div class="___COMPLETA_AQUI___ flex items-center justify-center text-white text-5xl">
+                <div class="___COMPLETA_AQUI___ bg-neo-white border-3 border-neo-black shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+                    <div class="___COMPLETA_AQUI___ bg-neo-blue border-b-3 border-neo-black">
                         🎎
                     </div>
-                    <!-- EJERCICIO: Padding de 4 -->
                     <div class="___COMPLETA_AQUI___">
-                        <h3 class="font-bold text-lg mb-2">Tokio Neon</h3>
-                        <p class="text-gray-600 text-sm mb-3">Japón</p>
+                        <h3 class="font-black text-lg mb-2 uppercase">Tokio Neon</h3>
+                        <p class="text-gray-800 text-sm mb-3 font-bold">Japón</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-2xl font-bold text-blue-600">8 min</span>
-                            <!-- EJERCICIO: Padding pequeño (px-3 py-1), fondo azul, texto blanco, bordes redondeados, texto pequeño -->
-                            <button class="___COMPLETA_AQUI___">
+                            <span class="text-2xl font-black text-neo-blue">8 min</span>
+                            <button class="___COMPLETA_AQUI___ bg-neo-black text-white border-2 border-neo-black font-bold uppercase hover:bg-gray-800">
                                 Leer
                             </button>
                         </div>
@@ -172,16 +157,16 @@
                 </div>
 
                 <!-- Article 2 -->
-                <div class="___COMPLETA_AQUI___">
-                    <div class="___COMPLETA_AQUI___ flex items-center justify-center text-white text-5xl">
+                <div class="___COMPLETA_AQUI___ bg-neo-white border-3 border-neo-black shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+                    <div class="___COMPLETA_AQUI___ bg-neo-purple border-b-3 border-neo-black">
                         🏔️
                     </div>
                     <div class="___COMPLETA_AQUI___">
-                        <h3 class="font-bold text-lg mb-2">Patagonia</h3>
-                        <p class="text-gray-600 text-sm mb-3">Chile</p>
+                        <h3 class="font-black text-lg mb-2 uppercase">Patagonia</h3>
+                        <p class="text-gray-800 text-sm mb-3 font-bold">Chile</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-2xl font-bold text-purple-600">12 min</span>
-                            <button class="___COMPLETA_AQUI___">
+                            <span class="text-2xl font-black text-neo-purple">12 min</span>
+                            <button class="___COMPLETA_AQUI___ bg-neo-black text-white border-2 border-neo-black font-bold uppercase hover:bg-gray-800">
                                 Leer
                             </button>
                         </div>
@@ -189,16 +174,16 @@
                 </div>
 
                 <!-- Article 3 -->
-                <div class="___COMPLETA_AQUI___">
-                    <div class="___COMPLETA_AQUI___ flex items-center justify-center text-white text-5xl">
+                <div class="___COMPLETA_AQUI___ bg-neo-white border-3 border-neo-black shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+                    <div class="___COMPLETA_AQUI___ bg-neo-green border-b-3 border-neo-black">
                         ☕
                     </div>
                     <div class="___COMPLETA_AQUI___">
-                        <h3 class="font-bold text-lg mb-2">Cafés de París</h3>
-                        <p class="text-gray-600 text-sm mb-3">Francia</p>
+                        <h3 class="font-black text-lg mb-2 uppercase">Cafés de París</h3>
+                        <p class="text-gray-800 text-sm mb-3 font-bold">Francia</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-2xl font-bold text-green-600">5 min</span>
-                            <button class="___COMPLETA_AQUI___">
+                            <span class="text-2xl font-black text-neo-green">5 min</span>
+                            <button class="___COMPLETA_AQUI___ bg-neo-black text-white border-2 border-neo-black font-bold uppercase hover:bg-gray-800">
                                 Leer
                             </button>
                         </div>
@@ -206,16 +191,16 @@
                 </div>
 
                 <!-- Article 4 -->
-                <div class="___COMPLETA_AQUI___">
-                    <div class="___COMPLETA_AQUI___ flex items-center justify-center text-white text-5xl">
+                <div class="___COMPLETA_AQUI___ bg-neo-white border-3 border-neo-black shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+                    <div class="___COMPLETA_AQUI___ bg-neo-pink border-b-3 border-neo-black">
                         🏜️
                     </div>
                     <div class="___COMPLETA_AQUI___">
-                        <h3 class="font-bold text-lg mb-2">Desierto</h3>
-                        <p class="text-gray-600 text-sm mb-3">Atacama</p>
+                        <h3 class="font-black text-lg mb-2 uppercase">Desierto</h3>
+                        <p class="text-gray-800 text-sm mb-3 font-bold">Atacama</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-2xl font-bold text-pink-600">10 min</span>
-                            <button class="___COMPLETA_AQUI___">
+                            <span class="text-2xl font-black text-neo-pink">10 min</span>
+                            <button class="___COMPLETA_AQUI___ bg-neo-black text-white border-2 border-neo-black font-bold uppercase hover:bg-gray-800">
                                 Leer
                             </button>
                         </div>
@@ -227,28 +212,21 @@
 
         <!-- Newsletter Section -->
         <section class="max-w-4xl mx-auto mb-16">
-            <!-- EJERCICIO: Fondo degradado de verde a teal, padding de 8, bordes redondeados grandes, sombra grande -->
-            <div class="___COMPLETA_AQUI___ text-white text-center">
-                <h2 class="text-3xl font-bold mb-4">
+            <div class="___COMPLETA_AQUI___ bg-neo-green border-3 border-neo-black shadow-neo text-neo-black">
+                <h2 class="text-3xl font-black mb-4 uppercase">
                     Únete a la Comunidad
                 </h2>
-                <p class="text-green-100 mb-6">
+                <p class="text-neo-black font-bold mb-6">
                     Recibe guías de viaje y consejos de fotografía semanalmente
                 </p>
                 
-                <!-- EJERCICIO: Flex responsive -->
-                <!-- EJERCICIO: flex-col en móvil, flex-row en tablet (md:) -->
-                <!-- EJERCICIO: Gap de 4, centrar items -->
                 <div class="___COMPLETA_AQUI___">
-                    <!-- EJERCICIO: flex-1 para que crezca, padding (px-4 py-3), bordes redondeados -->
                     <input 
                         type="email" 
                         placeholder="tu@email.com" 
-                        class="___COMPLETA_AQUI___ text-gray-800"
+                        class="___COMPLETA_AQUI___ border-3 border-neo-black text-neo-black font-bold focus:outline-none focus:border-white"
                     />
-                    <!-- EJERCICIO: Padding (px-8 py-3), fondo blanco, texto verde, bordes redondeados, font bold -->
-                    <!-- EJERCICIO: Hover para cambiar a verde claro, transiciones -->
-                    <button class="___COMPLETA_AQUI___">
+                    <button class="___COMPLETA_AQUI___ bg-neo-black text-white border-3 border-neo-black hover:bg-white hover:text-neo-black transition-colors uppercase">
                         Suscribirse
                     </button>
                 </div>
@@ -257,43 +235,39 @@
 
         <!-- Stats Section -->
         <section class="max-w-6xl mx-auto">
-            <div class="bg-white rounded-2xl shadow-lg p-8">
-                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
+                <h2 class="text-3xl font-black text-center text-neo-black mb-12 uppercase">
                     Nuestro Alcance
                 </h2>
                 
-                <!-- EJERCICIO: Grid responsive -->
-                <!-- EJERCICIO: 1 columna en móvil, 2 en tablet, 4 en desktop -->
-                <!-- EJERCICIO: Gap de 8 -->
                 <div class="___COMPLETA_AQUI___">
                     
-                    <div class="text-center">
-                        <!-- EJERCICIO: Texto muy grande (text-4xl o text-5xl), color azul, font bold -->
-                        <div class="___COMPLETA_AQUI___">
+                    <div class="text-center border-3 border-neo-black p-4 shadow-sm bg-neo-blue text-white">
+                        <div class="___COMPLETA_AQUI___ font-black">
                             10K+
                         </div>
-                        <p class="text-gray-600 mt-2">Lectores Mensuales</p>
+                        <p class="font-bold mt-2 uppercase text-sm">Lectores</p>
                     </div>
 
-                    <div class="text-center">
-                        <div class="___COMPLETA_AQUI___">
+                    <div class="text-center border-3 border-neo-black p-4 shadow-sm bg-neo-pink text-white">
+                        <div class="___COMPLETA_AQUI___ font-black">
                             50+
                         </div>
-                        <p class="text-gray-600 mt-2">Países Visitados</p>
+                        <p class="font-bold mt-2 uppercase text-sm">Países</p>
                     </div>
 
-                    <div class="text-center">
-                        <div class="___COMPLETA_AQUI___">
+                    <div class="text-center border-3 border-neo-black p-4 shadow-sm bg-neo-yellow text-neo-black">
+                        <div class="___COMPLETA_AQUI___ font-black">
                             500+
                         </div>
-                        <p class="text-gray-600 mt-2">Crónicas Publicadas</p>
+                        <p class="font-bold mt-2 uppercase text-sm">Crónicas</p>
                     </div>
 
-                    <div class="text-center">
-                        <div class="___COMPLETA_AQUI___">
+                    <div class="text-center border-3 border-neo-black p-4 shadow-sm bg-neo-purple text-white">
+                        <div class="___COMPLETA_AQUI___ font-black">
                             12
                         </div>
-                        <p class="text-gray-600 mt-2">Premios de Periodismo</p>
+                        <p class="font-bold mt-2 uppercase text-sm">Premios</p>
                     </div>
 
                 </div>
@@ -303,32 +277,29 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+    <footer class="bg-neo-black text-white py-12 mt-16 border-t-4 border-neo-black">
         <div class="container mx-auto px-4">
-            <!-- EJERCICIO: Grid responsive para el footer -->
-            <!-- EJERCICIO: 1 columna en móvil, 3 columnas en tablet (md:) -->
-            <!-- EJERCICIO: Gap de 8 -->
             <div class="___COMPLETA_AQUI___ mb-8">
                 
                 <div>
-                    <h3 class="text-white font-bold text-lg mb-4">Aventuras Globales</h3>
-                    <p class="text-sm text-gray-400">
+                    <h3 class="text-white font-black text-lg mb-4 uppercase">Aventuras Globales</h3>
+                    <p class="text-sm text-gray-400 font-bold">
                         Inspirando a viajeros desde 2023.
                     </p>
                 </div>
 
                 <div>
-                    <h3 class="text-white font-bold text-lg mb-4">Secciones</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-blue-400 transition-colors">Inicio</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition-colors">Destinos</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition-colors">Guías</a></li>
+                    <h3 class="text-white font-black text-lg mb-4 uppercase">Secciones</h3>
+                    <ul class="space-y-2 text-sm font-bold">
+                        <li><a href="#" class="hover:text-neo-blue transition-colors">Inicio</a></li>
+                        <li><a href="#" class="hover:text-neo-blue transition-colors">Destinos</a></li>
+                        <li><a href="#" class="hover:text-neo-blue transition-colors">Guías</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-white font-bold text-lg mb-4">Contacto</h3>
-                    <ul class="space-y-2 text-sm text-gray-400">
+                    <h3 class="text-white font-black text-lg mb-4 uppercase">Contacto</h3>
+                    <ul class="space-y-2 text-sm text-gray-400 font-mono">
                         <li>📧 hola@aventuras.com</li>
                         <li>📱 +56 9 1234 5678</li>
                         <li>📍 Santiago, Chile</li>
@@ -337,8 +308,8 @@
 
             </div>
 
-            <div class="border-t border-gray-800 pt-8 text-center text-sm">
-                <p>© 2025 Aventuras Globales. Todos los derechos reservados.</p>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm font-mono">
+                <p>© 2025 Aventuras Globales. Neobrutalismo Activado.</p>
             </div>
         </div>
     </footer>
@@ -346,9 +317,9 @@
     <!-- Help Modal -->
     <div class="fixed bottom-4 right-4">
         <button 
-            onclick="alert('💡 Consejo: Usa las DevTools del navegador (F12) para probar diferentes tamaños de pantalla y ver si tu diseño es responsive!')" 
-            class="bg-blue-600 hover:bg-blue-700 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-colors">
-            <span class="text-2xl">💡</span>
+            onclick="alert('💡 Consejo: Usa las DevTools del navegador (F12) para probar diferentes tamaños de pantalla!')"
+            class="bg-neo-blue hover:bg-blue-600 text-white border-3 border-neo-black w-14 h-14 flex items-center justify-center shadow-neo transition-colors font-black text-2xl">
+            💡
         </button>
     </div>
 

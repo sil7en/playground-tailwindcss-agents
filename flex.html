@@ -6,32 +6,34 @@
     <title>Guía de Flexbox CSS - Tailwind CSS</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body class="bg-gray-50">
+<body class="bg-neo-bg font-sans text-neo-black selection:bg-neo-pink selection:text-white">
     
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-neo-white border-b-3 border-neo-black sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
-                <a href="index.html" class="flex items-center gap-2 text-indigo-600 hover:text-indigo-700 transition-colors">
+                <a href="index.html" class="flex items-center gap-2 text-neo-black hover:text-neo-purple transition-colors font-bold uppercase">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
                     </svg>
-                    <span class="font-semibold">Volver al inicio</span>
+                    <span>Volver al inicio</span>
                 </a>
-                <h1 class="text-xl font-bold text-gray-800">↔️ Flexbox CSS</h1>
+                <h1 class="text-xl font-black uppercase tracking-tight">↔️ Flexbox CSS</h1>
             </div>
         </div>
     </nav>
 
     <!-- Hero -->
-    <header class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-16">
-        <div class="container mx-auto px-4">
+    <header class="bg-neo-purple border-b-3 border-neo-black text-white py-16 shadow-neo relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-3xl">
-                <div class="inline-block px-4 py-2 bg-indigo-500 bg-opacity-50 rounded-full text-sm font-semibold mb-4">
+                <div class="inline-block px-4 py-2 bg-neo-yellow border-2 border-neo-black text-neo-black shadow-neo-sm text-sm font-bold mb-6 transform rotate-2 uppercase">
                     📏 Maquetación Flexible
                 </div>
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Flexbox: El Director de Escena</h1>
-                <p class="text-xl text-indigo-100">
+                <h1 class="text-5xl md:text-6xl font-black mb-6 uppercase leading-none drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">
+                    Flexbox Director
+                </h1>
+                <p class="text-xl md:text-2xl font-bold border-l-4 border-neo-black pl-6">
                     Imagina que eres un director de cine colocando a tus actores en el escenario. Flexbox te permite decirles: "pónganse en fila", "céntrense" o "sepárense".
                 </p>
             </div>
@@ -43,20 +45,20 @@
 
         <!-- Intro Section -->
         <section class="max-w-4xl mx-auto mb-16">
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">¿Qué es Flexbox? 🤔</h2>
-                <p class="text-lg text-gray-700 mb-4">
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
+                <h2 class="text-4xl font-black text-neo-black mb-6 uppercase">¿Qué es Flexbox? 🤔</h2>
+                <p class="text-lg text-gray-800 mb-8 font-medium leading-relaxed">
                     Es una herramienta para <strong>alinear cosas</strong>. Si quieres poner un logo al lado de un menú, o centrar un título perfectamente en medio de la pantalla, Flexbox es la solución.
                 </p>
-                <div class="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded mb-4">
-                    <p class="text-indigo-900">
-                        <strong>💡 Analogía:</strong> Piensa en un collar de perlas. El hilo es el "Contenedor Flex" y las perlas son los "Items".
+                <div class="bg-neo-blue border-3 border-neo-black p-6 shadow-neo-sm transform -rotate-1 mb-6">
+                    <p class="text-white font-bold text-lg">
+                        💡 Analogía: Piensa en un collar de perlas. El hilo es el "Contenedor Flex" y las perlas son los "Items".
                         Puedes estirar el hilo, juntar las perlas, o separarlas.
                     </p>
                 </div>
-                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded">
-                    <p class="text-yellow-900">
-                        <strong>📌 Usos Periodísticos:</strong>
+                <div class="bg-neo-yellow border-3 border-neo-black p-6 shadow-neo-sm transform rotate-1">
+                    <p class="text-neo-black font-bold text-lg">
+                        📌 Usos Periodísticos:
                         1. Barra de navegación (Logo + Enlaces).
                         2. Tarjetas de noticias una al lado de la otra.
                         3. Centrar texto sobre una foto de portada.
@@ -67,35 +69,35 @@
 
         <!-- Conceptos Básicos -->
         <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">🧩 Conceptos Fundamentales</h2>
+            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">🧩 Conceptos Fundamentales</h2>
             
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <div class="border-2 border-indigo-200 rounded-lg p-4 bg-indigo-50">
-                        <h3 class="font-bold text-lg text-indigo-900 mb-2">📦 Flex Container (Padre)</h3>
-                        <p class="text-gray-700 text-sm mb-3">
-                            El elemento que tiene <code class="bg-indigo-100 px-2 py-1 rounded">display: flex</code>. 
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="border-3 border-neo-black p-6 bg-gray-100 shadow-neo-sm">
+                        <h3 class="font-black text-lg text-neo-black mb-3 uppercase bg-neo-blue inline-block px-2 text-white border-2 border-neo-black transform -rotate-1">📦 Flex Container (Padre)</h3>
+                        <p class="text-gray-800 text-sm mb-4 font-bold">
+                            El elemento que tiene <code class="bg-neo-black text-white px-2 py-1 rounded font-mono">display: flex</code>.
                             Controla cómo se distribuyen sus hijos.
                         </p>
-                        <div class="bg-white rounded p-3 border border-indigo-300">
-                            <code class="text-sm text-indigo-700">&lt;div class="flex"&gt;</code>
+                        <div class="bg-white p-4 border-2 border-gray-300 font-mono text-sm font-bold text-neo-blue">
+                            &lt;div class="flex"&gt;
                         </div>
                     </div>
 
-                    <div class="border-2 border-purple-200 rounded-lg p-4 bg-purple-50">
-                        <h3 class="font-bold text-lg text-purple-900 mb-2">🎁 Flex Items (Hijos)</h3>
-                        <p class="text-gray-700 text-sm mb-3">
+                    <div class="border-3 border-neo-black p-6 bg-neo-pink shadow-neo-sm">
+                        <h3 class="font-black text-lg text-white mb-3 uppercase bg-neo-black inline-block px-2 border-2 border-white transform rotate-1">🎁 Flex Items (Hijos)</h3>
+                        <p class="text-white text-sm mb-4 font-bold">
                             Los elementos directos dentro del flex container. Se alinean y distribuyen según las reglas del padre.
                         </p>
-                        <div class="bg-white rounded p-3 border border-purple-300">
-                            <code class="text-sm text-purple-700">&lt;div&gt;Item 1&lt;/div&gt;</code>
+                        <div class="bg-white p-4 border-2 border-neo-black font-mono text-sm font-bold text-neo-pink">
+                            &lt;div&gt;Item 1&lt;/div&gt;
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-gray-50 rounded-lg p-4">
-                    <h4 class="font-semibold text-gray-700 mb-3">Anatomía de Flexbox:</h4>
-                    <pre class="bg-gray-900 text-green-400 p-4 rounded overflow-x-auto text-sm"><code>&lt;div class="flex"&gt;  &lt;!-- Flex Container --&gt;
+                <div class="bg-neo-black border-3 border-neo-black p-6 relative">
+                    <div class="absolute top-0 left-0 bg-neo-green border-b-2 border-r-2 border-neo-black px-2 py-1 text-xs font-bold uppercase">Code</div>
+                    <pre class="text-white mt-4 overflow-x-auto text-sm font-mono"><code>&lt;div class="flex"&gt;  &lt;!-- Flex Container --&gt;
   &lt;div&gt;Item 1&lt;/div&gt;  &lt;!-- Flex Item --&gt;
   &lt;div&gt;Item 2&lt;/div&gt;  &lt;!-- Flex Item --&gt;
   &lt;div&gt;Item 3&lt;/div&gt;  &lt;!-- Flex Item --&gt;
@@ -106,53 +108,50 @@
 
         <!-- Demo 1: Flex Direction -->
         <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">➡️ Demo 1: Flex Direction (Dirección)</h2>
+            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">➡️ Demo 1: Flex Direction</h2>
             
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <p class="text-gray-700 mb-6">
-                    <code class="bg-gray-200 px-2 py-1 rounded">flex-direction</code> controla si los elementos se alinean 
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
+                <p class="text-gray-800 mb-6 font-medium">
+                    <code class="bg-neo-bg border border-neo-black px-2 py-1 rounded font-mono font-bold">flex-direction</code> controla si los elementos se alinean
                     en <strong>fila</strong> (horizontal) o <strong>columna</strong> (vertical).
                 </p>
 
                 <div class="space-y-8">
                     <!-- flex-row -->
                     <div>
-                        <h3 class="font-semibold text-lg mb-3">
-                            <code class="bg-indigo-100 px-3 py-1 rounded text-indigo-700">flex-row</code> - Fila horizontal (por defecto)
+                        <h3 class="font-black text-lg mb-3 uppercase">
+                            <code class="bg-neo-blue text-white px-3 py-1 border-2 border-neo-black shadow-neo-sm">flex-row</code> - Fila horizontal
                         </h3>
-                        <div class="flex flex-row gap-3 bg-gray-100 p-4 rounded-lg">
-                            <div class="bg-indigo-500 text-white px-6 py-4 rounded font-semibold">1</div>
-                            <div class="bg-indigo-500 text-white px-6 py-4 rounded font-semibold">2</div>
-                            <div class="bg-indigo-500 text-white px-6 py-4 rounded font-semibold">3</div>
+                        <div class="flex flex-row gap-3 bg-gray-100 border-2 border-neo-black p-4">
+                            <div class="bg-neo-blue text-white px-6 py-4 font-black border-2 border-neo-black shadow-sm">1</div>
+                            <div class="bg-neo-blue text-white px-6 py-4 font-black border-2 border-neo-black shadow-sm">2</div>
+                            <div class="bg-neo-blue text-white px-6 py-4 font-black border-2 border-neo-black shadow-sm">3</div>
                         </div>
-                        <pre class="bg-gray-900 text-green-400 p-3 rounded mt-3 text-sm"><code>&lt;div class="flex flex-row gap-3"&gt;...&lt;/div&gt;</code></pre>
                     </div>
 
                     <!-- flex-col -->
                     <div>
-                        <h3 class="font-semibold text-lg mb-3">
-                            <code class="bg-purple-100 px-3 py-1 rounded text-purple-700">flex-col</code> - Columna vertical
+                        <h3 class="font-black text-lg mb-3 uppercase">
+                            <code class="bg-neo-purple text-white px-3 py-1 border-2 border-neo-black shadow-neo-sm">flex-col</code> - Columna vertical
                         </h3>
-                        <div class="flex flex-col gap-3 bg-gray-100 p-4 rounded-lg">
-                            <div class="bg-purple-500 text-white px-6 py-4 rounded font-semibold">1</div>
-                            <div class="bg-purple-500 text-white px-6 py-4 rounded font-semibold">2</div>
-                            <div class="bg-purple-500 text-white px-6 py-4 rounded font-semibold">3</div>
+                        <div class="flex flex-col gap-3 bg-gray-100 border-2 border-neo-black p-4">
+                            <div class="bg-neo-purple text-white px-6 py-4 font-black border-2 border-neo-black shadow-sm">1</div>
+                            <div class="bg-neo-purple text-white px-6 py-4 font-black border-2 border-neo-black shadow-sm">2</div>
+                            <div class="bg-neo-purple text-white px-6 py-4 font-black border-2 border-neo-black shadow-sm">3</div>
                         </div>
-                        <pre class="bg-gray-900 text-green-400 p-3 rounded mt-3 text-sm"><code>&lt;div class="flex flex-col gap-3"&gt;...&lt;/div&gt;</code></pre>
                     </div>
 
                     <!-- flex-row-reverse -->
                     <div>
-                        <h3 class="font-semibold text-lg mb-3">
-                            <code class="bg-pink-100 px-3 py-1 rounded text-pink-700">flex-row-reverse</code> - Fila invertida
+                        <h3 class="font-black text-lg mb-3 uppercase">
+                            <code class="bg-neo-pink text-white px-3 py-1 border-2 border-neo-black shadow-neo-sm">flex-row-reverse</code> - Fila invertida
                         </h3>
-                        <div class="flex flex-row-reverse gap-3 bg-gray-100 p-4 rounded-lg">
-                            <div class="bg-pink-500 text-white px-6 py-4 rounded font-semibold">1</div>
-                            <div class="bg-pink-500 text-white px-6 py-4 rounded font-semibold">2</div>
-                            <div class="bg-pink-500 text-white px-6 py-4 rounded font-semibold">3</div>
+                        <div class="flex flex-row-reverse gap-3 bg-gray-100 border-2 border-neo-black p-4">
+                            <div class="bg-neo-pink text-white px-6 py-4 font-black border-2 border-neo-black shadow-sm">1</div>
+                            <div class="bg-neo-pink text-white px-6 py-4 font-black border-2 border-neo-black shadow-sm">2</div>
+                            <div class="bg-neo-pink text-white px-6 py-4 font-black border-2 border-neo-black shadow-sm">3</div>
                         </div>
-                        <pre class="bg-gray-900 text-green-400 p-3 rounded mt-3 text-sm"><code>&lt;div class="flex flex-row-reverse gap-3"&gt;...&lt;/div&gt;</code></pre>
-                        <p class="text-sm text-gray-600 mt-2">💡 Nota: El orden visual es 3-2-1 (invertido)</p>
+                        <p class="text-sm text-gray-600 mt-2 font-bold">💡 Nota: El orden visual es 3-2-1 (invertido)</p>
                     </div>
                 </div>
             </div>
@@ -160,71 +159,59 @@
 
         <!-- Demo 2: Justify Content -->
         <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">↔️ Demo 2: Justify Content (Alineación Horizontal)</h2>
+            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">↔️ Demo 2: Justify Content</h2>
             
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <p class="text-gray-700 mb-6">
-                    <code class="bg-gray-200 px-2 py-1 rounded">justify-content</code> controla cómo se distribuyen los elementos 
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
+                <p class="text-gray-800 mb-6 font-medium">
+                    <code class="bg-neo-bg border border-neo-black px-2 py-1 rounded font-mono font-bold">justify-content</code> controla cómo se distribuyen los elementos
                     a lo largo del <strong>eje principal</strong> (horizontal en flex-row).
                 </p>
 
                 <div class="space-y-6">
                     
                     <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-blue-100 px-2 py-1 rounded">justify-start</code> - Al inicio</h3>
-                        <div class="flex justify-start gap-2 bg-gray-100 p-4 rounded-lg">
-                            <div class="bg-blue-500 text-white px-4 py-3 rounded">A</div>
-                            <div class="bg-blue-500 text-white px-4 py-3 rounded">B</div>
-                            <div class="bg-blue-500 text-white px-4 py-3 rounded">C</div>
+                        <h3 class="font-black text-sm mb-2 uppercase"><code class="bg-neo-blue text-white px-2 py-1 border-2 border-neo-black">justify-start</code> - Al inicio</h3>
+                        <div class="flex justify-start gap-2 bg-gray-100 border-2 border-neo-black p-4">
+                            <div class="bg-neo-blue text-white px-4 py-3 border-2 border-neo-black font-bold">A</div>
+                            <div class="bg-neo-blue text-white px-4 py-3 border-2 border-neo-black font-bold">B</div>
+                            <div class="bg-neo-blue text-white px-4 py-3 border-2 border-neo-black font-bold">C</div>
                         </div>
                     </div>
 
                     <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-green-100 px-2 py-1 rounded">justify-center</code> - Centrado</h3>
-                        <div class="flex justify-center gap-2 bg-gray-100 p-4 rounded-lg">
-                            <div class="bg-green-500 text-white px-4 py-3 rounded">A</div>
-                            <div class="bg-green-500 text-white px-4 py-3 rounded">B</div>
-                            <div class="bg-green-500 text-white px-4 py-3 rounded">C</div>
+                        <h3 class="font-black text-sm mb-2 uppercase"><code class="bg-neo-green text-neo-black px-2 py-1 border-2 border-neo-black">justify-center</code> - Centrado</h3>
+                        <div class="flex justify-center gap-2 bg-gray-100 border-2 border-neo-black p-4">
+                            <div class="bg-neo-green text-neo-black px-4 py-3 border-2 border-neo-black font-bold">A</div>
+                            <div class="bg-neo-green text-neo-black px-4 py-3 border-2 border-neo-black font-bold">B</div>
+                            <div class="bg-neo-green text-neo-black px-4 py-3 border-2 border-neo-black font-bold">C</div>
                         </div>
                     </div>
 
                     <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-red-100 px-2 py-1 rounded">justify-end</code> - Al final</h3>
-                        <div class="flex justify-end gap-2 bg-gray-100 p-4 rounded-lg">
-                            <div class="bg-red-500 text-white px-4 py-3 rounded">A</div>
-                            <div class="bg-red-500 text-white px-4 py-3 rounded">B</div>
-                            <div class="bg-red-500 text-white px-4 py-3 rounded">C</div>
+                        <h3 class="font-black text-sm mb-2 uppercase"><code class="bg-neo-pink text-white px-2 py-1 border-2 border-neo-black">justify-end</code> - Al final</h3>
+                        <div class="flex justify-end gap-2 bg-gray-100 border-2 border-neo-black p-4">
+                            <div class="bg-neo-pink text-white px-4 py-3 border-2 border-neo-black font-bold">A</div>
+                            <div class="bg-neo-pink text-white px-4 py-3 border-2 border-neo-black font-bold">B</div>
+                            <div class="bg-neo-pink text-white px-4 py-3 border-2 border-neo-black font-bold">C</div>
                         </div>
                     </div>
 
                     <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-purple-100 px-2 py-1 rounded">justify-between</code> - Espacio entre elementos</h3>
-                        <div class="flex justify-between bg-gray-100 p-4 rounded-lg">
-                            <div class="bg-purple-500 text-white px-4 py-3 rounded">A</div>
-                            <div class="bg-purple-500 text-white px-4 py-3 rounded">B</div>
-                            <div class="bg-purple-500 text-white px-4 py-3 rounded">C</div>
+                        <h3 class="font-black text-sm mb-2 uppercase"><code class="bg-neo-purple text-white px-2 py-1 border-2 border-neo-black">justify-between</code> - Entre elementos</h3>
+                        <div class="flex justify-between bg-gray-100 border-2 border-neo-black p-4">
+                            <div class="bg-neo-purple text-white px-4 py-3 border-2 border-neo-black font-bold">A</div>
+                            <div class="bg-neo-purple text-white px-4 py-3 border-2 border-neo-black font-bold">B</div>
+                            <div class="bg-neo-purple text-white px-4 py-3 border-2 border-neo-black font-bold">C</div>
                         </div>
-                        <p class="text-sm text-gray-600 mt-2">💡 El espacio se distribuye ENTRE los elementos</p>
                     </div>
 
                     <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-orange-100 px-2 py-1 rounded">justify-around</code> - Espacio alrededor</h3>
-                        <div class="flex justify-around bg-gray-100 p-4 rounded-lg">
-                            <div class="bg-orange-500 text-white px-4 py-3 rounded">A</div>
-                            <div class="bg-orange-500 text-white px-4 py-3 rounded">B</div>
-                            <div class="bg-orange-500 text-white px-4 py-3 rounded">C</div>
+                        <h3 class="font-black text-sm mb-2 uppercase"><code class="bg-neo-yellow text-neo-black px-2 py-1 border-2 border-neo-black">justify-around</code> - Alrededor</h3>
+                        <div class="flex justify-around bg-gray-100 border-2 border-neo-black p-4">
+                            <div class="bg-neo-yellow text-neo-black px-4 py-3 border-2 border-neo-black font-bold">A</div>
+                            <div class="bg-neo-yellow text-neo-black px-4 py-3 border-2 border-neo-black font-bold">B</div>
+                            <div class="bg-neo-yellow text-neo-black px-4 py-3 border-2 border-neo-black font-bold">C</div>
                         </div>
-                        <p class="text-sm text-gray-600 mt-2">💡 El espacio está ALREDEDOR de cada elemento</p>
-                    </div>
-
-                    <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-teal-100 px-2 py-1 rounded">justify-evenly</code> - Espacio uniforme</h3>
-                        <div class="flex justify-evenly bg-gray-100 p-4 rounded-lg">
-                            <div class="bg-teal-500 text-white px-4 py-3 rounded">A</div>
-                            <div class="bg-teal-500 text-white px-4 py-3 rounded">B</div>
-                            <div class="bg-teal-500 text-white px-4 py-3 rounded">C</div>
-                        </div>
-                        <p class="text-sm text-gray-600 mt-2">💡 Todos los espacios son iguales</p>
                     </div>
 
                 </div>
@@ -233,52 +220,41 @@
 
         <!-- Demo 3: Align Items -->
         <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">↕️ Demo 3: Align Items (Alineación Vertical)</h2>
+            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">↕️ Demo 3: Align Items</h2>
             
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <p class="text-gray-700 mb-6">
-                    <code class="bg-gray-200 px-2 py-1 rounded">align-items</code> controla cómo se alinean los elementos 
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
+                <p class="text-gray-800 mb-6 font-medium">
+                    <code class="bg-neo-bg border border-neo-black px-2 py-1 rounded font-mono font-bold">align-items</code> controla cómo se alinean los elementos
                     a lo largo del <strong>eje cruzado</strong> (vertical en flex-row).
                 </p>
 
                 <div class="space-y-6">
                     
                     <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-blue-100 px-2 py-1 rounded">items-start</code> - Arriba</h3>
-                        <div class="flex items-start gap-2 bg-gray-100 p-4 rounded-lg h-32">
-                            <div class="bg-blue-500 text-white px-4 py-3 rounded">Corto</div>
-                            <div class="bg-blue-500 text-white px-4 py-6 rounded">Mediano</div>
-                            <div class="bg-blue-500 text-white px-4 py-9 rounded">Alto</div>
+                        <h3 class="font-black text-sm mb-2 uppercase"><code class="bg-neo-blue text-white px-2 py-1 border-2 border-neo-black">items-start</code> - Arriba</h3>
+                        <div class="flex items-start gap-2 bg-gray-100 border-2 border-neo-black p-4 h-32">
+                            <div class="bg-neo-blue text-white px-4 py-3 border-2 border-neo-black font-bold">Corto</div>
+                            <div class="bg-neo-blue text-white px-4 py-6 border-2 border-neo-black font-bold">Mediano</div>
+                            <div class="bg-neo-blue text-white px-4 py-9 border-2 border-neo-black font-bold">Alto</div>
                         </div>
                     </div>
 
                     <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-green-100 px-2 py-1 rounded">items-center</code> - Centro vertical ⭐</h3>
-                        <div class="flex items-center gap-2 bg-gray-100 p-4 rounded-lg h-32">
-                            <div class="bg-green-500 text-white px-4 py-3 rounded">Corto</div>
-                            <div class="bg-green-500 text-white px-4 py-6 rounded">Mediano</div>
-                            <div class="bg-green-500 text-white px-4 py-9 rounded">Alto</div>
-                        </div>
-                        <p class="text-sm text-gray-600 mt-2">💡 ¡Muy usado para centrar verticalmente!</p>
-                    </div>
-
-                    <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-red-100 px-2 py-1 rounded">items-end</code> - Abajo</h3>
-                        <div class="flex items-end gap-2 bg-gray-100 p-4 rounded-lg h-32">
-                            <div class="bg-red-500 text-white px-4 py-3 rounded">Corto</div>
-                            <div class="bg-red-500 text-white px-4 py-6 rounded">Mediano</div>
-                            <div class="bg-red-500 text-white px-4 py-9 rounded">Alto</div>
+                        <h3 class="font-black text-sm mb-2 uppercase"><code class="bg-neo-green text-neo-black px-2 py-1 border-2 border-neo-black">items-center</code> - Centro vertical</h3>
+                        <div class="flex items-center gap-2 bg-gray-100 border-2 border-neo-black p-4 h-32">
+                            <div class="bg-neo-green text-neo-black px-4 py-3 border-2 border-neo-black font-bold">Corto</div>
+                            <div class="bg-neo-green text-neo-black px-4 py-6 border-2 border-neo-black font-bold">Mediano</div>
+                            <div class="bg-neo-green text-neo-black px-4 py-9 border-2 border-neo-black font-bold">Alto</div>
                         </div>
                     </div>
 
                     <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-purple-100 px-2 py-1 rounded">items-stretch</code> - Estirado (por defecto)</h3>
-                        <div class="flex items-stretch gap-2 bg-gray-100 p-4 rounded-lg h-32">
-                            <div class="bg-purple-500 text-white px-4 py-3 rounded">A</div>
-                            <div class="bg-purple-500 text-white px-4 py-3 rounded">B</div>
-                            <div class="bg-purple-500 text-white px-4 py-3 rounded">C</div>
+                        <h3 class="font-black text-sm mb-2 uppercase"><code class="bg-neo-pink text-white px-2 py-1 border-2 border-neo-black">items-end</code> - Abajo</h3>
+                        <div class="flex items-end gap-2 bg-gray-100 border-2 border-neo-black p-4 h-32">
+                            <div class="bg-neo-pink text-white px-4 py-3 border-2 border-neo-black font-bold">Corto</div>
+                            <div class="bg-neo-pink text-white px-4 py-6 border-2 border-neo-black font-bold">Mediano</div>
+                            <div class="bg-neo-pink text-white px-4 py-9 border-2 border-neo-black font-bold">Alto</div>
                         </div>
-                        <p class="text-sm text-gray-600 mt-2">💡 Los elementos se estiran para llenar el contenedor</p>
                     </div>
 
                 </div>
@@ -287,184 +263,55 @@
 
         <!-- Demo 4: Centrado Perfecto -->
         <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">🎯 Demo 4: Centrado Perfecto</h2>
+            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">🎯 Demo 4: Centrado Perfecto</h2>
             
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <p class="text-gray-700 mb-6">
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
+                <p class="text-gray-800 mb-6 font-medium">
                     La combinación más famosa de Flexbox: <strong>centrado horizontal y vertical</strong> al mismo tiempo.
                 </p>
 
-                <div class="bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg h-64 flex items-center justify-center">
-                    <div class="bg-white px-8 py-6 rounded-xl shadow-2xl">
-                        <p class="text-2xl font-bold text-gray-800">¡Estoy perfectamente centrado! 🎯</p>
+                <div class="bg-neo-purple border-3 border-neo-black p-4 h-64 flex items-center justify-center">
+                    <div class="bg-white px-8 py-6 border-3 border-neo-black shadow-neo">
+                        <p class="text-2xl font-black text-neo-black uppercase">¡Estoy centrado! 🎯</p>
                     </div>
                 </div>
 
-                <div class="mt-6 bg-gray-50 rounded-lg p-4">
-                    <h4 class="font-semibold text-gray-700 mb-2">Código utilizado:</h4>
-                    <pre class="bg-gray-900 text-green-400 p-4 rounded overflow-x-auto text-sm"><code>&lt;div class="flex items-center justify-center h-64"&gt;
+                <div class="mt-8 bg-neo-black border-3 border-neo-black p-6 relative">
+                    <div class="absolute top-0 left-0 bg-neo-green border-b-2 border-r-2 border-neo-black px-2 py-1 text-xs font-bold uppercase">Code</div>
+                    <pre class="text-white mt-4 overflow-x-auto text-sm font-mono"><code>&lt;div class="flex items-center justify-center h-64"&gt;
   &lt;div&gt;¡Estoy perfectamente centrado!&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                    
-                    <div class="mt-4 bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-                        <p class="text-blue-900 text-sm">
-                            <strong>🔑 Truco clave:</strong> <code class="bg-blue-100 px-2 py-1 rounded">items-center</code> (vertical) + 
-                            <code class="bg-blue-100 px-2 py-1 rounded">justify-center</code> (horizontal) = Centrado perfecto
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Demo 5: Gap -->
         <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">📏 Demo 5: Gap (Espaciado entre elementos)</h2>
+            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">📏 Demo 5: Gap</h2>
             
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <p class="text-gray-700 mb-6">
-                    <code class="bg-gray-200 px-2 py-1 rounded">gap</code> añade espacio entre los flex items sin necesidad de márgenes.
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
+                <p class="text-gray-800 mb-6 font-medium">
+                    <code class="bg-neo-bg border border-neo-black px-2 py-1 rounded font-mono font-bold">gap</code> añade espacio entre los flex items sin necesidad de márgenes.
                 </p>
 
                 <div class="space-y-6">
                     
                     <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-gray-100 px-2 py-1 rounded">gap-2</code> - Espacio pequeño (0.5rem)</h3>
-                        <div class="flex gap-2 bg-gray-100 p-4 rounded-lg">
-                            <div class="bg-cyan-500 text-white px-4 py-3 rounded flex-1 text-center">A</div>
-                            <div class="bg-cyan-500 text-white px-4 py-3 rounded flex-1 text-center">B</div>
-                            <div class="bg-cyan-500 text-white px-4 py-3 rounded flex-1 text-center">C</div>
+                        <h3 class="font-black text-sm mb-2 uppercase"><code class="bg-gray-200 px-2 py-1 border-2 border-neo-black">gap-2</code> - 0.5rem</h3>
+                        <div class="flex gap-2 bg-gray-100 border-2 border-neo-black p-4">
+                            <div class="bg-neo-blue text-white px-4 py-3 border-2 border-neo-black font-bold flex-1 text-center">A</div>
+                            <div class="bg-neo-blue text-white px-4 py-3 border-2 border-neo-black font-bold flex-1 text-center">B</div>
+                            <div class="bg-neo-blue text-white px-4 py-3 border-2 border-neo-black font-bold flex-1 text-center">C</div>
                         </div>
                     </div>
 
                     <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-gray-100 px-2 py-1 rounded">gap-4</code> - Espacio mediano (1rem)</h3>
-                        <div class="flex gap-4 bg-gray-100 p-4 rounded-lg">
-                            <div class="bg-blue-500 text-white px-4 py-3 rounded flex-1 text-center">A</div>
-                            <div class="bg-blue-500 text-white px-4 py-3 rounded flex-1 text-center">B</div>
-                            <div class="bg-blue-500 text-white px-4 py-3 rounded flex-1 text-center">C</div>
+                        <h3 class="font-black text-sm mb-2 uppercase"><code class="bg-gray-200 px-2 py-1 border-2 border-neo-black">gap-8</code> - 2rem</h3>
+                        <div class="flex gap-8 bg-gray-100 border-2 border-neo-black p-4">
+                            <div class="bg-neo-purple text-white px-4 py-3 border-2 border-neo-black font-bold flex-1 text-center">A</div>
+                            <div class="bg-neo-purple text-white px-4 py-3 border-2 border-neo-black font-bold flex-1 text-center">B</div>
+                            <div class="bg-neo-purple text-white px-4 py-3 border-2 border-neo-black font-bold flex-1 text-center">C</div>
                         </div>
-                    </div>
-
-                    <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-gray-100 px-2 py-1 rounded">gap-8</code> - Espacio grande (2rem)</h3>
-                        <div class="flex gap-8 bg-gray-100 p-4 rounded-lg">
-                            <div class="bg-indigo-500 text-white px-4 py-3 rounded flex-1 text-center">A</div>
-                            <div class="bg-indigo-500 text-white px-4 py-3 rounded flex-1 text-center">B</div>
-                            <div class="bg-indigo-500 text-white px-4 py-3 rounded flex-1 text-center">C</div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3 class="font-semibold mb-2">
-                            <code class="bg-gray-100 px-2 py-1 rounded">gap-x-4 gap-y-8</code> - Espacios diferentes (horizontal/vertical)
-                        </h3>
-                        <div class="flex flex-wrap gap-x-4 gap-y-8 bg-gray-100 p-4 rounded-lg">
-                            <div class="bg-purple-500 text-white px-6 py-3 rounded">A</div>
-                            <div class="bg-purple-500 text-white px-6 py-3 rounded">B</div>
-                            <div class="bg-purple-500 text-white px-6 py-3 rounded">C</div>
-                            <div class="bg-purple-500 text-white px-6 py-3 rounded">D</div>
-                            <div class="bg-purple-500 text-white px-6 py-3 rounded">E</div>
-                        </div>
-                        <p class="text-sm text-gray-600 mt-2">💡 Espacio horizontal pequeño, vertical grande</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Demo 6: Flex Grow y Shrink -->
-        <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">📊 Demo 6: Flex Grow, Shrink y Basis</h2>
-            
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <p class="text-gray-700 mb-6">
-                    Estas propiedades controlan cómo los elementos <strong>crecen</strong>, <strong>se encogen</strong> 
-                    y su <strong>tamaño base</strong>.
-                </p>
-
-                <div class="space-y-6">
-                    
-                    <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-blue-100 px-2 py-1 rounded">flex-1</code> - Todos crecen igual</h3>
-                        <div class="flex gap-2 bg-gray-100 p-4 rounded-lg">
-                            <div class="flex-1 bg-blue-500 text-white px-4 py-3 rounded text-center">flex-1</div>
-                            <div class="flex-1 bg-blue-500 text-white px-4 py-3 rounded text-center">flex-1</div>
-                            <div class="flex-1 bg-blue-500 text-white px-4 py-3 rounded text-center">flex-1</div>
-                        </div>
-                        <p class="text-sm text-gray-600 mt-2">💡 Cada elemento ocupa la misma cantidad de espacio disponible</p>
-                    </div>
-
-                    <div>
-                        <h3 class="font-semibold mb-2">Combinación: <code class="bg-green-100 px-2 py-1 rounded">flex-1</code> + <code class="bg-red-100 px-2 py-1 rounded">flex-2</code></h3>
-                        <div class="flex gap-2 bg-gray-100 p-4 rounded-lg">
-                            <div class="flex-1 bg-green-500 text-white px-4 py-3 rounded text-center">flex-1</div>
-                            <div class="flex-2 bg-red-500 text-white px-4 py-3 rounded text-center">flex-2 (doble)</div>
-                            <div class="flex-1 bg-green-500 text-white px-4 py-3 rounded text-center">flex-1</div>
-                        </div>
-                        <p class="text-sm text-gray-600 mt-2">💡 El elemento del medio ocupa el doble de espacio</p>
-                    </div>
-
-                    <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-purple-100 px-2 py-1 rounded">flex-none</code> - Sin flexibilidad</h3>
-                        <div class="flex gap-2 bg-gray-100 p-4 rounded-lg">
-                            <div class="flex-1 bg-purple-400 text-white px-4 py-3 rounded text-center">flex-1</div>
-                            <div class="flex-none bg-purple-700 text-white px-4 py-3 rounded text-center">flex-none (tamaño fijo)</div>
-                            <div class="flex-1 bg-purple-400 text-white px-4 py-3 rounded text-center">flex-1</div>
-                        </div>
-                        <p class="text-sm text-gray-600 mt-2">💡 El elemento del medio mantiene su tamaño natural</p>
-                    </div>
-
-                    <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-orange-100 px-2 py-1 rounded">grow</code> vs <code class="bg-orange-100 px-2 py-1 rounded">grow-0</code></h3>
-                        <div class="flex gap-2 bg-gray-100 p-4 rounded-lg">
-                            <div class="grow bg-orange-500 text-white px-4 py-3 rounded text-center">grow (crece)</div>
-                            <div class="grow-0 bg-orange-700 text-white px-4 py-3 rounded text-center">grow-0 (no crece)</div>
-                            <div class="grow bg-orange-500 text-white px-4 py-3 rounded text-center">grow (crece)</div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Demo 7: Flex Wrap -->
-        <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">🔄 Demo 7: Flex Wrap (Ajuste de línea)</h2>
-            
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <p class="text-gray-700 mb-6">
-                    <code class="bg-gray-200 px-2 py-1 rounded">flex-wrap</code> permite que los elementos se envuelvan 
-                    en múltiples líneas cuando no hay espacio.
-                </p>
-
-                <div class="space-y-6">
-                    
-                    <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-gray-100 px-2 py-1 rounded">flex-nowrap</code> - Sin ajuste (por defecto)</h3>
-                        <div class="flex flex-nowrap gap-2 bg-gray-100 p-4 rounded-lg overflow-x-auto">
-                            <div class="bg-red-500 text-white px-8 py-3 rounded whitespace-nowrap flex-shrink-0">Item 1</div>
-                            <div class="bg-red-500 text-white px-8 py-3 rounded whitespace-nowrap flex-shrink-0">Item 2</div>
-                            <div class="bg-red-500 text-white px-8 py-3 rounded whitespace-nowrap flex-shrink-0">Item 3</div>
-                            <div class="bg-red-500 text-white px-8 py-3 rounded whitespace-nowrap flex-shrink-0">Item 4</div>
-                            <div class="bg-red-500 text-white px-8 py-3 rounded whitespace-nowrap flex-shrink-0">Item 5</div>
-                            <div class="bg-red-500 text-white px-8 py-3 rounded whitespace-nowrap flex-shrink-0">Item 6</div>
-                        </div>
-                        <p class="text-sm text-gray-600 mt-2">💡 Los elementos se mantienen en una línea (puede causar overflow)</p>
-                    </div>
-
-                    <div>
-                        <h3 class="font-semibold mb-2"><code class="bg-green-100 px-2 py-1 rounded">flex-wrap</code> - Con ajuste ⭐</h3>
-                        <div class="flex flex-wrap gap-2 bg-gray-100 p-4 rounded-lg">
-                            <div class="bg-green-500 text-white px-8 py-3 rounded">Item 1</div>
-                            <div class="bg-green-500 text-white px-8 py-3 rounded">Item 2</div>
-                            <div class="bg-green-500 text-white px-8 py-3 rounded">Item 3</div>
-                            <div class="bg-green-500 text-white px-8 py-3 rounded">Item 4</div>
-                            <div class="bg-green-500 text-white px-8 py-3 rounded">Item 5</div>
-                            <div class="bg-green-500 text-white px-8 py-3 rounded">Item 6</div>
-                            <div class="bg-green-500 text-white px-8 py-3 rounded">Item 7</div>
-                            <div class="bg-green-500 text-white px-8 py-3 rounded">Item 8</div>
-                        </div>
-                        <p class="text-sm text-gray-600 mt-2">💡 Los elementos se ajustan a múltiples líneas automáticamente</p>
                     </div>
 
                 </div>
@@ -473,228 +320,98 @@
 
         <!-- Casos de Uso Reales -->
         <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">🎨 Casos de Uso Reales</h2>
+            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">🎨 Casos de Uso Reales</h2>
             
             <!-- Navbar -->
-            <div class="bg-white rounded-xl shadow-lg p-8 mb-6">
-                <h3 class="text-2xl font-bold mb-4">1️⃣ Barra de Navegación</h3>
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8 mb-6">
+                <h3 class="text-2xl font-black mb-4 uppercase">1️⃣ Barra de Navegación</h3>
                 
-                <div class="bg-gray-900 rounded-lg px-6 py-4 flex items-center justify-between">
+                <div class="bg-neo-black border-3 border-neo-black px-6 py-4 flex items-center justify-between">
                     <div class="flex items-center gap-8">
-                        <span class="text-white font-bold text-xl">Logo</span>
+                        <span class="text-white font-black text-xl uppercase">Logo</span>
                         <nav class="hidden md:flex gap-6">
-                            <a href="#" class="text-gray-300 hover:text-white transition-colors">Inicio</a>
-                            <a href="#" class="text-gray-300 hover:text-white transition-colors">Productos</a>
-                            <a href="#" class="text-gray-300 hover:text-white transition-colors">Contacto</a>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors font-bold">Inicio</a>
+                            <a href="#" class="text-gray-300 hover:text-white transition-colors font-bold">Productos</a>
                         </nav>
                     </div>
-                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
-                        Iniciar Sesión
+                    <button class="bg-neo-blue text-white px-4 py-2 border-2 border-white font-bold hover:bg-blue-600 transition-colors shadow-sm">
+                        Login
                     </button>
                 </div>
-
-                <pre class="bg-gray-900 text-green-400 p-4 rounded mt-4 text-sm overflow-x-auto"><code>&lt;div class="flex items-center justify-between"&gt;
-  &lt;div class="flex items-center gap-8"&gt;
-    &lt;span&gt;Logo&lt;/span&gt;
-    &lt;nav class="flex gap-6"&gt;...&lt;/nav&gt;
-  &lt;/div&gt;
-  &lt;button&gt;Iniciar Sesión&lt;/button&gt;
-&lt;/div&gt;</code></pre>
             </div>
 
             <!-- Card con imagen -->
-            <div class="bg-white rounded-xl shadow-lg p-8 mb-6">
-                <h3 class="text-2xl font-bold mb-4">2️⃣ Card con Imagen y Contenido</h3>
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
+                <h3 class="text-2xl font-black mb-4 uppercase">2️⃣ Card con Imagen</h3>
                 
-                <div class="bg-white border-2 border-gray-200 rounded-xl overflow-hidden">
+                <div class="bg-white border-3 border-neo-black shadow-neo-sm overflow-hidden">
                     <div class="flex flex-col sm:flex-row">
-                        <div class="w-full sm:w-48 h-48 bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center">
+                        <div class="w-full sm:w-48 h-48 bg-neo-pink border-b-3 sm:border-b-0 sm:border-r-3 border-neo-black flex items-center justify-center">
                             <span class="text-white text-4xl">🎨</span>
                         </div>
                         <div class="flex-1 p-6">
-                            <h4 class="text-xl font-bold text-gray-800 mb-2">Título del Producto</h4>
-                            <p class="text-gray-600 mb-4">
-                                Descripción del producto con detalles importantes que el usuario necesita saber.
+                            <h4 class="text-xl font-black text-neo-black mb-2 uppercase">Título del Producto</h4>
+                            <p class="text-gray-800 mb-4 font-medium">
+                                Descripción del producto con detalles importantes.
                             </p>
                             <div class="flex items-center justify-between">
-                                <span class="text-2xl font-bold text-blue-600">$99.99</span>
-                                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                                <span class="text-2xl font-black text-neo-blue">$99.99</span>
+                                <button class="bg-neo-green text-neo-black px-4 py-2 border-2 border-neo-black font-bold shadow-sm hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
                                     Comprar
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <pre class="bg-gray-900 text-green-400 p-4 rounded mt-4 text-sm overflow-x-auto"><code>&lt;div class="flex flex-col sm:flex-row"&gt;
-  &lt;div class="w-full sm:w-48"&gt;[Imagen]&lt;/div&gt;
-  &lt;div class="flex-1 p-6"&gt;
-    &lt;h4&gt;Título&lt;/h4&gt;
-    &lt;p&gt;Descripción&lt;/p&gt;
-    &lt;div class="flex items-center justify-between"&gt;
-      &lt;span&gt;Precio&lt;/span&gt;
-      &lt;button&gt;Comprar&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-
-            <!-- Footer -->
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <h3 class="text-2xl font-bold mb-4">3️⃣ Footer con Columnas</h3>
-                
-                <div class="bg-gray-800 rounded-lg p-8">
-                    <div class="flex flex-col md:flex-row gap-8 justify-between text-white">
-                        <div class="flex-1">
-                            <h5 class="font-bold mb-3">Empresa</h5>
-                            <ul class="space-y-2 text-sm text-gray-300">
-                                <li><a href="#" class="hover:text-white">Nosotros</a></li>
-                                <li><a href="#" class="hover:text-white">Equipo</a></li>
-                                <li><a href="#" class="hover:text-white">Contacto</a></li>
-                            </ul>
-                        </div>
-                        <div class="flex-1">
-                            <h5 class="font-bold mb-3">Productos</h5>
-                            <ul class="space-y-2 text-sm text-gray-300">
-                                <li><a href="#" class="hover:text-white">Categorías</a></li>
-                                <li><a href="#" class="hover:text-white">Ofertas</a></li>
-                                <li><a href="#" class="hover:text-white">Novedades</a></li>
-                            </ul>
-                        </div>
-                        <div class="flex-1">
-                            <h5 class="font-bold mb-3">Legal</h5>
-                            <ul class="space-y-2 text-sm text-gray-300">
-                                <li><a href="#" class="hover:text-white">Privacidad</a></li>
-                                <li><a href="#" class="hover:text-white">Términos</a></li>
-                                <li><a href="#" class="hover:text-white">Cookies</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <pre class="bg-gray-900 text-green-400 p-4 rounded mt-4 text-sm overflow-x-auto"><code>&lt;div class="flex flex-col md:flex-row gap-8 justify-between"&gt;
-  &lt;div class="flex-1"&gt;[Columna 1]&lt;/div&gt;
-  &lt;div class="flex-1"&gt;[Columna 2]&lt;/div&gt;
-  &lt;div class="flex-1"&gt;[Columna 3]&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-        </section>
-
-        <!-- Cheat Sheet -->
-        <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">📋 Hoja de Referencia Rápida</h2>
-            
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    
-                    <div class="border-2 border-indigo-200 rounded-lg p-4 bg-indigo-50">
-                        <h3 class="font-bold text-indigo-900 mb-3">🔄 Dirección</h3>
-                        <ul class="space-y-1 text-sm">
-                            <li><code class="bg-white px-2 py-1 rounded">flex-row</code> - Horizontal →</li>
-                            <li><code class="bg-white px-2 py-1 rounded">flex-col</code> - Vertical ↓</li>
-                            <li><code class="bg-white px-2 py-1 rounded">flex-row-reverse</code> - ←</li>
-                            <li><code class="bg-white px-2 py-1 rounded">flex-col-reverse</code> - ↑</li>
-                        </ul>
-                    </div>
-
-                    <div class="border-2 border-blue-200 rounded-lg p-4 bg-blue-50">
-                        <h3 class="font-bold text-blue-900 mb-3">↔️ Justify (horizontal)</h3>
-                        <ul class="space-y-1 text-sm">
-                            <li><code class="bg-white px-2 py-1 rounded">justify-start</code> - Inicio</li>
-                            <li><code class="bg-white px-2 py-1 rounded">justify-center</code> - Centro</li>
-                            <li><code class="bg-white px-2 py-1 rounded">justify-end</code> - Final</li>
-                            <li><code class="bg-white px-2 py-1 rounded">justify-between</code> - Espaciado</li>
-                        </ul>
-                    </div>
-
-                    <div class="border-2 border-green-200 rounded-lg p-4 bg-green-50">
-                        <h3 class="font-bold text-green-900 mb-3">↕️ Align (vertical)</h3>
-                        <ul class="space-y-1 text-sm">
-                            <li><code class="bg-white px-2 py-1 rounded">items-start</code> - Arriba</li>
-                            <li><code class="bg-white px-2 py-1 rounded">items-center</code> - Centro</li>
-                            <li><code class="bg-white px-2 py-1 rounded">items-end</code> - Abajo</li>
-                            <li><code class="bg-white px-2 py-1 rounded">items-stretch</code> - Estirado</li>
-                        </ul>
-                    </div>
-
-                    <div class="border-2 border-purple-200 rounded-lg p-4 bg-purple-50">
-                        <h3 class="font-bold text-purple-900 mb-3">📊 Flex</h3>
-                        <ul class="space-y-1 text-sm">
-                            <li><code class="bg-white px-2 py-1 rounded">flex-1</code> - Crece igual</li>
-                            <li><code class="bg-white px-2 py-1 rounded">flex-auto</code> - Automático</li>
-                            <li><code class="bg-white px-2 py-1 rounded">flex-none</code> - Tamaño fijo</li>
-                            <li><code class="bg-white px-2 py-1 rounded">grow</code> - Puede crecer</li>
-                        </ul>
-                    </div>
-
-                    <div class="border-2 border-orange-200 rounded-lg p-4 bg-orange-50">
-                        <h3 class="font-bold text-orange-900 mb-3">📏 Gap</h3>
-                        <ul class="space-y-1 text-sm">
-                            <li><code class="bg-white px-2 py-1 rounded">gap-2</code> - 0.5rem</li>
-                            <li><code class="bg-white px-2 py-1 rounded">gap-4</code> - 1rem</li>
-                            <li><code class="bg-white px-2 py-1 rounded">gap-8</code> - 2rem</li>
-                            <li><code class="bg-white px-2 py-1 rounded">gap-x-4 gap-y-8</code> - Diferente</li>
-                        </ul>
-                    </div>
-
-                    <div class="border-2 border-pink-200 rounded-lg p-4 bg-pink-50">
-                        <h3 class="font-bold text-pink-900 mb-3">🔄 Wrap</h3>
-                        <ul class="space-y-1 text-sm">
-                            <li><code class="bg-white px-2 py-1 rounded">flex-wrap</code> - Sí ajustar</li>
-                            <li><code class="bg-white px-2 py-1 rounded">flex-nowrap</code> - No ajustar</li>
-                            <li><code class="bg-white px-2 py-1 rounded">flex-wrap-reverse</code> - Invertido</li>
-                        </ul>
-                    </div>
-
-                </div>
             </div>
         </section>
 
         <!-- Resumen -->
         <section class="max-w-4xl mx-auto">
-            <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl shadow-lg p-8 text-white">
-                <h2 class="text-3xl font-bold mb-4">🎉 ¡Excelente Trabajo!</h2>
-                <p class="text-lg text-indigo-100 mb-6">
-                    Has completado la guía de Flexbox CSS. Ahora dominas uno de los sistemas de layout más útiles del desarrollo web.
-                </p>
-                
-                <div class="bg-white bg-opacity-20 rounded-lg p-6 mb-6">
-                    <h3 class="font-bold text-xl mb-3">✨ Recuerda lo esencial:</h3>
-                    <ul class="space-y-2">
-                        <li>🎯 <strong>Centrado perfecto:</strong> <code class="bg-white bg-opacity-20 px-2 py-1 rounded">flex items-center justify-center</code></li>
-                        <li>📱 <strong>Responsive:</strong> <code class="bg-white bg-opacity-20 px-2 py-1 rounded">flex-col md:flex-row</code></li>
-                        <li>📏 <strong>Espaciado:</strong> Usa <code class="bg-white bg-opacity-20 px-2 py-1 rounded">gap</code> en lugar de margins</li>
-                        <li>📊 <strong>Distribución:</strong> <code class="bg-white bg-opacity-20 px-2 py-1 rounded">flex-1</code> para igualar tamaños</li>
-                    </ul>
-                </div>
-                
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="responsive.html" class="px-6 py-3 bg-white text-indigo-600 font-semibold rounded-lg text-center hover:bg-indigo-50 transition-colors">
-                        ← Responsive Design
-                    </a>
-                    <a href="grid.html" class="px-6 py-3 bg-indigo-700 text-white font-semibold rounded-lg text-center hover:bg-indigo-800 transition-colors">
-                        Siguiente: Grid CSS →
-                    </a>
+            <div class="bg-neo-purple border-3 border-neo-black shadow-neo p-8 text-white relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="text-4xl font-black mb-4 uppercase">🎉 ¡Excelente Trabajo!</h2>
+                    <p class="text-xl font-bold mb-8">
+                        Has completado la guía de Flexbox CSS. Ahora dominas uno de los sistemas de layout más útiles.
+                    </p>
+                    
+                    <div class="bg-neo-black border-2 border-white p-6 mb-8">
+                        <h3 class="font-black text-xl mb-4 text-neo-yellow uppercase">✨ Recuerda lo esencial:</h3>
+                        <ul class="space-y-3 font-bold">
+                            <li>🎯 <strong>Centrado perfecto:</strong> <code class="text-neo-green font-mono">flex items-center justify-center</code></li>
+                            <li>📱 <strong>Responsive:</strong> <code class="text-neo-green font-mono">flex-col md:flex-row</code></li>
+                            <li>📏 <strong>Espaciado:</strong> Usa <code class="text-neo-green font-mono">gap</code> en lugar de margins</li>
+                            <li>📊 <strong>Distribución:</strong> <code class="text-neo-green font-mono">flex-1</code> para igualar tamaños</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="responsive.html" class="px-6 py-3 bg-white text-neo-black font-bold border-3 border-neo-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-200 text-center uppercase">
+                            ← Responsive
+                        </a>
+                        <a href="grid.html" class="px-6 py-3 bg-neo-yellow text-neo-black font-bold border-3 border-neo-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-200 text-center uppercase">
+                            Siguiente: Grid CSS →
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Practice Exercise CTA -->
         <section class="max-w-4xl mx-auto mb-16">
-            <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl shadow-2xl p-8 text-white">
-                <div class="flex items-start gap-6">
-                    <div class="text-6xl">✏️</div>
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8 mt-16">
+                <div class="flex items-start gap-6 flex-col md:flex-row">
+                    <div class="text-6xl bg-neo-blue border-3 border-neo-black p-4 shadow-neo-sm">✏️</div>
                     <div class="flex-1">
-                        <h2 class="text-3xl font-bold mb-3">¡Hora de Practicar!</h2>
-                        <p class="text-indigo-100 text-lg mb-6">
-                            Pon en práctica todo lo que aprendiste sobre Flexbox. Completa el ejercicio de Portfolio 
-                            y luego compara tu solución con la nuestra.
+                        <h2 class="text-3xl font-black mb-3 uppercase text-neo-black">¡Hora de Practicar!</h2>
+                        <p class="text-gray-800 text-lg mb-6 font-bold">
+                            Pon en práctica todo lo que aprendiste sobre Flexbox. Completa el ejercicio de Portfolio.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="ejercicio-flex.html" class="px-6 py-3 bg-white text-indigo-600 font-bold rounded-lg text-center hover:bg-indigo-50 transition-colors shadow-lg">
+                            <a href="ejercicio-flex.html" class="px-6 py-3 bg-neo-green text-neo-black font-bold border-3 border-neo-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-200 text-center uppercase">
                                 📝 Comenzar Ejercicio
                             </a>
-                            <a href="solved/ejercicio-flex-solucion.html" class="px-6 py-3 bg-indigo-800 bg-opacity-50 text-white font-semibold rounded-lg text-center hover:bg-indigo-800 hover:bg-opacity-70 transition-colors border-2 border-white border-opacity-30">
+                            <a href="solved/ejercicio-flex-solucion.html" class="px-6 py-3 bg-gray-800 text-white font-bold border-3 border-neo-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-200 text-center uppercase">
                                 ✅ Ver Solución
                             </a>
                         </div>
@@ -706,8 +423,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-8 mt-16">
-        <div class="container mx-auto px-4 text-center">
+    <footer class="bg-neo-black text-white py-8 mt-16 border-t-4 border-neo-black">
+        <div class="container mx-auto px-4 text-center font-mono">
             <p class="text-sm">Hecho con ❤️ para estudiantes | Tailwind CSS Playground</p>
         </div>
     </footer>
