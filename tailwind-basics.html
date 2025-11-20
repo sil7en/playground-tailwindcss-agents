@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía de Tailwind CSS Básico - Tailwind CSS Playground</title>
+    <title>Guía de Tailwind CSS Básico - Frontend & AI Playground</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body class="bg-neo-bg font-sans text-neo-black selection:bg-neo-pink selection:text-white">
@@ -31,10 +31,10 @@
                     ⚡ Diseño Ágil
                 </div>
                 <h1 class="text-5xl md:text-6xl font-black mb-6 uppercase leading-none drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
-                    Utilería Digital
+                    Utility-First
                 </h1>
                 <p class="text-xl md:text-2xl font-bold border-l-4 border-neo-black pl-6">
-                    Imagina que eres un escenógrafo. En lugar de fabricar cada mueble desde cero (CSS Clásico), vas al almacén de utilería y pides "Silla Azul Grande" (Tailwind). Es mucho más rápido.
+                    Imagina que estás construyendo con LEGO. Tienes miles de piezas pequeñas y estandarizadas que puedes combinar para crear cualquier cosa. Eso es Tailwind.
                 </p>
             </div>
         </div>
@@ -43,48 +43,65 @@
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-12">
 
+        <!-- AI Tip -->
+        <section class="max-w-4xl mx-auto mb-16">
+            <div class="bg-neo-black text-white border-3 border-neo-black p-8 shadow-neo transform -rotate-1">
+                <div class="flex items-start gap-4">
+                    <div class="text-4xl">🤖</div>
+                    <div>
+                        <h2 class="text-2xl font-black uppercase text-neo-green mb-2">Tip de Agente IA</h2>
+                        <p class="font-bold text-lg leading-relaxed">
+                            No memorices todas las clases. Tailwind es perfecto para ser generado por IA.
+                            <br>
+                            <span class="bg-white text-neo-black px-2 py-1 font-mono text-sm mt-2 inline-block">"Dame un botón con gradiente azul, bordes redondeados y sombra usando Tailwind"</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- ¿Qué es Utility-First? -->
         <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">🎬 El Almacén de Utilería</h2>
+            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">🧱 Construcción por Bloques</h2>
 
             <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
                 <p class="text-lg text-gray-800 mb-8 font-medium leading-relaxed">
-                    Tailwind te da miles de pequeñas piezas pre-fabricadas (clases) que puedes combinar.
+                    Tailwind te da miles de pequeñas clases pre-fabricadas.
                     <br>
-                    En lugar de escribir código complejo para definir un "Botón Azul", simplemente le dices al elemento: <code class="bg-neo-bg px-2 py-1 rounded border border-neo-black font-mono">bg-blue-500</code> (Fondo azul), <code class="bg-neo-bg px-2 py-1 rounded border border-neo-black font-mono">text-white</code> (Texto blanco).
+                    En lugar de escribir CSS en otro archivo, aplicas estilos directamente: <code class="bg-neo-bg px-2 py-1 rounded border border-neo-black font-mono">bg-blue-500</code> (Fondo azul), <code class="bg-neo-bg px-2 py-1 rounded border border-neo-black font-mono">text-white</code> (Texto blanco).
                 </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Enfoque Tradicional -->
                     <div class="border-3 border-neo-black p-6 bg-gray-100 shadow-neo-sm">
-                        <h3 class="font-black text-gray-600 mb-4 uppercase bg-white inline-block px-2 border-2 border-gray-400 transform -rotate-1">Manera Antigua (Lenta)</h3>
-                        <p class="text-sm text-gray-600 mb-4 font-bold">Tenías que inventar nombres y escribir reglas aparte.</p>
+                        <h3 class="font-black text-gray-600 mb-4 uppercase bg-white inline-block px-2 border-2 border-gray-400 transform -rotate-1">CSS Tradicional</h3>
+                        <p class="text-sm text-gray-600 mb-4 font-bold">Inventas nombres y escribes reglas en otro archivo.</p>
                         <div class="bg-white p-4 border-2 border-gray-300 mb-4 flex justify-center">
                             <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded">
                                 Botón
                             </button>
                         </div>
-                        <pre class="bg-neo-black text-gray-300 p-4 text-xs font-mono border-2 border-gray-600"><code>.mi-boton-especial {
+                        <pre class="bg-neo-black text-gray-300 p-4 text-xs font-mono border-2 border-gray-600"><code>.btn-primary {
   background-color: #3b82f6;
   color: white;
-  font-weight: bold;
-  /* ...y mucho más código */
+  padding: 0.5rem 1rem;
+  /* ...aburrido */
 }</code></pre>
                     </div>
 
                     <!-- Enfoque Tailwind -->
                     <div class="border-3 border-neo-black p-6 bg-neo-green shadow-neo-sm">
-                        <h3 class="font-black text-neo-black mb-4 uppercase bg-white inline-block px-2 border-2 border-neo-black transform rotate-1">Manera Tailwind (Rápida)</h3>
-                        <p class="text-sm text-neo-black mb-4 font-bold">Describes cómo se ve directamente en el elemento.</p>
+                        <h3 class="font-black text-neo-black mb-4 uppercase bg-white inline-block px-2 border-2 border-neo-black transform rotate-1">Tailwind CSS</h3>
+                        <p class="text-sm text-neo-black mb-4 font-bold">Describes el diseño directamente en el HTML.</p>
                         <div class="bg-white p-4 border-2 border-neo-black mb-4 flex justify-center">
                             <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded">
                                 Botón
                             </button>
                         </div>
-                        <pre class="bg-neo-black text-green-400 p-4 text-xs font-mono border-2 border-neo-white"><code>&lt;button class="bg-blue-500 text-white font-bold py-2 px-4 rounded"&gt;
+                        <pre class="bg-neo-black text-green-400 p-4 text-xs font-mono border-2 border-neo-white"><code>&lt;button class="bg-blue-500 text-white px-4 py-2 rounded"&gt;
   Botón
 &lt;/button&gt;</code></pre>
-                        <p class="text-xs text-neo-black mt-2 font-black uppercase">¡Listo! Sin archivos extra.</p>
+                        <p class="text-xs text-neo-black mt-2 font-black uppercase">¡Rápido y sin cambiar de archivo!</p>
                     </div>
                 </div>
             </div>
@@ -96,9 +113,9 @@
 
             <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
                 <p class="text-gray-800 mb-4 font-medium">
-                    Tailwind tiene una paleta de colores enorme. El formato es: <code class="bg-neo-bg border border-neo-black px-2 py-1 rounded font-mono font-bold">propiedad-{color}-{intensidad}</code>.
+                    El formato es: <code class="bg-neo-bg border border-neo-black px-2 py-1 rounded font-mono font-bold">propiedad-{color}-{intensidad}</code>.
                 </p>
-                <p class="text-sm text-gray-500 mb-8 font-bold uppercase">Intensidad va de 50 (claro) a 900 (oscuro).</p>
+                <p class="text-sm text-gray-500 mb-8 font-bold uppercase">Intensidad va de 50 (claro) a 950 (oscuro).</p>
 
                 <div class="space-y-8">
                     <div>
@@ -136,9 +153,7 @@
 
             <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
                 <p class="text-gray-800 mb-8 font-medium">
-                    El sistema de espaciado usa números. <code class="bg-neo-bg border border-neo-black px-2 py-1 rounded font-mono font-bold">1</code> unidad = <code class="bg-neo-bg border border-neo-black px-2 py-1 rounded font-mono font-bold">0.25rem</code> (4px).
-                    <br>
-                    Por lo tanto, <code class="bg-neo-bg border border-neo-black px-2 py-1 rounded font-mono font-bold">4</code> = <code class="bg-neo-bg border border-neo-black px-2 py-1 rounded font-mono font-bold">1rem</code> (16px).
+                    El sistema de espaciado usa números proporcionales. <code class="bg-neo-bg border border-neo-black px-2 py-1 rounded font-mono font-bold">4</code> = <code class="bg-neo-bg border border-neo-black px-2 py-1 rounded font-mono font-bold">1rem</code> (16px).
                 </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -170,9 +185,7 @@
                 <div class="relative z-10">
                     <h2 class="text-4xl font-black mb-4 uppercase">🚀 ¡Listo para Responsive!</h2>
                     <p class="text-xl font-bold mb-8">
-                        Ya tienes las bases: HTML semántico, fundamentos CSS y la sintaxis de Tailwind.
-                        <br>
-                        El siguiente paso es aprender a hacer que tus diseños se adapten a móviles y tablets.
+                        Ya tienes las bases. El siguiente paso es aprender a hacer que tus diseños se adapten a móviles y tablets.
                     </p>
 
                     <div class="flex justify-start md:justify-end">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía de HTML Semántico - Tailwind CSS Playground</title>
+    <title>Guía de HTML Semántico - Frontend & AI Playground</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body class="bg-neo-bg font-sans text-neo-black selection:bg-neo-pink selection:text-white">
@@ -28,13 +28,13 @@
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-3xl">
                 <div class="inline-block px-4 py-2 bg-neo-yellow border-2 border-neo-black text-neo-black shadow-neo-sm text-sm font-bold mb-6 transform -rotate-2 uppercase">
-                    📰 Estructura Periodística
+                    🏗️ Estructura Web
                 </div>
                 <h1 class="text-5xl md:text-6xl font-black mb-6 uppercase leading-none text-neo-white drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">
-                    La Noticia Digital
+                    El Esqueleto
                 </h1>
                 <p class="text-xl md:text-2xl font-bold text-white border-l-4 border-neo-black pl-6">
-                    Aprende a estructurar tus artículos, crónicas y reseñas para que Google los entienda y los lectores los disfruten.
+                    Aprende a estructurar documentos web. HTML Semántico es clave para SEO, Accesibilidad y para que los Agentes IA entiendan tu contenido.
                 </p>
             </div>
         </div>
@@ -48,13 +48,18 @@
             <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
                 <h2 class="text-3xl font-black text-neo-black mb-6 uppercase">¿Por qué usar Etiquetas Correctas? 🤔</h2>
                 <p class="text-lg text-gray-800 mb-6 font-medium leading-relaxed">
-                    Imagina que escribes un <strong>guión de cine</strong>. Tienes un formato específico para los diálogos, otro para las acotaciones y otro para los encabezados de escena (EXT. NOCHE).
+                    HTML no es solo "hacer que se vea". Es dar <strong>significado</strong>.
                     <br><br>
-                    Si todo tuviera el mismo formato, el director no sabría qué filmar. En la web pasa lo mismo: HTML son las "acotaciones" que le dicen al navegador qué es un título, qué es un párrafo y qué es una imagen.
+                    Cuando usas las etiquetas correctas (<code class="bg-gray-200 px-1">nav</code>, <code class="bg-gray-200 px-1">article</code>, <code class="bg-gray-200 px-1">button</code>), le dices al navegador, a Google y a los lectores de pantalla exactamente qué es cada parte de tu web.
                 </p>
-                <div class="bg-neo-yellow border-3 border-neo-black p-6 shadow-neo-sm transform rotate-1">
-                    <p class="text-neo-black font-bold text-lg">
-                        💡 Para Periodistas (SEO): Google es como un editor jefe muy estricto. Si no etiquetas bien tus titulares y tus párrafos, tu noticia quedará enterrada en la página 10 de los resultados.
+
+                <!-- AI Tip -->
+                <div class="bg-neo-black text-white border-3 border-neo-black p-6 shadow-neo-sm transform rotate-1">
+                    <h3 class="text-neo-yellow font-bold text-lg uppercase mb-2">🤖 Tip de IA</h3>
+                    <p class="font-medium">
+                        ¿No sabes qué etiqueta usar? Pregunta a tu agente:
+                        <br>
+                        <span class="italic text-gray-400">"Tengo una lista de productos con imagen y precio. ¿Cuál es la estructura HTML semántica correcta?"</span>
                     </p>
                 </div>
             </div>
@@ -68,25 +73,25 @@
                 <div class="space-y-8">
                     <div class="border-l-4 border-neo-blue pl-6">
                         <h3 class="font-black text-xl text-neo-blue mb-2 font-mono">&lt;header&gt; (La Cabecera)</h3>
-                        <p class="text-gray-800 font-medium">Como el nombre de tu periódico o revista en la parte superior. Suele tener el logo y el menú.</p>
+                        <p class="text-gray-800 font-medium">La parte superior. Logo, navegación principal y búsqueda.</p>
                     </div>
                     <div class="border-l-4 border-neo-green pl-6">
                         <h3 class="font-black text-xl text-neo-green mb-2 font-mono">&lt;nav&gt; (Navegación)</h3>
-                        <p class="text-gray-800 font-medium">El índice de secciones: "Política", "Cultura", "Deportes". Solo para los enlaces principales.</p>
+                        <p class="text-gray-800 font-medium">Bloque de enlaces principales para moverse por el sitio.</p>
                     </div>
                     <div class="border-l-4 border-neo-pink pl-6">
                         <h3 class="font-black text-xl text-neo-pink mb-2 font-mono">&lt;main&gt; (Cuerpo Principal)</h3>
-                        <p class="text-gray-800 font-medium">El contenido central. Aquí va tu reportaje, tu documental o tu galería de fotos.</p>
+                        <p class="text-gray-800 font-medium">El contenido único de esa página. Solo debe haber uno por página.</p>
                     </div>
                     <div class="border-l-4 border-neo-purple pl-6">
-                        <h3 class="font-black text-xl text-neo-purple mb-2 font-mono">&lt;article&gt; (El Artículo)</h3>
+                        <h3 class="font-black text-xl text-neo-purple mb-2 font-mono">&lt;article&gt; (Contenido Independiente)</h3>
                         <p class="text-gray-800 font-medium">
-                            Úsalo para una noticia completa, un post de blog o una crítica de cine. Es contenido que tiene sentido por sí mismo.
+                            Un post de blog, una tarjeta de producto, un comentario. Algo que tiene sentido por sí mismo.
                         </p>
                     </div>
                     <div class="border-l-4 border-gray-500 pl-6">
                         <h3 class="font-black text-xl text-gray-600 mb-2 font-mono">&lt;footer&gt; (Pie de Página)</h3>
-                        <p class="text-gray-800 font-medium">El cierre. Copyright, contacto, "Sobre nosotros".</p>
+                        <p class="text-gray-800 font-medium">El cierre. Copyright, redes sociales, enlaces legales.</p>
                     </div>
                 </div>
 
@@ -97,23 +102,23 @@
 &lt;body&gt;
 
   <span class="text-neo-blue">&lt;header&gt;</span>
-    &lt;h1&gt;Diario El Comunicador&lt;/h1&gt;
+    &lt;h1&gt;Mi Blog Tech&lt;/h1&gt;
     <span class="text-neo-yellow">&lt;nav&gt;</span>...<span class="text-neo-yellow">&lt;/nav&gt;</span>
   <span class="text-neo-blue">&lt;/header&gt;</span>
 
   <span class="text-neo-pink">&lt;main&gt;</span>
     <span class="text-neo-purple">&lt;article&gt;</span>
-      &lt;h2&gt;Estreno de Cine: La nueva ola&lt;/h2&gt;
-      &lt;p&gt;La película que revoluciona...&lt;/p&gt;
+      &lt;h2&gt;Cómo aprender Frontend en 2025&lt;/h2&gt;
+      &lt;p&gt;La inteligencia artificial ha cambiado...&lt;/p&gt;
     <span class="text-neo-purple">&lt;/article&gt;</span>
 
     <span class="text-neo-green">&lt;aside&gt;</span>
-      &lt;p&gt;Noticias relacionadas&lt;/p&gt;
+      &lt;p&gt;Posts Relacionados&lt;/p&gt;
     <span class="text-neo-green">&lt;/aside&gt;</span>
   <span class="text-neo-pink">&lt;/main&gt;</span>
 
   <span class="text-gray-400">&lt;footer&gt;</span>
-    &lt;p&gt;© 2025 Periodismo Digital&lt;/p&gt;
+    &lt;p&gt;© 2025 Mi Sitio Web&lt;/p&gt;
   <span class="text-gray-400">&lt;/footer&gt;</span>
 
 &lt;/body&gt;

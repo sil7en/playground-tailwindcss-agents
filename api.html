@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía de APIs - Tailwind CSS</title>
+    <title>Guía de APIs - Frontend & AI Playground</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body class="bg-neo-bg font-sans text-neo-black selection:bg-neo-pink selection:text-white">
@@ -28,13 +28,13 @@
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-3xl">
                 <div class="inline-block px-4 py-2 bg-neo-yellow border-2 border-neo-black text-neo-black shadow-neo-sm text-sm font-bold mb-6 transform rotate-2 uppercase">
-                    🌍 Periodismo de Datos
+                    🌍 Datos Conectados
                 </div>
                 <h1 class="text-5xl md:text-6xl font-black mb-6 uppercase leading-none drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">
-                    Datos en Vivo (APIs)
+                    Datos en Vivo
                 </h1>
                 <p class="text-xl md:text-2xl font-bold border-l-4 border-neo-black pl-6">
-                    Conecta tu sitio web con el mundo real. Muestra el clima actual, resultados de elecciones o precios de mercado sin escribirlos manualmente.
+                    Conecta tu sitio web con el mundo real. Muestra el clima actual, precios de criptomonedas o resultados deportivos sin escribirlos manualmente.
                 </p>
             </div>
         </div>
@@ -43,13 +43,30 @@
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-12">
 
+        <!-- AI Tip -->
+        <section class="max-w-4xl mx-auto mb-16">
+            <div class="bg-neo-black text-white border-3 border-neo-black p-8 shadow-neo transform -rotate-1">
+                <div class="flex items-start gap-4">
+                    <div class="text-4xl">🤖</div>
+                    <div>
+                        <h2 class="text-2xl font-black uppercase text-neo-blue mb-2">Tip de Agente IA</h2>
+                        <p class="font-bold text-lg leading-relaxed">
+                            ¿No sabes cómo consumir una API específica? Pega la URL de la documentación en tu chat de IA y dile:
+                            <br>
+                            <span class="bg-white text-neo-black px-2 py-1 font-mono text-sm mt-2 inline-block">"Escribe una función async/await en JS para obtener los datos de esta API y mostrarlos en consola"</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Intro Section -->
         <section class="max-w-4xl mx-auto mb-16">
             <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
-                <h2 class="text-4xl font-black text-neo-black mb-6 uppercase">Tu corresponsal digital 📡</h2>
+                <h2 class="text-4xl font-black text-neo-black mb-6 uppercase">Tu Conector Digital 📡</h2>
                 <p class="text-lg text-gray-800 mb-8 font-medium leading-relaxed">
-                    Una <strong>API</strong> es como una agencia de noticias (Reuters, AFP). Tú no estás en Tokio, pero la agencia sí.
-                    Tú le pides "¿Qué tiempo hace allá?" y ellos te responden con los datos exactos.
+                    Una <strong>API</strong> (Interfaz de Programación de Aplicaciones) es como un camarero en un restaurante.
+                    Tú (el cliente) pides algo del menú, el camarero (la API) lleva tu pedido a la cocina (el servidor) y te trae la comida (los datos) sin que tú tengas que entrar a cocinar.
                 </p>
 
                 <div class="bg-neo-green border-3 border-neo-black p-6 shadow-neo-sm transform -rotate-1 mb-6">
@@ -57,11 +74,11 @@
                     <ul class="space-y-2 text-neo-black font-bold">
                         <li class="flex items-start gap-2">
                             <span class="text-white">✓</span>
-                            <span><strong>Obtener datos:</strong> Clima, noticias, pokemon.</span>
+                            <span><strong>Obtener datos:</strong> Clima, noticias, productos.</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-white">✓</span>
-                            <span><strong>Enviar datos:</strong> Crear usuarios, mensajes.</span>
+                            <span><strong>Enviar datos:</strong> Formularios de contacto, pagos.</span>
                         </li>
                     </ul>
                 </div>
@@ -71,13 +88,13 @@
                     <div class="grid md:grid-cols-2 gap-4 text-neo-black">
                         <div class="bg-white border-2 border-neo-black p-4 shadow-sm">
                             <h4 class="font-black text-neo-green mb-2 uppercase">GET (Pedir) 🎤</h4>
-                            <p class="text-sm font-bold">Pides información.</p>
+                            <p class="text-sm font-bold">Solicitas información.</p>
                             <code class="text-xs bg-gray-100 px-2 py-1 rounded mt-2 inline-block border border-gray-300">"Dame el clima"</code>
                         </div>
                         <div class="bg-white border-2 border-neo-black p-4 shadow-sm">
-                            <h4 class="font-black text-neo-blue mb-2 uppercase">POST (Enviar) 📰</h4>
-                            <p class="text-sm font-bold">Envías información.</p>
-                            <code class="text-xs bg-gray-100 px-2 py-1 rounded mt-2 inline-block border border-gray-300">"Enviar form"</code>
+                            <h4 class="font-black text-neo-blue mb-2 uppercase">POST (Enviar) 📤</h4>
+                            <p class="text-sm font-bold">Envías nueva información.</p>
+                            <code class="text-xs bg-gray-100 px-2 py-1 rounded mt-2 inline-block border border-gray-300">"Guardar usuario"</code>
                         </div>
                     </div>
                 </div>
@@ -95,7 +112,7 @@
                 <div class="space-y-8">
                     <div class="border-l-4 border-neo-purple pl-6">
                         <h3 class="font-black text-neo-black text-xl mb-2 uppercase">1️⃣ URL (Endpoint)</h3>
-                        <p class="text-gray-800 mb-4 font-bold">La dirección a donde envías la solicitud</p>
+                        <p class="text-gray-800 mb-4 font-bold">La dirección web donde viven los datos.</p>
                         <div class="bg-neo-black text-neo-green border-2 border-neo-black p-4 shadow-sm font-mono text-sm break-all">
                             https://pokeapi.co/api/v2/pokemon/pikachu
                         </div>
@@ -103,7 +120,7 @@
 
                     <div class="border-l-4 border-neo-blue pl-6">
                         <h3 class="font-black text-neo-black text-xl mb-2 uppercase">2️⃣ Método HTTP</h3>
-                        <p class="text-gray-800 mb-4 font-bold">Qué acción quieres realizar</p>
+                        <p class="text-gray-800 mb-4 font-bold">El verbo que indica la acción.</p>
                         <div class="bg-neo-black text-neo-blue border-2 border-neo-black p-4 shadow-sm font-mono text-sm font-bold">
                             GET, POST, PUT, DELETE
                         </div>
@@ -116,7 +133,7 @@
         <section class="max-w-4xl mx-auto mb-16">
             <div class="bg-neo-red border-3 border-neo-black shadow-neo p-8 text-white mb-6 bg-red-500">
                 <h2 class="text-3xl font-black mb-2 uppercase">Demo 1: PokeAPI 🎮</h2>
-                <p class="text-white font-bold">Busca información de cualquier Pokemon</p>
+                <p class="text-white font-bold">Busca información de cualquier Pokemon en tiempo real.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
@@ -168,7 +185,7 @@
         <section class="max-w-4xl mx-auto mb-16">
             <div class="bg-neo-cyan bg-cyan-500 border-3 border-neo-black shadow-neo p-8 text-white mb-6">
                 <h2 class="text-3xl font-black mb-2 uppercase">Demo 2: API del Clima 🌤️</h2>
-                <p class="text-white font-bold">Consulta el clima de cualquier ciudad</p>
+                <p class="text-white font-bold">Simulación de consulta de clima.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
