@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es_CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Ejecución - Tailwind CSS Playground</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-2 text-indigo-600 hover:text-indigo-700 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                    </svg>
+                    <span class="font-semibold">Volver al inicio</span>
+                </a>
+                <h1 class="text-xl font-bold text-gray-800">⚙️ Entorno y Ejecución</h1>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl">
+                <div class="inline-block px-4 py-2 bg-indigo-500 bg-opacity-50 rounded-full text-sm font-semibold mb-4">
+                    🛠️ Configuración
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Cómo Ejecutar el Proyecto</h1>
+                <p class="text-xl text-indigo-100">
+                    Entiende qué pasa "bajo el capó" cuando ejecutas comandos, qué es Node.js y cómo funciona tu servidor local.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+
+        <!-- Node.js Context -->
+        <section class="max-w-4xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">🟢 El Rol de Node.js</h2>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <p class="text-lg text-gray-700 mb-4">
+                    <strong>Node.js</strong> es un entorno de ejecución que permite correr JavaScript fuera del navegador (en tu servidor o computadora).
+                    En el desarrollo moderno, no lo usamos necesariamente para "backend", sino para ejecutar nuestras <strong>herramientas de construcción</strong> (como Tailwind CSS, servidores locales, linters, etc.).
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+                        <h3 class="font-bold text-lg text-blue-800 mb-2">En Windows 🪟</h3>
+                        <p class="text-gray-700 text-sm">
+                            Node se instala como un programa normal. Es recomendable usar terminales como <strong>PowerShell</strong> o <strong>Git Bash</strong> para ejecutarlo, ya que el CMD clásico puede tener limitaciones.
+                        </p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg border-l-4 border-gray-800">
+                        <h3 class="font-bold text-lg text-gray-800 mb-2">En Mac 🍎</h3>
+                        <p class="text-gray-700 text-sm">
+                            Mac está basado en UNIX, por lo que la terminal es nativa. Node se integra perfectamente con la terminal (zsh o bash).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- npm run dev explanation -->
+        <section class="max-w-4xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">🚀 ¿Qué hace "npm run dev"?</h2>
+
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <p class="text-gray-700 mb-6">
+                    Cuando escribes <code class="bg-gray-100 px-2 py-1 rounded text-pink-600 font-mono">npm run dev</code> en tu terminal, no estás ejecutando un solo comando, sino un "script" definido en el archivo <code class="font-bold">package.json</code>.
+                </p>
+
+                <div class="bg-gray-900 text-gray-300 rounded-lg p-6 mb-6 overflow-x-auto">
+                    <pre><code>"scripts": {
+  "dev": "npm-run-all --parallel watch:css serve"
+}</code></pre>
+                </div>
+
+                <p class="text-gray-700 mb-4">Este comando hace dos cosas <strong>en paralelo</strong> (al mismo tiempo):</p>
+
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0 text-2xl">🎨</div>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-900">1. watch:css (Tailwind)</h3>
+                            <p class="text-gray-600">
+                                Observa tus archivos HTML. Si agregas una clase como <code class="text-sm bg-gray-100 px-1">text-red-500</code>,
+                                Tailwind la detecta y genera el código CSS necesario instantáneamente.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 text-2xl">🌐</div>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-900">2. serve (Localhost)</h3>
+                            <p class="text-gray-600">
+                                Inicia un servidor web local (BrowserSync). Esto crea una dirección URL (como <code class="text-blue-600">http://localhost:3000</code>)
+                                para que veas tu sitio en el navegador. Además, <strong>recarga la página automáticamente</strong> cuando guardas cambios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Localhost -->
+        <section class="max-w-4xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">🏠 Entendiendo Localhost</h2>
+
+            <div class="bg-white rounded-xl shadow-lg p-8 border-l-4 border-green-500">
+                <h3 class="font-bold text-xl text-gray-900 mb-4">¿Qué es Localhost?</h3>
+                <p class="text-gray-700 mb-4">
+                    <strong>Localhost</strong> es simplemente "este computador". Cuando accedes a él, tu navegador no sale a internet; se conecta a un programa (el servidor web) que está corriendo en tu misma máquina.
+                </p>
+                <p class="text-gray-700">
+                    Es tu entorno seguro de pruebas. Nadie más en internet puede ver lo que haces en localhost a menos que configures herramientas específicas para compartirlo.
+                </p>
+            </div>
+        </section>
+
+        <!-- Step by Step -->
+        <section class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">👣 Paso a Paso: Ejecutando el Proyecto</h2>
+
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-xl shadow-md flex gap-4 items-center">
+                    <div class="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</div>
+                    <div>
+                        <h3 class="font-bold text-lg">Abrir la Terminal</h3>
+                        <p class="text-gray-600">En VSCode, ve al menú <span class="font-mono text-sm bg-gray-100 px-1">Terminal > New Terminal</span>.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md flex gap-4 items-center">
+                    <div class="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">2</div>
+                    <div>
+                        <h3 class="font-bold text-lg">Instalar Dependencias (Solo la primera vez)</h3>
+                        <p class="text-gray-600">Ejecuta <code class="font-mono text-sm bg-gray-100 px-1 text-pink-600">npm install</code>. Esto descarga las herramientas necesarias (Tailwind, etc.) a la carpeta node_modules.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md flex gap-4 items-center">
+                    <div class="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">3</div>
+                    <div>
+                        <h3 class="font-bold text-lg">Iniciar el Servidor</h3>
+                        <p class="text-gray-600">Ejecuta <code class="font-mono text-sm bg-gray-100 px-1 text-pink-600">npm run dev</code>. Verás mensajes de que Tailwind está observando archivos.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md flex gap-4 items-center">
+                    <div class="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">4</div>
+                    <div>
+                        <h3 class="font-bold text-lg">¡A Programar!</h3>
+                        <p class="text-gray-600">Tu navegador debería abrirse automáticamente. Si no, abre el link que aparece en la terminal (ej: Local: http://localhost:3000).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 flex justify-end">
+                <a href="index.html" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700 transition-all">
+                    Volver al Menú Principal
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">Hecho con ❤️ para estudiantes | Tailwind CSS Playground</p>
+        </div>
+    </footer>
+
+</body>
+</html>
