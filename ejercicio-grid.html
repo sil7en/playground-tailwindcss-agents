@@ -31,9 +31,9 @@
                 <div class="inline-block px-4 py-2 bg-purple-500 bg-opacity-50 rounded-full text-sm font-semibold mb-4">
                     ✏️ Ejercicio: CSS Grid
                 </div>
-                <h1 class="text-3xl md:text-4xl font-bold mb-4">Crea un Dashboard con CSS Grid</h1>
+                <h1 class="text-3xl md:text-4xl font-bold mb-4">Diseña una Portada de Revista</h1>
                 <p class="text-xl text-purple-100">
-                    Usa CSS Grid para crear layouts complejos bidimensionales con filas y columnas.
+                    Usa CSS Grid para organizar los titulares, fotos y columnas de opinión de tu medio digital.
                 </p>
             </div>
         </div>
@@ -44,15 +44,15 @@
         <div class="max-w-4xl mx-auto bg-pink-50 border-2 border-pink-400 rounded-xl p-6">
             <h2 class="text-2xl font-bold text-pink-900 mb-4 flex items-center gap-2">
                 <span class="text-3xl">📝</span>
-                Instrucciones
+                Instrucciones del Editor Jefe
             </h2>
             <div class="text-pink-900 space-y-3">
-                <p class="font-semibold">Desafío de CSS Grid:</p>
+                <p class="font-semibold">Tu misión: Maquetar la portada de hoy.</p>
                 <ol class="list-decimal list-inside space-y-2 ml-4">
                     <li>Completa las clases de Grid donde veas <code class="bg-pink-200 px-2 py-1 rounded">___COMPLETA_AQUI___</code></li>
                     <li>Usa <code class="bg-pink-200 px-2 py-1 rounded">grid</code>, <code class="bg-pink-200 px-2 py-1 rounded">grid-cols-{n}</code>, <code class="bg-pink-200 px-2 py-1 rounded">col-span-{n}</code></li>
-                    <li>Crea layouts complejos con filas y columnas</li>
-                    <li>Haz que el dashboard sea responsive</li>
+                    <li>Distribuye las noticias principales y secundarias</li>
+                    <li>Asegúrate que se lea bien en celular (responsive)</li>
                 </ol>
                 <div class="bg-white rounded-lg p-4 mt-4">
                     <p class="font-semibold text-pink-900 mb-2">💡 Pistas de Grid:</p>
@@ -71,166 +71,183 @@
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-12">
 
-        <!-- Dashboard Header -->
+        <!-- Magazine Header -->
         <section class="max-w-7xl mx-auto mb-8">
             <!-- EJERCICIO: Grid de 12 columnas con gap de 6 -->
             <div class="___COMPLETA_AQUI___">
                 <!-- EJERCICIO: Esta card debe ocupar 12 columnas (ancho completo) -->
-                <div class="___COMPLETA_AQUI___ bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl p-6 text-white">
-                    <h1 class="text-3xl font-bold mb-2">Dashboard Analítico</h1>
-                    <p class="text-purple-100">Bienvenido de vuelta, Juan. Aquí está el resumen de hoy.</p>
+                <div class="___COMPLETA_AQUI___ bg-gradient-to-r from-purple-900 to-gray-900 rounded-xl p-8 text-white text-center border-b-4 border-pink-500">
+                    <p class="text-pink-400 font-bold tracking-widest mb-2">EDICIÓN SEMANAL</p>
+                    <h1 class="text-5xl md:text-6xl font-black mb-2 uppercase font-serif">Cine & Cultura</h1>
+                    <p class="text-gray-400 italic">"Donde las historias cobran vida"</p>
                 </div>
             </div>
         </section>
 
-        <!-- Stats Cards -->
+        <!-- Top Stories (Titulares Rápidos) -->
         <section class="max-w-7xl mx-auto mb-8">
             <!-- EJERCICIO: Grid responsive -->
             <!-- EJERCICIO: 1 columna en móvil, 2 en tablet (md:), 4 en desktop (lg:) -->
             <!-- EJERCICIO: Gap de 6 -->
             <div class="___COMPLETA_AQUI___">
                 
-                <!-- Stat Card 1 -->
-                <div class="bg-white rounded-xl p-6 shadow-lg">
+                <!-- Story 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-blue-500">
                     <div class="flex items-center justify-between mb-2">
-                        <span class="text-gray-600 text-sm">Usuarios Activos</span>
-                        <span class="text-3xl">👥</span>
+                        <span class="text-blue-600 text-xs font-bold uppercase">Tecnología</span>
+                        <span class="text-xl">🤖</span>
                     </div>
-                    <div class="text-3xl font-bold text-blue-600">12,543</div>
-                    <div class="text-sm text-green-600 mt-2">↑ 12% vs mes anterior</div>
+                    <h3 class="font-bold text-gray-800">IA en el Cine</h3>
+                    <p class="text-sm text-gray-500 mt-2">Cómo los algoritmos escriben guiones.</p>
                 </div>
 
-                <!-- Stat Card 2 -->
-                <div class="bg-white rounded-xl p-6 shadow-lg">
+                <!-- Story 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-green-500">
                     <div class="flex items-center justify-between mb-2">
-                        <span class="text-gray-600 text-sm">Ingresos</span>
-                        <span class="text-3xl">💰</span>
+                        <span class="text-green-600 text-xs font-bold uppercase">Festival</span>
+                        <span class="text-xl">🎬</span>
                     </div>
-                    <div class="text-3xl font-bold text-green-600">$45,234</div>
-                    <div class="text-sm text-green-600 mt-2">↑ 8% vs mes anterior</div>
+                    <h3 class="font-bold text-gray-800">Cannes 2025</h3>
+                    <p class="text-sm text-gray-500 mt-2">Los documentales arrasan este año.</p>
                 </div>
 
-                <!-- Stat Card 3 -->
-                <div class="bg-white rounded-xl p-6 shadow-lg">
+                <!-- Story 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-purple-500">
                     <div class="flex items-center justify-between mb-2">
-                        <span class="text-gray-600 text-sm">Pedidos</span>
-                        <span class="text-3xl">📦</span>
+                        <span class="text-purple-600 text-xs font-bold uppercase">Opinión</span>
+                        <span class="text-xl">✍️</span>
                     </div>
-                    <div class="text-3xl font-bold text-purple-600">892</div>
-                    <div class="text-sm text-red-600 mt-2">↓ 3% vs mes anterior</div>
+                    <h3 class="font-bold text-gray-800">Crítica: "El Vacío"</h3>
+                    <p class="text-sm text-gray-500 mt-2">Una obra maestra del silencio.</p>
                 </div>
 
-                <!-- Stat Card 4 -->
-                <div class="bg-white rounded-xl p-6 shadow-lg">
+                <!-- Story 4 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-yellow-500">
                     <div class="flex items-center justify-between mb-2">
-                        <span class="text-gray-600 text-sm">Satisfacción</span>
-                        <span class="text-3xl">⭐</span>
+                        <span class="text-yellow-600 text-xs font-bold uppercase">Entrevista</span>
+                        <span class="text-xl">🎤</span>
                     </div>
-                    <div class="text-3xl font-bold text-yellow-600">98%</div>
-                    <div class="text-sm text-green-600 mt-2">↑ 2% vs mes anterior</div>
+                    <h3 class="font-bold text-gray-800">Habla Spielberg</h3>
+                    <p class="text-sm text-gray-500 mt-2">"El cine nunca morirá."</p>
                 </div>
 
             </div>
         </section>
 
-        <!-- Main Dashboard Grid -->
+        <!-- Main Content Grid -->
         <section class="max-w-7xl mx-auto mb-8">
             <!-- EJERCICIO: Grid de 12 columnas, gap de 6 -->
             <!-- EJERCICIO: Define filas automáticas con auto-rows -->
             <div class="___COMPLETA_AQUI___">
                 
-                <!-- Chart Principal - EJERCICIO: Ocupa 8 columnas, 2 filas -->
-                <div class="___COMPLETA_AQUI___ bg-white rounded-xl p-6 shadow-lg">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4">Ventas Mensuales</h2>
-                    <div class="h-64 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg flex items-center justify-center">
-                        <div class="text-center">
-                            <div class="text-6xl mb-4">📊</div>
-                            <p class="text-gray-600">Gráfico de ventas aquí</p>
+                <!-- Noticia Principal - EJERCICIO: Ocupa 8 columnas, 2 filas -->
+                <div class="___COMPLETA_AQUI___ bg-white rounded-xl p-6 shadow-lg overflow-hidden group">
+                    <div class="h-64 bg-gradient-to-br from-gray-800 to-black rounded-lg flex items-center justify-center mb-4 relative overflow-hidden">
+                        <span class="text-8xl">🎥</span>
+                        <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent">
+                             <span class="text-white text-xs font-bold px-2 py-1 bg-red-600 rounded">EN VIVO</span>
                         </div>
                     </div>
+                    <h2 class="text-3xl font-black text-gray-900 mb-2 leading-tight">El Renacimiento del Cine Independiente</h2>
+                    <p class="text-gray-600 text-lg">
+                        Directores jóvenes están rompiendo esquemas con presupuestos bajos y mucha creatividad.
+                        Un análisis profundo sobre la nueva ola que sacude Hollywood.
+                    </p>
                 </div>
 
-                <!-- Actividad Reciente - EJERCICIO: Ocupa 4 columnas, 2 filas -->
+                <!-- Flash News - EJERCICIO: Ocupa 4 columnas, 2 filas -->
                 <div class="___COMPLETA_AQUI___ bg-white rounded-xl p-6 shadow-lg">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4">Actividad Reciente</h2>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
+                        <h2 class="text-xl font-bold text-gray-800">Último Minuto</h2>
+                    </div>
                     <div class="space-y-4">
                         <div class="flex items-start gap-3 pb-3 border-b border-gray-100">
                             <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-lg flex-shrink-0">
-                                🛒
+                                🌍
                             </div>
                             <div class="flex-1">
-                                <p class="text-sm font-semibold text-gray-800">Nueva compra</p>
-                                <p class="text-xs text-gray-600">Cliente #1234 - $129.99</p>
+                                <p class="text-sm font-semibold text-gray-800">Estreno Mundial</p>
+                                <p class="text-xs text-gray-600">La esperada secuela llega a los cines.</p>
                                 <p class="text-xs text-gray-400 mt-1">Hace 5 min</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3 pb-3 border-b border-gray-100">
                             <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-lg flex-shrink-0">
-                                ✓
+                                🏆
                             </div>
                             <div class="flex-1">
-                                <p class="text-sm font-semibold text-gray-800">Pedido completado</p>
-                                <p class="text-xs text-gray-600">Orden #5678</p>
+                                <p class="text-sm font-semibold text-gray-800">Premios Oscar</p>
+                                <p class="text-xs text-gray-600">Anunciados los nominados.</p>
                                 <p class="text-xs text-gray-400 mt-1">Hace 12 min</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3 pb-3 border-b border-gray-100">
                             <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center text-lg flex-shrink-0">
-                                👤
+                                📉
                             </div>
                             <div class="flex-1">
-                                <p class="text-sm font-semibold text-gray-800">Nuevo usuario</p>
-                                <p class="text-xs text-gray-600">maria@email.com</p>
+                                <p class="text-sm font-semibold text-gray-800">Taquilla</p>
+                                <p class="text-xs text-gray-600">Caída en ventas de entradas.</p>
                                 <p class="text-xs text-gray-400 mt-1">Hace 25 min</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Top Productos - EJERCICIO: Ocupa 6 columnas -->
+                <!-- Más Leídas - EJERCICIO: Ocupa 6 columnas -->
                 <div class="___COMPLETA_AQUI___ bg-white rounded-xl p-6 shadow-lg">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4">Top Productos</h2>
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">🔥 Lo más leído</h2>
                     <div class="space-y-3">
-                        <div class="flex items-center justify-between p-3 bg-blue-50 rounded-lg">
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
                             <div class="flex items-center gap-3">
-                                <span class="text-2xl">💻</span>
+                                <span class="text-2xl text-gray-400 font-bold">1</span>
                                 <div>
-                                    <p class="font-semibold text-gray-800">Laptop Pro</p>
-                                    <p class="text-sm text-gray-600">234 ventas</p>
+                                    <p class="font-semibold text-gray-800">Los 10 mejores lentes</p>
+                                    <p class="text-sm text-gray-600">Fotografía</p>
                                 </div>
                             </div>
-                            <span class="font-bold text-blue-600">$899</span>
+                            <span class="text-xs text-gray-400">5k lecturas</span>
                         </div>
-                        <div class="flex items-center justify-between p-3 bg-green-50 rounded-lg">
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
                             <div class="flex items-center gap-3">
-                                <span class="text-2xl">📱</span>
+                                <span class="text-2xl text-gray-400 font-bold">2</span>
                                 <div>
-                                    <p class="font-semibold text-gray-800">Smartphone X</p>
-                                    <p class="text-sm text-gray-600">189 ventas</p>
+                                    <p class="font-semibold text-gray-800">Guía de Iluminación</p>
+                                    <p class="text-sm text-gray-600">Tutoriales</p>
                                 </div>
                             </div>
-                            <span class="font-bold text-green-600">$599</span>
+                            <span class="text-xs text-gray-400">3.2k lecturas</span>
                         </div>
-                        <div class="flex items-center justify-between p-3 bg-purple-50 rounded-lg">
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
                             <div class="flex items-center gap-3">
-                                <span class="text-2xl">🎧</span>
+                                <span class="text-2xl text-gray-400 font-bold">3</span>
                                 <div>
-                                    <p class="font-semibold text-gray-800">Auriculares Pro</p>
-                                    <p class="text-sm text-gray-600">156 ventas</p>
+                                    <p class="font-semibold text-gray-800">Entrevista Exclusiva</p>
+                                    <p class="text-sm text-gray-600">Cine</p>
                                 </div>
                             </div>
-                            <span class="font-bold text-purple-600">$199</span>
+                            <span class="text-xs text-gray-400">1.8k lecturas</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Categorías - EJERCICIO: Ocupa 6 columnas -->
+                <!-- Tendencias - EJERCICIO: Ocupa 6 columnas -->
                 <div class="___COMPLETA_AQUI___ bg-white rounded-xl p-6 shadow-lg">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4">Ventas por Categoría</h2>
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">📈 Tendencias de Búsqueda</h2>
                     <div class="space-y-3">
                         <div>
                             <div class="flex justify-between mb-1">
-                                <span class="text-sm font-semibold text-gray-700">Electrónica</span>
+                                <span class="text-sm font-semibold text-gray-700">Estrenos Streaming</span>
+                                <span class="text-sm text-gray-600">🔥 85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-red-600 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-sm font-semibold text-gray-700">Cine Clásico</span>
                                 <span class="text-sm text-gray-600">45%</span>
                             </div>
                             <div class="w-full bg-gray-200 rounded-full h-2">
@@ -239,86 +256,78 @@
                         </div>
                         <div>
                             <div class="flex justify-between mb-1">
-                                <span class="text-sm font-semibold text-gray-700">Ropa</span>
-                                <span class="text-sm text-gray-600">30%</span>
+                                <span class="text-sm font-semibold text-gray-700">Documentales</span>
+                                <span class="text-sm text-gray-600">32%</span>
                             </div>
                             <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-green-600 h-2 rounded-full" style="width: 30%"></div>
+                                <div class="bg-green-600 h-2 rounded-full" style="width: 32%"></div>
                             </div>
                         </div>
                         <div>
                             <div class="flex justify-between mb-1">
-                                <span class="text-sm font-semibold text-gray-700">Hogar</span>
+                                <span class="text-sm font-semibold text-gray-700">Cortometrajes</span>
                                 <span class="text-sm text-gray-600">15%</span>
                             </div>
                             <div class="w-full bg-gray-200 rounded-full h-2">
                                 <div class="bg-purple-600 h-2 rounded-full" style="width: 15%"></div>
                             </div>
                         </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-sm font-semibold text-gray-700">Otros</span>
-                                <span class="text-sm text-gray-600">10%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-pink-600 h-2 rounded-full" style="width: 10%"></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- Clientes y Mapa -->
+        <!-- Suscriptores y Cobertura -->
         <section class="max-w-7xl mx-auto mb-8">
             <!-- EJERCICIO: Grid de 12 columnas, gap de 6 -->
             <div class="___COMPLETA_AQUI___">
                 
-                <!-- Últimos Clientes - EJERCICIO: Ocupa 5 columnas -->
+                <!-- Suscriptores Nuevos - EJERCICIO: Ocupa 5 columnas -->
                 <div class="___COMPLETA_AQUI___ bg-white rounded-xl p-6 shadow-lg">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4">Últimos Clientes</h2>
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Nuevos Suscriptores</h2>
                     <div class="space-y-3">
                         <div class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors">
                             <div class="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">
-                                JP
+                                AG
                             </div>
                             <div class="flex-1">
-                                <p class="font-semibold text-gray-800 text-sm">Juan Pérez</p>
-                                <p class="text-xs text-gray-600">juan@email.com</p>
+                                <p class="font-semibold text-gray-800 text-sm">Ana García</p>
+                                <p class="text-xs text-gray-600">Estudiante de Cine</p>
                             </div>
-                            <span class="text-xs text-gray-500">Hoy</span>
+                            <span class="text-xs text-green-500 text-center font-bold border border-green-200 bg-green-50 px-2 py-1 rounded">Premium</span>
                         </div>
                         <div class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors">
                             <div class="w-10 h-10 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
-                                MS
+                                CL
                             </div>
                             <div class="flex-1">
-                                <p class="font-semibold text-gray-800 text-sm">María Silva</p>
-                                <p class="text-xs text-gray-600">maria@email.com</p>
+                                <p class="font-semibold text-gray-800 text-sm">Carlos López</p>
+                                <p class="text-xs text-gray-600">Periodista Freelance</p>
                             </div>
-                            <span class="text-xs text-gray-500">Ayer</span>
+                            <span class="text-xs text-gray-500 text-center border border-gray-200 px-2 py-1 rounded">Básico</span>
                         </div>
                         <div class="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors">
                             <div class="w-10 h-10 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-bold">
-                                PR
+                                MS
                             </div>
                             <div class="flex-1">
-                                <p class="font-semibold text-gray-800 text-sm">Pedro Rojas</p>
-                                <p class="text-xs text-gray-600">pedro@email.com</p>
+                                <p class="font-semibold text-gray-800 text-sm">María Soto</p>
+                                <p class="text-xs text-gray-600">Fotógrafa</p>
                             </div>
-                            <span class="text-xs text-gray-500">2 días</span>
+                            <span class="text-xs text-green-500 text-center font-bold border border-green-200 bg-green-50 px-2 py-1 rounded">Premium</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Mapa de Ventas - EJERCICIO: Ocupa 7 columnas -->
+                <!-- Mapa de Cobertura - EJERCICIO: Ocupa 7 columnas -->
                 <div class="___COMPLETA_AQUI___ bg-white rounded-xl p-6 shadow-lg">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4">Ventas por Región</h2>
-                    <div class="h-64 bg-gradient-to-br from-green-50 to-blue-50 rounded-lg flex items-center justify-center">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">Lectores por Región</h2>
+                    <div class="h-64 bg-gradient-to-br from-indigo-50 to-blue-50 rounded-lg flex items-center justify-center relative border-2 border-dashed border-blue-200">
                         <div class="text-center">
-                            <div class="text-6xl mb-4">🗺️</div>
-                            <p class="text-gray-600">Mapa de calor aquí</p>
+                            <div class="text-6xl mb-4">🌎</div>
+                            <p class="text-gray-600">Mapa de Lectores</p>
+                            <p class="text-xs text-gray-400 mt-1">(Latam: 60%, Europa: 25%, USA: 15%)</p>
                         </div>
                     </div>
                 </div>
@@ -326,9 +335,9 @@
             </div>
         </section>
 
-        <!-- Gallery de Productos -->
+        <!-- Gallery -->
         <section class="max-w-7xl mx-auto">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6">Galería de Productos</h2>
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">La Semana en Fotos</h2>
             
             <!-- EJERCICIO: Grid responsive -->
             <!-- EJERCICIO: 2 columnas en móvil, 3 en tablet (md:), 6 en desktop (lg:) -->
