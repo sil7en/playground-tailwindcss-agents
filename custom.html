@@ -13,7 +13,7 @@
     <!-- Favicon (opcional) -->
     <!-- <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg"> -->
 </head>
-<body>
+<body class="bg-neo-bg font-sans text-neo-black">
     
     <!-- 
     ═══════════════════════════════════════════════════════════════════════
@@ -23,7 +23,7 @@
     ¡Bienvenido estudiante! 👋
     
     Este es tu espacio para crear libremente usando Tailwind CSS.
-    El <body> está completamente vacío esperando tu creatividad.
+    El <body> está listo para tu creatividad.
     
     💡 Ideas de lo que puedes crear:
     
@@ -38,13 +38,12 @@
     - 💼 Página corporativa
     - ¡Lo que tu imaginación quiera!
     
-    ⚡ Tips rápidos:
+    ⚡ Estilo Neobrutalista Activado:
     
-    1. Usa clases de Tailwind CSS (ej: bg-blue-500, text-white, p-4)
-    2. Piensa en mobile-first (usa md:, lg: para responsive)
-    3. Estructura con HTML semántico (<header>, <main>, <section>, <footer>)
-    4. Mantén un diseño limpio y espaciado adecuado
-    5. Usa colores consistentes (elige una paleta)
+    - Bordes gruesos: border-2 border-black o border-4 border-neo-black
+    - Sombras duras: shadow-neo, shadow-neo-sm, shadow-neo-lg
+    - Colores vibrantes: bg-neo-yellow, bg-neo-pink, bg-neo-blue, bg-neo-green, bg-neo-purple
+    - Tipografía: font-black, uppercase, tracking-tight
     
     📚 Recursos útiles:
     
@@ -66,7 +65,15 @@
     ═══════════════════════════════════════════════════════════════════════
     -->
 
-
+    <div class="container mx-auto p-8">
+        <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8 text-center">
+            <h1 class="text-4xl font-black uppercase mb-4">¡Tu Lienzo en Blanco!</h1>
+            <p class="text-xl font-bold mb-6">Empieza a escribir tu código HTML aquí.</p>
+            <a href="index.html" class="inline-block bg-neo-blue text-white px-6 py-3 border-2 border-neo-black font-bold shadow-sm hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all uppercase">
+                ← Volver al Inicio
+            </a>
+        </div>
+    </div>
 
     <!-- Tu código aquí -->
 

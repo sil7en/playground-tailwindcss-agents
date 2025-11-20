@@ -6,32 +6,34 @@
     <title>Guía de HTML Semántico - Tailwind CSS Playground</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body class="bg-gray-50">
+<body class="bg-neo-bg font-sans text-neo-black selection:bg-neo-pink selection:text-white">
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-neo-white border-b-3 border-neo-black sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
-                <a href="index.html" class="flex items-center gap-2 text-orange-600 hover:text-orange-700 transition-colors">
+                <a href="index.html" class="flex items-center gap-2 text-neo-black hover:text-neo-pink transition-colors font-bold uppercase">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
                     </svg>
-                    <span class="font-semibold">Volver al inicio</span>
+                    <span>Volver al inicio</span>
                 </a>
-                <h1 class="text-xl font-bold text-gray-800">🏷️ HTML Semántico</h1>
+                <h1 class="text-xl font-black uppercase tracking-tight">🏷️ HTML Semántico</h1>
             </div>
         </div>
     </nav>
 
     <!-- Hero -->
-    <header class="bg-gradient-to-r from-orange-600 to-red-600 text-white py-16">
-        <div class="container mx-auto px-4">
+    <header class="bg-neo-pink border-b-3 border-neo-black text-white py-16 shadow-neo relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-3xl">
-                <div class="inline-block px-4 py-2 bg-orange-500 bg-opacity-50 rounded-full text-sm font-semibold mb-4">
+                <div class="inline-block px-4 py-2 bg-neo-yellow border-2 border-neo-black text-neo-black shadow-neo-sm text-sm font-bold mb-6 transform -rotate-2 uppercase">
                     📰 Estructura Periodística
                 </div>
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">La Noticia Digital (HTML)</h1>
-                <p class="text-xl text-orange-100">
+                <h1 class="text-5xl md:text-6xl font-black mb-6 uppercase leading-none text-neo-white drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">
+                    La Noticia Digital
+                </h1>
+                <p class="text-xl md:text-2xl font-bold text-white border-l-4 border-neo-black pl-6">
                     Aprende a estructurar tus artículos, crónicas y reseñas para que Google los entienda y los lectores los disfruten.
                 </p>
             </div>
@@ -43,16 +45,16 @@
 
         <!-- Intro Section -->
         <section class="max-w-4xl mx-auto mb-16">
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">¿Por qué usar Etiquetas Correctas? 🤔</h2>
-                <p class="text-lg text-gray-700 mb-4">
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
+                <h2 class="text-3xl font-black text-neo-black mb-6 uppercase">¿Por qué usar Etiquetas Correctas? 🤔</h2>
+                <p class="text-lg text-gray-800 mb-6 font-medium leading-relaxed">
                     Imagina que escribes un <strong>guión de cine</strong>. Tienes un formato específico para los diálogos, otro para las acotaciones y otro para los encabezados de escena (EXT. NOCHE).
                     <br><br>
                     Si todo tuviera el mismo formato, el director no sabría qué filmar. En la web pasa lo mismo: HTML son las "acotaciones" que le dicen al navegador qué es un título, qué es un párrafo y qué es una imagen.
                 </p>
-                <div class="bg-orange-50 border-l-4 border-orange-500 p-4 rounded mb-4">
-                    <p class="text-orange-900">
-                        <strong>💡 Para Periodistas (SEO):</strong> Google es como un editor jefe muy estricto. Si no etiquetas bien tus titulares y tus párrafos, tu noticia quedará enterrada en la página 10 de los resultados.
+                <div class="bg-neo-yellow border-3 border-neo-black p-6 shadow-neo-sm transform rotate-1">
+                    <p class="text-neo-black font-bold text-lg">
+                        💡 Para Periodistas (SEO): Google es como un editor jefe muy estricto. Si no etiquetas bien tus titulares y tus párrafos, tu noticia quedará enterrada en la página 10 de los resultados.
                     </p>
                 </div>
             </div>
@@ -60,54 +62,55 @@
 
         <!-- Etiquetas Principales -->
         <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">🏗️ La Anatomía de una Página</h2>
+            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">🏗️ La Anatomía de una Página</h2>
 
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <div class="space-y-6">
-                    <div class="border-l-4 border-blue-500 pl-4">
-                        <h3 class="font-bold text-lg text-gray-900">&lt;header&gt; (La Cabecera)</h3>
-                        <p class="text-gray-600">Como el nombre de tu periódico o revista en la parte superior. Suele tener el logo y el menú.</p>
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
+                <div class="space-y-8">
+                    <div class="border-l-4 border-neo-blue pl-6">
+                        <h3 class="font-black text-xl text-neo-blue mb-2 font-mono">&lt;header&gt; (La Cabecera)</h3>
+                        <p class="text-gray-800 font-medium">Como el nombre de tu periódico o revista en la parte superior. Suele tener el logo y el menú.</p>
                     </div>
-                    <div class="border-l-4 border-green-500 pl-4">
-                        <h3 class="font-bold text-lg text-gray-900">&lt;nav&gt; (Navegación)</h3>
-                        <p class="text-gray-600">El índice de secciones: "Política", "Cultura", "Deportes". Solo para los enlaces principales.</p>
+                    <div class="border-l-4 border-neo-green pl-6">
+                        <h3 class="font-black text-xl text-neo-green mb-2 font-mono">&lt;nav&gt; (Navegación)</h3>
+                        <p class="text-gray-800 font-medium">El índice de secciones: "Política", "Cultura", "Deportes". Solo para los enlaces principales.</p>
                     </div>
-                    <div class="border-l-4 border-red-500 pl-4">
-                        <h3 class="font-bold text-lg text-gray-900">&lt;main&gt; (Cuerpo Principal)</h3>
-                        <p class="text-gray-600">El contenido central. Aquí va tu reportaje, tu documental o tu galería de fotos.</p>
+                    <div class="border-l-4 border-neo-pink pl-6">
+                        <h3 class="font-black text-xl text-neo-pink mb-2 font-mono">&lt;main&gt; (Cuerpo Principal)</h3>
+                        <p class="text-gray-800 font-medium">El contenido central. Aquí va tu reportaje, tu documental o tu galería de fotos.</p>
                     </div>
-                    <div class="border-l-4 border-purple-500 pl-4">
-                        <h3 class="font-bold text-lg text-gray-900">&lt;article&gt; (El Artículo)</h3>
-                        <p class="text-gray-600">
+                    <div class="border-l-4 border-neo-purple pl-6">
+                        <h3 class="font-black text-xl text-neo-purple mb-2 font-mono">&lt;article&gt; (El Artículo)</h3>
+                        <p class="text-gray-800 font-medium">
                             Úsalo para una noticia completa, un post de blog o una crítica de cine. Es contenido que tiene sentido por sí mismo.
                         </p>
                     </div>
-                    <div class="border-l-4 border-gray-500 pl-4">
-                        <h3 class="font-bold text-lg text-gray-900">&lt;footer&gt; (Pie de Página)</h3>
-                        <p class="text-gray-600">El cierre. Copyright, contacto, "Sobre nosotros".</p>
+                    <div class="border-l-4 border-gray-500 pl-6">
+                        <h3 class="font-black text-xl text-gray-600 mb-2 font-mono">&lt;footer&gt; (Pie de Página)</h3>
+                        <p class="text-gray-800 font-medium">El cierre. Copyright, contacto, "Sobre nosotros".</p>
                     </div>
                 </div>
 
-                <div class="mt-8 bg-gray-900 rounded-lg p-6 overflow-x-auto">
-                    <pre class="text-green-400 text-sm"><code>&lt;!DOCTYPE html&gt;
+                <div class="mt-10 bg-neo-black border-3 border-neo-black shadow-neo p-6 overflow-x-auto relative">
+                    <div class="absolute top-0 left-0 bg-neo-yellow px-2 py-1 text-xs font-bold border-b-2 border-r-2 border-neo-black">CODE</div>
+                    <pre class="text-white font-mono text-sm mt-4 leading-relaxed"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="es"&gt;
 &lt;body&gt;
 
-  <span class="text-blue-400">&lt;header&gt;</span>
+  <span class="text-neo-blue">&lt;header&gt;</span>
     &lt;h1&gt;Diario El Comunicador&lt;/h1&gt;
-    <span class="text-yellow-400">&lt;nav&gt;</span>...<span class="text-yellow-400">&lt;/nav&gt;</span>
-  <span class="text-blue-400">&lt;/header&gt;</span>
+    <span class="text-neo-yellow">&lt;nav&gt;</span>...<span class="text-neo-yellow">&lt;/nav&gt;</span>
+  <span class="text-neo-blue">&lt;/header&gt;</span>
 
-  <span class="text-red-400">&lt;main&gt;</span>
-    <span class="text-purple-400">&lt;article&gt;</span>
+  <span class="text-neo-pink">&lt;main&gt;</span>
+    <span class="text-neo-purple">&lt;article&gt;</span>
       &lt;h2&gt;Estreno de Cine: La nueva ola&lt;/h2&gt;
       &lt;p&gt;La película que revoluciona...&lt;/p&gt;
-    <span class="text-purple-400">&lt;/article&gt;</span>
+    <span class="text-neo-purple">&lt;/article&gt;</span>
 
-    <span class="text-pink-400">&lt;aside&gt;</span>
+    <span class="text-neo-green">&lt;aside&gt;</span>
       &lt;p&gt;Noticias relacionadas&lt;/p&gt;
-    <span class="text-pink-400">&lt;/aside&gt;</span>
-  <span class="text-red-400">&lt;/main&gt;</span>
+    <span class="text-neo-green">&lt;/aside&gt;</span>
+  <span class="text-neo-pink">&lt;/main&gt;</span>
 
   <span class="text-gray-400">&lt;footer&gt;</span>
     &lt;p&gt;© 2025 Periodismo Digital&lt;/p&gt;
@@ -121,28 +124,28 @@
 
         <!-- Ejemplo Visual -->
         <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">👁️ Visualización</h2>
+            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">👁️ Visualización</h2>
 
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <div class="flex flex-col gap-4 border-2 border-dashed border-gray-300 p-4 rounded-lg">
-                    <div class="bg-blue-100 border-2 border-blue-500 p-4 text-center text-blue-700 font-bold rounded">
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
+                <div class="flex flex-col gap-4 border-3 border-dashed border-gray-400 p-6 bg-gray-50">
+                    <div class="bg-blue-100 border-3 border-neo-blue p-4 text-center text-neo-blue font-black uppercase tracking-wider shadow-sm">
                         &lt;header&gt;
                     </div>
-                    <div class="bg-green-100 border-2 border-green-500 p-2 text-center text-green-700 font-bold rounded w-3/4 mx-auto">
+                    <div class="bg-green-100 border-3 border-neo-green p-2 text-center text-neo-green font-black uppercase tracking-wider w-3/4 mx-auto shadow-sm">
                         &lt;nav&gt;
                     </div>
-                    <div class="flex gap-4">
-                        <div class="flex-1 bg-red-100 border-2 border-red-500 p-8 text-center text-red-700 font-bold rounded">
+                    <div class="flex gap-4 flex-col md:flex-row">
+                        <div class="flex-1 bg-red-100 border-3 border-neo-pink p-8 text-center text-neo-pink font-black uppercase tracking-wider shadow-sm">
                             &lt;main&gt;
-                            <div class="mt-4 bg-purple-100 border-2 border-purple-500 p-4 text-purple-700 text-sm">
+                            <div class="mt-4 bg-purple-100 border-3 border-neo-purple p-4 text-neo-purple text-sm font-bold">
                                 &lt;section&gt; / &lt;article&gt;
                             </div>
                         </div>
-                        <div class="w-1/4 bg-pink-100 border-2 border-pink-500 p-4 text-center text-pink-700 font-bold rounded flex items-center justify-center">
+                        <div class="md:w-1/4 bg-pink-100 border-3 border-neo-yellow p-4 text-center text-neo-black font-black uppercase tracking-wider flex items-center justify-center shadow-sm">
                             &lt;aside&gt;
                         </div>
                     </div>
-                    <div class="bg-gray-200 border-2 border-gray-500 p-4 text-center text-gray-700 font-bold rounded">
+                    <div class="bg-gray-200 border-3 border-gray-500 p-4 text-center text-gray-700 font-black uppercase tracking-wider shadow-sm">
                         &lt;footer&gt;
                     </div>
                 </div>
@@ -151,16 +154,18 @@
 
         <!-- Resumen -->
         <section class="max-w-4xl mx-auto">
-            <div class="bg-gradient-to-r from-orange-600 to-red-600 rounded-xl shadow-lg p-8 text-white">
-                <h2 class="text-3xl font-bold mb-4">🚀 Siguiente paso</h2>
-                <p class="text-lg text-orange-100 mb-6">
-                    Ahora que conoces la estructura, es hora de darle estilo.
-                </p>
+            <div class="bg-neo-pink border-3 border-neo-black shadow-neo p-8 text-white relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="text-4xl font-black mb-4 uppercase">🚀 Siguiente paso</h2>
+                    <p class="text-xl font-bold mb-8">
+                        Ahora que conoces la estructura, es hora de darle estilo.
+                    </p>
 
-                <div class="flex justify-end">
-                    <a href="css-basics.html" class="px-6 py-3 bg-white text-orange-600 font-semibold rounded-lg text-center hover:bg-orange-50 transition-colors">
-                        Siguiente: CSS Básico →
-                    </a>
+                    <div class="flex justify-start md:justify-end">
+                        <a href="css-basics.html" class="px-8 py-4 bg-neo-white text-neo-black font-bold border-3 border-neo-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-200 uppercase">
+                            Siguiente: CSS Básico →
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -168,8 +173,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-8 mt-16">
-        <div class="container mx-auto px-4 text-center">
+    <footer class="bg-neo-black text-white py-8 mt-16 border-t-4 border-neo-black">
+        <div class="container mx-auto px-4 text-center font-mono">
             <p class="text-sm">Hecho con ❤️ para estudiantes | Tailwind CSS Playground</p>
         </div>
     </footer>

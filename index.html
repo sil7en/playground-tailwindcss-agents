@@ -6,21 +6,24 @@
     <title>Playground Tailwind CSS - Inicio</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+<body class="bg-neo-bg min-h-screen font-sans text-neo-black selection:bg-neo-pink selection:text-white">
     
     <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
+    <header class="bg-neo-white border-b-3 border-neo-black sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
+                    <div class="w-10 h-10 bg-neo-blue border-2 border-neo-black shadow-neo-sm flex items-center justify-center">
                         <span class="text-white text-xl font-bold">TW</span>
                     </div>
-                    <h1 class="text-2xl font-bold text-gray-800">Taller Web Creativo</h1>
+                    <h1 class="text-2xl font-bold uppercase tracking-tighter">Taller Web Creativo</h1>
                 </div>
-                <div class="flex items-center gap-2">
-                    <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
-                        🎬 Cine, Periodismo y Comunicación
+                <div class="hidden md:flex items-center gap-2">
+                    <span class="px-3 py-1 bg-neo-yellow border-2 border-neo-black shadow-neo-sm text-sm font-bold transform -rotate-1">
+                        🎬 Cine
+                    </span>
+                    <span class="px-3 py-1 bg-neo-pink border-2 border-neo-black shadow-neo-sm text-sm font-bold text-white transform rotate-1">
+                        📰 Periodismo
                     </span>
                 </div>
             </div>
@@ -30,29 +33,26 @@
     <!-- Hero Section -->
     <section class="container mx-auto px-4 py-16 md:py-24">
         <div class="text-center max-w-4xl mx-auto">
-            <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full mb-6">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-                <span class="font-semibold">Cine, Periodismo y Comunicación</span>
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-neo-green border-2 border-neo-black shadow-neo mb-8 transform -rotate-2">
+                <span class="font-bold uppercase tracking-wider">Curso Introductorio</span>
             </div>
             
-            <h2 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Diseño Web para
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-                    Mentes Creativas
+            <h2 class="text-5xl md:text-7xl font-black text-neo-black mb-6 leading-none tracking-tight">
+                DISEÑO WEB PARA
+                <span class="block text-neo-blue drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">
+                    MENTES CREATIVAS
                 </span>
             </h2>
             
-            <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-                ¿Estudias Cine, Periodismo o Comunicación? Aprende a crear tu propio <strong>Portafolio Profesional</strong> o <strong>Revista Digital</strong>. Sin matemáticas, sin lógica compleja. Solo estructura, diseño y tu historia.
+            <p class="text-xl md:text-2xl font-medium text-gray-800 mb-10 max-w-2xl mx-auto leading-relaxed border-l-4 border-neo-black pl-6 text-left md:text-center md:border-l-0 md:pl-0">
+                ¿Estudias Cine, Periodismo o Comunicación? Aprende a crear tu propio <strong>Portafolio Profesional</strong>. Sin matemáticas. Solo estructura, diseño y tu historia.
             </p>
             
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#guias" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200">
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="#guias" class="px-8 py-4 bg-neo-pink text-white font-bold text-lg border-3 border-neo-black shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
                     Empezar mi Portafolio
                 </a>
-                <a href="https://tailwindcss.com/docs" target="_blank" class="px-8 py-4 bg-white text-gray-700 font-semibold rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 border-2 border-gray-200">
+                <a href="https://tailwindcss.com/docs" target="_blank" class="px-8 py-4 bg-neo-white text-neo-black font-bold text-lg border-3 border-neo-black shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all duration-200">
                     Documentación Oficial
                 </a>
             </div>
@@ -61,40 +61,43 @@
 
     <!-- Features Section -->
     <section class="container mx-auto px-4 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             
-            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <!-- Feature 1 -->
+            <div class="bg-neo-white border-3 border-neo-black p-6 shadow-neo hover:shadow-neo-lg transition-all duration-300 transform hover:-translate-y-1">
+                <div class="w-14 h-14 bg-neo-yellow border-2 border-neo-black flex items-center justify-center mb-6 shadow-neo-sm">
+                    <svg class="w-8 h-8 text-neo-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Visual Storytelling</h3>
-                <p class="text-gray-600">
-                    Aprende a contar historias en la web. Combina texto, imagen y video para crear reportajes inmersivos como en The New York Times.
+                <h3 class="text-2xl font-bold mb-3 uppercase">Visual Storytelling</h3>
+                <p class="font-medium text-gray-700">
+                    Aprende a contar historias en la web. Combina texto, imagen y video para crear reportajes inmersivos.
                 </p>
             </div>
 
-            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <!-- Feature 2 -->
+            <div class="bg-neo-white border-3 border-neo-black p-6 shadow-neo hover:shadow-neo-lg transition-all duration-300 transform hover:-translate-y-1">
+                <div class="w-14 h-14 bg-neo-blue border-2 border-neo-black flex items-center justify-center mb-6 shadow-neo-sm">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Cero Matemáticas</h3>
-                <p class="text-gray-600">
-                    El desarrollo web no tiene por qué ser cálculo. Aquí usamos HTML y CSS como herramientas de diseño, igual que usarías una cámara o una pluma.
+                <h3 class="text-2xl font-bold mb-3 uppercase">Cero Matemáticas</h3>
+                <p class="font-medium text-gray-700">
+                    El desarrollo web no tiene por qué ser cálculo. Usamos HTML y CSS como herramientas de diseño.
                 </p>
             </div>
 
-            <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <!-- Feature 3 -->
+            <div class="bg-neo-white border-3 border-neo-black p-6 shadow-neo hover:shadow-neo-lg transition-all duration-300 transform hover:-translate-y-1">
+                <div class="w-14 h-14 bg-neo-purple border-2 border-neo-black flex items-center justify-center mb-6 shadow-neo-sm">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Portafolio Profesional</h3>
-                <p class="text-gray-600">
+                <h3 class="text-2xl font-bold mb-3 uppercase">Portafolio Pro</h3>
+                <p class="font-medium text-gray-700">
                     Construye tu propio sitio web para mostrar tus artículos, videos y trabajos al mundo.
                 </p>
             </div>
@@ -105,423 +108,202 @@
     <!-- Guías Section -->
     <section id="guias" class="container mx-auto px-4 py-16">
         <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 class="text-4xl md:text-5xl font-black text-neo-black mb-4 uppercase tracking-tight">
                 Ruta de Aprendizaje
             </h2>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                Sigue esta ruta para pasar de "no sé nada" a tener tu propio sitio web publicado.
+            <p class="text-xl font-bold text-gray-700 max-w-2xl mx-auto bg-neo-yellow inline-block px-2 border-2 border-neo-black transform rotate-1">
+                De cero a experto en diseño web.
             </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
             <!-- Guía 0.0: Configuración y Ejecución -->
-            <a href="execution-guide.html" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 ring-4 ring-indigo-100">
-                <div class="bg-gradient-to-br from-gray-700 to-gray-900 p-8 text-white">
-                    <div class="absolute top-4 right-4 bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded">¡Empieza Aquí!</div>
-                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">Configuración</h3>
-                    <p class="text-gray-300">Nivel: Pre-requisito</p>
+            <a href="execution-guide.html" class="group bg-neo-white border-3 border-neo-black shadow-neo hover:shadow-neo-lg transform hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                <div class="bg-neo-black p-8 border-b-3 border-neo-black relative">
+                    <div class="absolute top-4 right-4 bg-neo-yellow border-2 border-neo-black text-neo-black text-xs font-bold px-2 py-1 uppercase">Start Here</div>
+                    <h3 class="text-3xl font-black text-white mb-2">Configuración</h3>
+                    <p class="text-neo-yellow font-mono text-sm">> npm install</p>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 mb-4">
-                        Aprende cómo ejecutar este proyecto paso a paso. Entiende Node.js, npm run dev y localhost.
+                <div class="p-6 flex-1 flex flex-col">
+                    <p class="font-medium text-gray-800 mb-4 flex-1">
+                        Aprende cómo ejecutar este proyecto paso a paso. Node.js, npm y localhost.
                     </p>
-                    <ul class="space-y-2 mb-6">
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Instalación de dependencias</span>
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Comandos de terminal</span>
-                        </li>
-                    </ul>
-                    <div class="flex items-center justify-between text-gray-700 font-semibold">
+                    <div class="flex items-center justify-between text-neo-black font-bold border-t-2 border-gray-200 pt-4">
                         <span>Ver guía</span>
-                        <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
                     </div>
                 </div>
             </a>
 
             <!-- Guía 0.1: HTML Semántico -->
-            <a href="html-basics.html" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-                <div class="bg-gradient-to-br from-orange-500 to-red-600 p-8 text-white">
-                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">Estructura de la Noticia</h3>
-                    <p class="text-orange-100">HTML Semántico</p>
+            <a href="html-basics.html" class="group bg-neo-white border-3 border-neo-black shadow-neo hover:shadow-neo-lg transform hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                <div class="bg-neo-pink p-8 border-b-3 border-neo-black">
+                    <h3 class="text-3xl font-black text-white mb-2">HTML Semántico</h3>
+                    <p class="text-white font-mono text-sm">&lt;article&gt;</p>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 mb-4">
-                        Aprende a estructurar un artículo periodístico o una reseña de cine para que Google te encuentre.
+                <div class="p-6 flex-1 flex flex-col">
+                    <p class="font-medium text-gray-800 mb-4 flex-1">
+                        Estructura tus artículos para que Google te encuentre. Títulos, párrafos y SEO.
                     </p>
-                    <ul class="space-y-2 mb-6">
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Titulares y párrafos</span>
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>SEO para periodistas</span>
-                        </li>
-                    </ul>
-                    <div class="flex items-center justify-between text-orange-600 font-semibold">
-                        <span>Comenzar guía</span>
-                        <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    <div class="flex items-center justify-between text-neo-black font-bold border-t-2 border-gray-200 pt-4">
+                        <span>Ver guía</span>
+                        <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
                     </div>
                 </div>
             </a>
 
             <!-- Guía Extra: Git con VSCode -->
-            <a href="git-guide.html" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-2 border-gray-100">
-                <div class="bg-gradient-to-br from-gray-800 to-black p-8 text-white">
-                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">Guarda tu Trabajo</h3>
-                    <p class="text-gray-400">Git y VSCode</p>
+            <a href="git-guide.html" class="group bg-neo-white border-3 border-neo-black shadow-neo hover:shadow-neo-lg transform hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                <div class="bg-gray-800 p-8 border-b-3 border-neo-black">
+                    <h3 class="text-3xl font-black text-white mb-2">Git & VSCode</h3>
+                    <p class="text-gray-300 font-mono text-sm">git push origin</p>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 mb-4">
-                        Aprende a guardar versiones de tu historia (como un borrador) y trabajar sin miedo a perder cambios.
+                <div class="p-6 flex-1 flex flex-col">
+                    <p class="font-medium text-gray-800 mb-4 flex-1">
+                        Guarda versiones de tu historia y trabaja sin miedo a perder cambios.
                     </p>
-                    <ul class="space-y-2 mb-6">
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Guardar versiones</span>
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Subir a la nube</span>
-                        </li>
-                    </ul>
-                    <div class="flex items-center justify-between text-gray-800 font-semibold">
+                    <div class="flex items-center justify-between text-neo-black font-bold border-t-2 border-gray-200 pt-4">
                         <span>Ver guía</span>
-                        <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
                     </div>
                 </div>
             </a>
 
             <!-- Guía 0.2: CSS Básico -->
-            <a href="css-basics.html" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-                <div class="bg-gradient-to-br from-blue-400 to-cyan-500 p-8 text-white">
-                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.357a4 4 0 016.608 4.142H15m-4.828 0l4.828-4.828m-4.828 4.828L10 7.343M15 7.343l-1.657 1.357"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">Diseño Editorial</h3>
-                    <p class="text-cyan-100">CSS Básico</p>
+            <a href="css-basics.html" class="group bg-neo-white border-3 border-neo-black shadow-neo hover:shadow-neo-lg transform hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                <div class="bg-neo-blue p-8 border-b-3 border-neo-black">
+                    <h3 class="text-3xl font-black text-white mb-2">CSS Básico</h3>
+                    <p class="text-blue-100 font-mono text-sm">style="color: red"</p>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 mb-4">
-                        Aprende a darle estilo a tus páginas como si fueran una revista: colores, tipografía y diagramación.
+                <div class="p-6 flex-1 flex flex-col">
+                    <p class="font-medium text-gray-800 mb-4 flex-1">
+                        Diseño editorial: colores, tipografía y diagramación tipo revista.
                     </p>
-                    <ul class="space-y-2 mb-6">
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Diagramación (Box Model)</span>
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Tipografía y Color</span>
-                        </li>
-                    </ul>
-                    <div class="flex items-center justify-between text-cyan-600 font-semibold">
-                        <span>Comenzar guía</span>
-                        <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    <div class="flex items-center justify-between text-neo-black font-bold border-t-2 border-gray-200 pt-4">
+                        <span>Ver guía</span>
+                        <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
                     </div>
                 </div>
             </a>
 
             <!-- Guía 0.3: Tailwind Básico -->
-            <a href="tailwind-basics.html" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-                <div class="bg-gradient-to-br from-teal-500 to-cyan-600 p-8 text-white">
-                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">Estilo Rápido</h3>
-                    <p class="text-teal-100">Tailwind CSS</p>
+            <a href="tailwind-basics.html" class="group bg-neo-white border-3 border-neo-black shadow-neo hover:shadow-neo-lg transform hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                <div class="bg-neo-green p-8 border-b-3 border-neo-black">
+                    <h3 class="text-3xl font-black text-neo-black mb-2">Tailwind CSS</h3>
+                    <p class="text-neo-black font-mono text-sm">class="text-red-500"</p>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 mb-4">
-                        Crea diseños increíbles sin escribir CSS desde cero. Ideal para prototipar ideas visuales rápidamente.
+                <div class="p-6 flex-1 flex flex-col">
+                    <p class="font-medium text-gray-800 mb-4 flex-1">
+                        Diseña rápido. Colores, espaciado y tipografía sin escribir CSS desde cero.
                     </p>
-                    <ul class="space-y-2 mb-6">
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Diseño Ágil</span>
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Colores y Espaciado</span>
-                        </li>
-                    </ul>
-                    <div class="flex items-center justify-between text-teal-600 font-semibold">
-                        <span>Comenzar guía</span>
-                        <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    <div class="flex items-center justify-between text-neo-black font-bold border-t-2 border-gray-200 pt-4">
+                        <span>Ver guía</span>
+                        <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
                     </div>
                 </div>
             </a>
             
             <!-- Guía 1: Responsive -->
-            <a href="responsive.html" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-                <div class="bg-gradient-to-br from-blue-500 to-blue-600 p-8 text-white">
-                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">Periodismo Móvil</h3>
-                    <p class="text-blue-100">Diseño Responsive</p>
+            <a href="responsive.html" class="group bg-neo-white border-3 border-neo-black shadow-neo hover:shadow-neo-lg transform hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                <div class="bg-neo-yellow p-8 border-b-3 border-neo-black">
+                    <h3 class="text-3xl font-black text-neo-black mb-2">Responsive</h3>
+                    <p class="text-neo-black font-mono text-sm">@media screen</p>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 mb-4">
-                        Asegúrate que tus reportajes se lean bien en cualquier celular, tablet o computadora.
+                <div class="p-6 flex-1 flex flex-col">
+                    <p class="font-medium text-gray-800 mb-4 flex-1">
+                        Periodismo móvil. Asegúrate que tus reportajes se lean bien en cualquier celular.
                     </p>
-                    <ul class="space-y-2 mb-6">
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Adaptabilidad total</span>
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Mobile-first (Móvil primero)</span>
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Lectura cómoda</span>
-                        </li>
-                    </ul>
-                    <div class="flex items-center justify-between text-blue-600 font-semibold">
-                        <span>Comenzar guía</span>
-                        <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    <div class="flex items-center justify-between text-neo-black font-bold border-t-2 border-gray-200 pt-4">
+                        <span>Ver guía</span>
+                        <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
                     </div>
                 </div>
             </a>
 
             <!-- Guía 2: Flexbox -->
-            <a href="flex.html" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-                <div class="bg-gradient-to-br from-indigo-500 to-indigo-600 p-8 text-white">
-                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1h-4a1 1 0 01-1-1V5z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">Maquetación Flexible</h3>
-                    <p class="text-indigo-100">Flexbox</p>
+            <a href="flex.html" class="group bg-neo-white border-3 border-neo-black shadow-neo hover:shadow-neo-lg transform hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                <div class="bg-neo-purple p-8 border-b-3 border-neo-black">
+                    <h3 class="text-3xl font-black text-white mb-2">Flexbox</h3>
+                    <p class="text-purple-100 font-mono text-sm">display: flex</p>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 mb-4">
-                        Organiza menús, galerías de fotos y tarjetas de contenido de manera ordenada y flexible.
+                <div class="p-6 flex-1 flex flex-col">
+                    <p class="font-medium text-gray-800 mb-4 flex-1">
+                        Organiza menús y galerías. La herramienta esencial para tu portafolio.
                     </p>
-                    <ul class="space-y-2 mb-6">
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Alinear elementos</span>
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Galerías adaptables</span>
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Construye tu portafolio</span>
-                        </li>
-                    </ul>
-                    <div class="flex items-center justify-between text-indigo-600 font-semibold">
-                        <span>Comenzar guía</span>
-                        <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    <div class="flex items-center justify-between text-neo-black font-bold border-t-2 border-gray-200 pt-4">
+                        <span>Ver guía</span>
+                        <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
                     </div>
                 </div>
             </a>
 
             <!-- Guía 3: Grid -->
-            <a href="grid.html" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-                <div class="bg-gradient-to-br from-purple-500 to-purple-600 p-8 text-white">
-                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 16a1 1 0 011-1h4a1 1 0 011 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-3zM14 16a1 1 0 011-1h4a1 1 0 011 1v3a1 1 0 01-1 1h-4a1 1 0 01-1-1v-3z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">Diseño de Revistas</h3>
-                    <p class="text-purple-100">Grid CSS</p>
+            <a href="grid.html" class="group bg-neo-white border-3 border-neo-black shadow-neo hover:shadow-neo-lg transform hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                <div class="bg-neo-pink p-8 border-b-3 border-neo-black">
+                    <h3 class="text-3xl font-black text-white mb-2">Grid CSS</h3>
+                    <p class="text-pink-100 font-mono text-sm">display: grid</p>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 mb-4">
-                        Crea diseños de página avanzados, como la portada de un periódico o una revista digital compleja.
+                <div class="p-6 flex-1 flex flex-col">
+                    <p class="font-medium text-gray-800 mb-4 flex-1">
+                        Diseño de revistas. Portadas complejas, columnas y filas.
                     </p>
-                    <ul class="space-y-2 mb-6">
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Columnas y filas</span>
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Estructuras complejas</span>
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Maquetación avanzada</span>
-                        </li>
-                    </ul>
-                    <div class="flex items-center justify-between text-purple-600 font-semibold">
-                        <span>Comenzar guía</span>
-                        <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    <div class="flex items-center justify-between text-neo-black font-bold border-t-2 border-gray-200 pt-4">
+                        <span>Ver guía</span>
+                        <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
                     </div>
                 </div>
             </a>
 
             <!-- Guía 4: Web Components -->
-            <a href="components.html" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-                <div class="bg-gradient-to-br from-emerald-500 to-teal-600 p-8 text-white">
-                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">Web Components</h3>
-                    <p class="text-emerald-100">Nivel: Intermedio-Avanzado</p>
+            <a href="components.html" class="group bg-neo-white border-3 border-neo-black shadow-neo hover:shadow-neo-lg transform hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                <div class="bg-neo-green p-8 border-b-3 border-neo-black">
+                    <h3 class="text-3xl font-black text-neo-black mb-2">Web Components</h3>
+                    <p class="text-neo-black font-mono text-sm">&lt;mi-componente&gt;</p>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 mb-4">
-                        Crea componentes reutilizables con la API nativa del navegador. Sin frameworks, sin dependencias.
+                <div class="p-6 flex-1 flex flex-col">
+                    <p class="font-medium text-gray-800 mb-4 flex-1">
+                        Crea componentes reutilizables sin frameworks. (Nivel Avanzado)
                     </p>
-                    <ul class="space-y-2 mb-6">
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Custom Elements</span>
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Shadow DOM</span>
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Componentes reutilizables</span>
-                        </li>
-                    </ul>
-                    <div class="flex items-center justify-between text-emerald-600 font-semibold">
-                        <span>Comenzar guía</span>
-                        <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    <div class="flex items-center justify-between text-neo-black font-bold border-t-2 border-gray-200 pt-4">
+                        <span>Ver guía</span>
+                        <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
                     </div>
                 </div>
             </a>
 
             <!-- Guía 5: APIs REST -->
-            <a href="api.html" class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-                <div class="bg-gradient-to-br from-cyan-500 to-blue-600 p-8 text-white">
-                    <div class="w-16 h-16 bg-white bg-opacity-20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-2">APIs REST</h3>
-                    <p class="text-cyan-100">Nivel: Intermedio</p>
+            <a href="api.html" class="group bg-neo-white border-3 border-neo-black shadow-neo hover:shadow-neo-lg transform hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                <div class="bg-neo-blue p-8 border-b-3 border-neo-black">
+                    <h3 class="text-3xl font-black text-white mb-2">APIs REST</h3>
+                    <p class="text-blue-100 font-mono text-sm">fetch('url')</p>
                 </div>
-                <div class="p-6">
-                    <p class="text-gray-600 mb-4">
-                        Aprende a consumir APIs públicas para obtener datos en tiempo real. Ejemplos con Pokemon y el Clima.
+                <div class="p-6 flex-1 flex flex-col">
+                    <p class="font-medium text-gray-800 mb-4 flex-1">
+                        Datos en tiempo real. Pokemon, Clima, Noticias.
                     </p>
-                    <ul class="space-y-2 mb-6">
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Fetch API con async/await</span>
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Manejo de errores</span>
-                        </li>
-                        <li class="flex items-start gap-2 text-sm text-gray-700">
-                            <svg class="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Casos de uso reales</span>
-                        </li>
-                    </ul>
-                    <div class="flex items-center justify-between text-cyan-600 font-semibold">
-                        <span>Comenzar guía</span>
-                        <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    <div class="flex items-center justify-between text-neo-black font-bold border-t-2 border-gray-200 pt-4">
+                        <span>Ver guía</span>
+                        <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
                     </div>
                 </div>
@@ -532,22 +314,22 @@
 
     <!-- Free Creation Section -->
     <section class="container mx-auto px-4 py-16">
-        <div class="bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 rounded-3xl p-12 text-white shadow-2xl max-w-5xl mx-auto">
+        <div class="bg-white border-3 border-neo-black shadow-neo p-12 max-w-5xl mx-auto">
             <div class="flex flex-col md:flex-row items-center gap-8">
                 <div class="flex-shrink-0">
-                    <div class="w-24 h-24 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center text-6xl backdrop-blur-sm">
+                    <div class="w-24 h-24 bg-neo-yellow border-3 border-neo-black flex items-center justify-center text-6xl shadow-neo-sm transform -rotate-3">
                         🎨
                     </div>
                 </div>
                 <div class="flex-1 text-center md:text-left">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-3">
+                    <h2 class="text-4xl font-black text-neo-black mb-3 uppercase">
                         Crea Tu Propio Proyecto
                     </h2>
-                    <p class="text-lg text-purple-100 mb-6">
-                        ¿Ya dominas lo básico? Usa <code class="bg-white bg-opacity-20 px-2 py-1 rounded font-mono">custom.html</code> 
-                        para crear lo que quieras. Un lienzo en blanco esperando tu creatividad.
+                    <p class="text-xl font-medium text-gray-800 mb-6">
+                        ¿Ya dominas lo básico? Usa <code class="bg-neo-bg px-2 py-1 rounded font-mono border border-neo-black">custom.html</code>
+                        para crear lo que quieras. Un lienzo en blanco.
                     </p>
-                    <a href="custom.html" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-purple-600 font-bold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200">
+                    <a href="custom.html" class="inline-flex items-center gap-2 px-8 py-4 bg-neo-purple text-white font-bold border-3 border-neo-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-200">
                         <span>✨</span>
                         <span>Página en Blanco</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -561,58 +343,63 @@
 
     <!-- CTA Section -->
     <section class="container mx-auto px-4 py-16">
-        <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-12 text-center text-white shadow-2xl max-w-4xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                ¿Listo para Comenzar?
-            </h2>
-            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                Elige una guía y comienza tu viaje para dominar Tailwind CSS. Aprende haciendo con ejemplos reales.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="responsive.html" class="px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200">
-                    Empezar con Responsive
-                </a>
-                <a href="flex.html" class="px-8 py-4 bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl hover:bg-blue-800 transform hover:-translate-y-1 transition-all duration-200">
-                    Explorar Flexbox
-                </a>
+        <div class="bg-neo-blue border-3 border-neo-black p-12 text-center text-white shadow-neo max-w-4xl mx-auto relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-4xl md:text-5xl font-black mb-6 uppercase">
+                    ¿Listo para Comenzar?
+                </h2>
+                <p class="text-xl text-white mb-8 max-w-2xl mx-auto font-medium">
+                    Elige una guía y comienza tu viaje para dominar Tailwind CSS.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="responsive.html" class="px-8 py-4 bg-white text-neo-black font-bold border-3 border-neo-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-200">
+                        Empezar con Responsive
+                    </a>
+                    <a href="flex.html" class="px-8 py-4 bg-neo-yellow text-neo-black font-bold border-3 border-neo-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-200">
+                        Explorar Flexbox
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+    <footer class="bg-neo-black text-white py-12 mt-16 border-t-4 border-neo-black">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 
                 <div>
-                    <h3 class="text-white font-bold text-lg mb-4">Tailwind CSS Playground</h3>
+                    <div class="w-12 h-12 bg-neo-yellow border-2 border-white flex items-center justify-center mb-4">
+                        <span class="text-neo-black font-bold text-xl">TW</span>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 uppercase">Tailwind CSS Playground</h3>
                     <p class="text-gray-400 text-sm">
-                        Proyecto educativo para aprender diseño web moderno con Tailwind CSS y agentes de inteligencia artificial.
+                        Proyecto educativo neobrutalista.
                     </p>
                 </div>
 
                 <div>
-                    <h3 class="text-white font-bold text-lg mb-4">Guías</h3>
+                    <h3 class="font-bold text-neo-yellow text-lg mb-4 uppercase border-b-2 border-gray-700 inline-block pb-1">Guías</h3>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="responsive.html" class="hover:text-blue-400 transition-colors">Diseño Responsive</a></li>
-                        <li><a href="flex.html" class="hover:text-blue-400 transition-colors">Flexbox CSS</a></li>
-                        <li><a href="grid.html" class="hover:text-blue-400 transition-colors">Grid CSS</a></li>
+                        <li><a href="responsive.html" class="hover:text-neo-yellow transition-colors">» Diseño Responsive</a></li>
+                        <li><a href="flex.html" class="hover:text-neo-yellow transition-colors">» Flexbox CSS</a></li>
+                        <li><a href="grid.html" class="hover:text-neo-yellow transition-colors">» Grid CSS</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-white font-bold text-lg mb-4">Recursos</h3>
+                    <h3 class="font-bold text-neo-pink text-lg mb-4 uppercase border-b-2 border-gray-700 inline-block pb-1">Recursos</h3>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="https://tailwindcss.com/docs" target="_blank" class="hover:text-blue-400 transition-colors">Documentación Tailwind</a></li>
-                        <li><a href="https://github.com/features/copilot" target="_blank" class="hover:text-blue-400 transition-colors">GitHub Copilot</a></li>
-                        <li><a href="https://developer.mozilla.org/" target="_blank" class="hover:text-blue-400 transition-colors">MDN Web Docs</a></li>
+                        <li><a href="https://tailwindcss.com/docs" target="_blank" class="hover:text-neo-pink transition-colors">» Documentación Tailwind</a></li>
+                        <li><a href="https://github.com/features/copilot" target="_blank" class="hover:text-neo-pink transition-colors">» GitHub Copilot</a></li>
+                        <li><a href="https://developer.mozilla.org/" target="_blank" class="hover:text-neo-pink transition-colors">» MDN Web Docs</a></li>
                     </ul>
                 </div>
 
             </div>
 
-            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
-                <p>Hecho con ❤️ para estudiantes que quieren aprender desarrollo web</p>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-500 font-mono">
+                <p>Hecho con ❤️ estilo Neobrutalista</p>
                 <p class="mt-2">🤖 Powered by GitHub Copilot & Tailwind CSS</p>
             </div>
         </div>

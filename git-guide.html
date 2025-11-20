@@ -6,32 +6,34 @@
     <title>Guía de Git con VSCode - Tailwind CSS Playground</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body class="bg-gray-50">
+<body class="bg-neo-bg font-sans text-neo-black selection:bg-neo-pink selection:text-white">
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-neo-white border-b-3 border-neo-black sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
-                <a href="index.html" class="flex items-center gap-2 text-gray-600 hover:text-gray-800 transition-colors">
+                <a href="index.html" class="flex items-center gap-2 text-neo-black hover:text-neo-pink transition-colors font-bold uppercase">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
                     </svg>
-                    <span class="font-semibold">Volver al inicio</span>
+                    <span>Volver al inicio</span>
                 </a>
-                <h1 class="text-xl font-bold text-gray-800">🌲 Git y GitHub</h1>
+                <h1 class="text-xl font-black uppercase tracking-tight">🌲 Git y GitHub</h1>
             </div>
         </div>
     </nav>
 
     <!-- Hero -->
-    <header class="bg-gradient-to-r from-gray-700 to-black text-white py-16">
-        <div class="container mx-auto px-4">
+    <header class="bg-neo-black border-b-3 border-neo-black text-white py-16 shadow-neo relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-3xl">
-                <div class="inline-block px-4 py-2 bg-gray-600 bg-opacity-50 rounded-full text-sm font-semibold mb-4">
+                <div class="inline-block px-4 py-2 bg-neo-yellow border-2 border-neo-black text-neo-black shadow-neo-sm text-sm font-bold mb-6 transform -rotate-2 uppercase">
                     💻 Control de Versiones
                 </div>
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Git con VSCode</h1>
-                <p class="text-xl text-gray-300">
+                <h1 class="text-5xl md:text-6xl font-black mb-6 uppercase leading-none drop-shadow-[4px_4px_0px_rgba(255,0,255,1)]">
+                    Git con VSCode
+                </h1>
+                <p class="text-xl md:text-2xl font-bold border-l-4 border-neo-pink pl-6">
                     Aprende a guardar tu progreso, colaborar y subir tu código a la nube usando la terminal y Visual Studio Code.
                 </p>
             </div>
@@ -43,29 +45,32 @@
 
         <!-- Context: Bash & Terminal -->
         <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">🐚 La Terminal y Bash</h2>
-            <div class="bg-white rounded-xl shadow-lg p-8">
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
+                <h2 class="text-4xl font-black text-neo-black mb-6 uppercase">🐚 La Terminal</h2>
                 <div class="flex flex-col md:flex-row gap-8 items-start">
                     <div class="flex-1">
-                        <p class="text-lg text-gray-700 mb-4">
-                            Para usar Git, necesitamos comunicarnos con el sistema usando comandos de texto. El lenguaje estándar para esto es <strong>Bash</strong>.
+                        <p class="text-lg text-gray-800 mb-4 font-medium">
+                            Para usar Git, necesitamos comunicarnos con el sistema usando comandos de texto. El lenguaje estándar es <strong>Bash</strong>.
                         </p>
-                        <ul class="space-y-3 text-gray-600">
+                        <ul class="space-y-3 text-gray-800 font-bold">
                             <li class="flex items-center gap-2">
-                                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                                <strong>Mac / Linux:</strong> Ya viene instalado. Tu terminal usa Bash o Zsh por defecto.
+                                <div class="w-4 h-4 bg-neo-green border border-neo-black"></div>
+                                <span>Mac / Linux: Ya viene instalado.</span>
                             </li>
                             <li class="flex items-center gap-2">
-                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
-                                <strong>Windows:</strong> Se recomienda instalar <a href="https://git-scm.com/download/win" target="_blank" class="text-blue-600 hover:underline">Git Bash</a>. Esto te da una terminal poderosa similar a Linux dentro de Windows.
+                                <div class="w-4 h-4 bg-neo-blue border border-neo-black"></div>
+                                <span>Windows: Instala Git Bash.</span>
                             </li>
                         </ul>
                     </div>
-                    <div class="bg-gray-900 p-4 rounded-lg text-green-400 font-mono text-sm w-full md:w-1/3 shadow-inner">
-                        $ git --version<br>
-                        git version 2.41.0<br>
-                        $ ls -la<br>
-                        $ cd mi-proyecto
+                    <div class="bg-neo-black border-3 border-neo-black p-6 w-full md:w-1/3 shadow-neo-sm relative">
+                         <div class="absolute top-0 left-0 bg-neo-green border-b-2 border-r-2 border-neo-black px-2 py-1 text-xs font-bold uppercase text-neo-black">Terminal</div>
+                        <p class="text-neo-green font-mono text-sm mt-4">
+                            $ git --version<br>
+                            git version 2.41.0<br>
+                            $ ls -la<br>
+                            $ cd mi-proyecto
+                        </p>
                     </div>
                 </div>
             </div>
@@ -73,59 +78,59 @@
 
         <!-- Configuración Inicial -->
         <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">⚙️ Configura tus Credenciales</h2>
+            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">⚙️ Configuración</h2>
 
-            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-xl mb-6">
-                <p class="text-yellow-800">
-                    <strong>¡Importante!</strong> Antes de tu primer commit, Git necesita saber quién eres. Esto se hace una sola vez por computadora.
+            <div class="bg-neo-yellow border-3 border-neo-black p-6 shadow-neo transform rotate-1 mb-8">
+                <p class="text-neo-black font-black text-lg uppercase">
+                    ¡Importante! Antes de tu primer commit, Git necesita saber quién eres.
                 </p>
             </div>
 
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <p class="mb-4 text-gray-700">Abre tu terminal (Git Bash en Windows) y escribe:</p>
-                <div class="bg-gray-900 text-gray-300 rounded-lg p-6 space-y-2 font-mono">
-                    <p><span class="text-purple-400">$</span> git config --global user.name "Tu Nombre"</p>
-                    <p><span class="text-purple-400">$</span> git config --global user.email "tu@email.com"</p>
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
+                <p class="mb-4 text-gray-800 font-bold uppercase">Ejecuta en tu terminal:</p>
+                <div class="bg-neo-black text-white border-3 border-neo-black p-6 space-y-2 font-mono shadow-sm">
+                    <p><span class="text-neo-pink">$</span> git config --global user.name "Tu Nombre"</p>
+                    <p><span class="text-neo-pink">$</span> git config --global user.email "tu@email.com"</p>
                 </div>
-                <p class="mt-4 text-sm text-gray-500">* Usa el mismo email con el que te registraste en GitHub.</p>
+                <p class="mt-4 text-sm text-gray-600 font-bold">* Usa el mismo email de GitHub.</p>
             </div>
         </section>
 
         <!-- Flujo de Trabajo Git -->
         <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">🔄 Flujo de Trabajo Básico</h2>
+            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">🔄 Flujo Básico</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                 <!-- Card: Clone -->
-                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-purple-500">
-                    <h3 class="font-bold text-xl mb-2">1. Git Clone</h3>
-                    <p class="text-gray-600 mb-3 text-sm">Descarga un repositorio de la nube a tu computador.</p>
-                    <code class="bg-gray-100 px-2 py-1 rounded text-purple-700 text-sm block w-full">git clone https://github.com/...</code>
+                <div class="bg-neo-white p-6 border-3 border-neo-black shadow-neo transform hover:-translate-y-1 transition-transform">
+                    <h3 class="font-black text-xl mb-2 uppercase bg-neo-purple text-white inline-block px-2 border-2 border-neo-black">1. Clone</h3>
+                    <p class="text-gray-800 mb-3 text-sm font-bold">Descarga un repositorio.</p>
+                    <code class="bg-gray-100 px-2 py-1 border-2 border-neo-black text-neo-purple text-xs font-mono block w-full break-all">git clone https://github.com/...</code>
                 </div>
 
                 <!-- Card: Add -->
-                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
-                    <h3 class="font-bold text-xl mb-2">2. Git Add</h3>
-                    <p class="text-gray-600 mb-3 text-sm">Prepara archivos para guardar. Puedes añadir uno por uno o todos.</p>
-                    <div class="space-y-1">
-                        <code class="bg-gray-100 px-2 py-1 rounded text-orange-700 text-sm block">git add index.html</code>
-                        <code class="bg-gray-100 px-2 py-1 rounded text-orange-700 text-sm block">git add . (todos)</code>
+                <div class="bg-neo-white p-6 border-3 border-neo-black shadow-neo transform hover:-translate-y-1 transition-transform">
+                    <h3 class="font-black text-xl mb-2 uppercase bg-neo-yellow text-neo-black inline-block px-2 border-2 border-neo-black">2. Add</h3>
+                    <p class="text-gray-800 mb-3 text-sm font-bold">Prepara archivos.</p>
+                    <div class="space-y-2">
+                        <code class="bg-gray-100 px-2 py-1 border-2 border-neo-black text-neo-black text-xs font-mono block">git add index.html</code>
+                        <code class="bg-gray-100 px-2 py-1 border-2 border-neo-black text-neo-black text-xs font-mono block">git add . (todos)</code>
                     </div>
                 </div>
 
                 <!-- Card: Commit -->
-                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-green-500">
-                    <h3 class="font-bold text-xl mb-2">3. Git Commit</h3>
-                    <p class="text-gray-600 mb-3 text-sm">Guarda los cambios preparados. Es como tomar una foto en el tiempo.</p>
-                    <code class="bg-gray-100 px-2 py-1 rounded text-green-700 text-sm block w-full">git commit -m "Mensaje descriptivo"</code>
+                <div class="bg-neo-white p-6 border-3 border-neo-black shadow-neo transform hover:-translate-y-1 transition-transform">
+                    <h3 class="font-black text-xl mb-2 uppercase bg-neo-green text-neo-black inline-block px-2 border-2 border-neo-black">3. Commit</h3>
+                    <p class="text-gray-800 mb-3 text-sm font-bold">Guarda los cambios.</p>
+                    <code class="bg-gray-100 px-2 py-1 border-2 border-neo-black text-neo-black text-xs font-mono block w-full">git commit -m "Mensaje"</code>
                 </div>
 
                 <!-- Card: Push -->
-                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-500">
-                    <h3 class="font-bold text-xl mb-2">4. Git Push</h3>
-                    <p class="text-gray-600 mb-3 text-sm">Sube tus commits locales a GitHub (la nube).</p>
-                    <code class="bg-gray-100 px-2 py-1 rounded text-blue-700 text-sm block w-full">git push origin main</code>
+                <div class="bg-neo-white p-6 border-3 border-neo-black shadow-neo transform hover:-translate-y-1 transition-transform">
+                    <h3 class="font-black text-xl mb-2 uppercase bg-neo-blue text-white inline-block px-2 border-2 border-neo-black">4. Push</h3>
+                    <p class="text-gray-800 mb-3 text-sm font-bold">Sube a la nube.</p>
+                    <code class="bg-gray-100 px-2 py-1 border-2 border-neo-black text-neo-blue text-xs font-mono block w-full">git push origin main</code>
                 </div>
 
             </div>
@@ -133,30 +138,30 @@
 
         <!-- Colaboración -->
         <section class="max-w-4xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">🤝 Colaboración</h2>
+            <h2 class="text-4xl font-black text-neo-black mb-8 uppercase tracking-tight">🤝 Colaboración</h2>
 
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <div class="space-y-6">
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-8">
+                <div class="space-y-8">
                     <div>
-                        <h3 class="font-bold text-lg flex items-center gap-2">
-                            <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        <h3 class="font-black text-lg flex items-center gap-2 uppercase">
+                            <span class="text-neo-blue text-2xl">⬇️</span>
                             Git Pull
                         </h3>
-                        <p class="text-gray-600">
-                            Descarga cambios que otros hicieron en la nube y los mezcla con tu código local. ¡Haz esto siempre antes de empezar a trabajar!
+                        <p class="text-gray-800 font-bold mb-2">
+                            Descarga cambios de la nube. ¡Haz esto siempre antes de empezar!
                         </p>
-                        <code class="text-sm text-indigo-600 bg-indigo-50 px-2 py-1 rounded mt-1 inline-block">git pull origin main</code>
+                        <code class="text-sm text-white bg-neo-black px-3 py-1 border-2 border-neo-black inline-block font-mono shadow-sm">git pull origin main</code>
                     </div>
 
-                    <hr class="border-gray-100">
+                    <hr class="border-2 border-neo-black border-dashed">
 
                     <div>
-                        <h3 class="font-bold text-lg flex items-center gap-2">
-                            <svg class="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                        <h3 class="font-black text-lg flex items-center gap-2 uppercase">
+                            <span class="text-neo-pink text-2xl">🔀</span>
                             Git Merge
                         </h3>
-                        <p class="text-gray-600">
-                            Une dos historias (ramas) diferentes. Por ejemplo, traer los cambios de una rama de características a la rama principal.
+                        <p class="text-gray-800 font-bold">
+                            Une dos historias (ramas) diferentes.
                         </p>
                     </div>
                 </div>
@@ -165,35 +170,43 @@
 
         <!-- VSCode Integration -->
         <section class="max-w-4xl mx-auto">
-            <div class="bg-gray-800 rounded-xl shadow-2xl p-8 text-white flex flex-col md:flex-row items-center gap-8">
+            <div class="bg-neo-black border-3 border-neo-black shadow-neo p-8 text-white flex flex-col md:flex-row items-center gap-8">
                 <div class="flex-1">
-                    <h2 class="text-2xl font-bold mb-4">Git Visual en VSCode</h2>
-                    <p class="text-gray-400 mb-4">
-                        ¿No te gusta la terminal? VSCode tiene Git integrado. Busca el icono de <strong>Source Control</strong> (la ramita) en la barra lateral.
+                    <h2 class="text-3xl font-black mb-4 uppercase text-neo-yellow">Git en VSCode</h2>
+                    <p class="text-white mb-6 font-bold">
+                        ¿No te gusta la terminal? Usa la interfaz gráfica de VSCode.
                     </p>
-                    <ul class="text-sm space-y-2 text-gray-300">
-                        <li>✓ Ver cambios archivo por archivo</li>
-                        <li>✓ Hacer Stage (+) con un clic</li>
-                        <li>✓ Escribir el mensaje y Commitear</li>
-                        <li>✓ Sincronizar cambios (Push/Pull) con un botón</li>
+                    <ul class="text-sm space-y-3 font-mono">
+                        <li class="flex items-center gap-2">
+                            <div class="w-3 h-3 bg-neo-green"></div>
+                            <span>Ver cambios archivo por archivo</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-3 h-3 bg-neo-green"></div>
+                            <span>Hacer Stage (+) con un clic</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="w-3 h-3 bg-neo-green"></div>
+                            <span>Sincronizar con un botón</span>
+                        </li>
                     </ul>
                 </div>
-                <div class="w-32 h-32 bg-blue-600 rounded-full flex items-center justify-center text-6xl shadow-lg">
+                <div class="w-32 h-32 bg-neo-blue border-3 border-white flex items-center justify-center text-6xl shadow-lg transform rotate-3">
                     🦄
                 </div>
             </div>
 
             <div class="mt-12 flex justify-end">
-                <a href="index.html" class="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg shadow hover:bg-gray-700 transition-all">
-                    Volver al Menú Principal
+                <a href="index.html" class="px-8 py-4 bg-neo-white text-neo-black font-black border-3 border-neo-black shadow-neo hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all uppercase">
+                    Volver al Menú
                 </a>
             </div>
         </section>
 
     </main>
 
-    <footer class="bg-gray-900 text-gray-300 py-8 mt-16">
-        <div class="container mx-auto px-4 text-center">
+    <footer class="bg-neo-black text-white py-8 mt-16 border-t-4 border-neo-black">
+        <div class="container mx-auto px-4 text-center font-mono">
             <p class="text-sm">Hecho con ❤️ para estudiantes | Tailwind CSS Playground</p>
         </div>
     </footer>

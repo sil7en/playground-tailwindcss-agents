@@ -6,32 +6,34 @@
     <title>Ejercicio: Web Components - Tailwind CSS</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body class="bg-gray-50">
+<body class="bg-neo-bg font-sans text-neo-black selection:bg-neo-pink selection:text-white">
     
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-neo-white border-b-3 border-neo-black sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
-                <a href="components.html" class="flex items-center gap-2 text-emerald-600 hover:text-emerald-700 transition-colors">
+                <a href="components.html" class="flex items-center gap-2 text-neo-black hover:text-neo-green transition-colors font-bold uppercase">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
                     </svg>
-                    <span class="font-semibold">Volver a la guía</span>
+                    <span>Volver a la guía</span>
                 </a>
-                <h1 class="text-xl font-bold text-gray-800">✏️ Ejercicio de Web Components</h1>
+                <h1 class="text-xl font-black uppercase tracking-tight">✏️ Ejercicio Web Components</h1>
             </div>
         </div>
     </nav>
 
     <!-- Header -->
-    <header class="bg-gradient-to-r from-emerald-600 to-teal-700 text-white py-12">
-        <div class="container mx-auto px-4">
+    <header class="bg-neo-green border-b-3 border-neo-black text-neo-black py-12 shadow-neo relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-3xl">
-                <div class="inline-block px-4 py-2 bg-emerald-500 bg-opacity-50 rounded-full text-sm font-semibold mb-4">
-                    ✏️ Ejercicio: Web Components
+                <div class="inline-block px-4 py-2 bg-neo-white border-2 border-neo-black text-neo-black shadow-neo-sm text-sm font-bold mb-6 transform rotate-2 uppercase">
+                    ✏️ Ejercicio
                 </div>
-                <h1 class="text-3xl md:text-4xl font-bold mb-4">Crea Tu Biblioteca de Componentes</h1>
-                <p class="text-xl text-emerald-100">
+                <h1 class="text-5xl md:text-6xl font-black mb-6 uppercase leading-none drop-shadow-[4px_4px_0px_rgba(255,255,255,1)]">
+                    Crea Componentes
+                </h1>
+                <p class="text-xl md:text-2xl font-bold border-l-4 border-neo-black pl-6">
                     Construye componentes reutilizables que podrás usar en cualquier proyecto.
                 </p>
             </div>
@@ -40,26 +42,26 @@
 
     <!-- Instructions -->
     <section class="container mx-auto px-4 py-8">
-        <div class="max-w-4xl mx-auto bg-emerald-50 border-2 border-emerald-400 rounded-xl p-6">
-            <h2 class="text-2xl font-bold text-emerald-900 mb-4 flex items-center gap-2">
+        <div class="max-w-4xl mx-auto bg-neo-white border-3 border-neo-black shadow-neo p-6">
+            <h2 class="text-2xl font-black text-neo-black mb-4 flex items-center gap-2 uppercase">
                 <span class="text-3xl">📝</span>
                 Instrucciones
             </h2>
-            <div class="text-emerald-900 space-y-3">
-                <p class="font-semibold">Desafío de Web Components:</p>
-                <ol class="list-decimal list-inside space-y-2 ml-4">
-                    <li>Completa los Web Components donde veas <code class="bg-emerald-200 px-2 py-1 rounded">___COMPLETA_AQUI___</code></li>
+            <div class="text-neo-black font-bold space-y-3">
+                <p class="uppercase bg-neo-yellow inline-block px-2 border-2 border-neo-black transform -rotate-1">Desafío:</p>
+                <ol class="list-decimal list-inside space-y-2 ml-4 font-medium">
+                    <li>Completa los Web Components donde veas <code class="bg-gray-200 px-2 py-1 rounded border border-neo-black">___COMPLETA_AQUI___</code></li>
                     <li>Crea 4 componentes: ProductCard, StatWidget, TodoItem, y RatingStars</li>
-                    <li>Usa <code class="bg-emerald-200 px-2 py-1 rounded">customElements.define()</code> para registrarlos</li>
+                    <li>Usa <code class="bg-gray-200 px-2 py-1 rounded border border-neo-black">customElements.define()</code> para registrarlos</li>
                     <li>Agrega interactividad con event listeners</li>
                 </ol>
-                <div class="bg-white rounded-lg p-4 mt-4">
-                    <p class="font-semibold text-emerald-900 mb-2">💡 Pistas:</p>
-                    <ul class="list-disc list-inside space-y-1 text-sm">
-                        <li><code class="bg-gray-200 px-2 py-1 rounded">class MiComponente extends HTMLElement</code></li>
-                        <li><code class="bg-gray-200 px-2 py-1 rounded">connectedCallback()</code> - Cuando se agrega al DOM</li>
-                        <li><code class="bg-gray-200 px-2 py-1 rounded">this.getAttribute('nombre')</code> - Obtener atributos</li>
-                        <li><code class="bg-gray-200 px-2 py-1 rounded">this.innerHTML =</code> - Renderizar HTML</li>
+                <div class="bg-neo-black text-white border-2 border-neo-black p-4 mt-4 shadow-sm">
+                    <p class="font-black text-neo-green mb-2 uppercase">💡 Pistas:</p>
+                    <ul class="list-disc list-inside space-y-1 text-sm font-mono">
+                        <li>class MiComponente extends HTMLElement</li>
+                        <li>connectedCallback()</li>
+                        <li>this.getAttribute('nombre')</li>
+                        <li>this.innerHTML =</li>
                     </ul>
                 </div>
             </div>
@@ -71,103 +73,70 @@
 
         <!-- Componente 1: Product Card -->
         <section class="max-w-4xl mx-auto mb-16">
-            <div class="bg-white rounded-xl shadow-lg p-6">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">🛍️ Componente 1: Product Card</h2>
-                <p class="text-gray-600 mb-6">
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-6">
+                <h2 class="text-2xl font-black text-neo-black mb-4 uppercase">🛍️ Componente 1: Product Card</h2>
+                <p class="text-gray-800 font-bold mb-6">
                     Crea un componente de tarjeta de producto que muestre imagen, nombre, precio y un botón de compra.
                 </p>
 
-                <div class="bg-emerald-50 border-l-4 border-emerald-500 p-4 rounded mb-6">
-                    <p class="text-sm text-emerald-800">
-                        <strong>Atributos esperados:</strong> <code class="bg-white px-2 py-1 rounded">name</code>, 
-                        <code class="bg-white px-2 py-1 rounded">price</code>, 
-                        <code class="bg-white px-2 py-1 rounded">image</code>
+                <div class="bg-neo-blue border-3 border-neo-black p-4 shadow-neo-sm mb-6 text-white">
+                    <p class="text-sm font-bold">
+                        <strong>Atributos esperados:</strong> <code class="bg-neo-black px-2 py-1 rounded border border-white">name</code>,
+                        <code class="bg-neo-black px-2 py-1 rounded border border-white">price</code>,
+                        <code class="bg-neo-black px-2 py-1 rounded border border-white">image</code>
                     </p>
                 </div>
 
                 <!-- Resultado esperado -->
                 <div class="grid md:grid-cols-3 gap-6 mb-6">
-                    <!-- EJERCICIO: Estas tarjetas deben ser renderizadas por tu componente -->
-                    <product-card 
-                        name="Laptop Pro" 
-                        price="$899" 
-                        image="💻">
-                    </product-card>
-                    <product-card 
-                        name="Smartphone X" 
-                        price="$599" 
-                        image="📱">
-                    </product-card>
-                    <product-card 
-                        name="Auriculares" 
-                        price="$199" 
-                        image="🎧">
-                    </product-card>
+                    <product-card name="Laptop Pro" price="$899" image="💻"></product-card>
+                    <product-card name="Smartphone X" price="$599" image="📱"></product-card>
+                    <product-card name="Auriculares" price="$199" image="🎧"></product-card>
                 </div>
             </div>
         </section>
 
         <!-- Componente 2: Stat Widget -->
         <section class="max-w-4xl mx-auto mb-16">
-            <div class="bg-white rounded-xl shadow-lg p-6">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">📊 Componente 2: Stat Widget</h2>
-                <p class="text-gray-600 mb-6">
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-6">
+                <h2 class="text-2xl font-black text-neo-black mb-4 uppercase">📊 Componente 2: Stat Widget</h2>
+                <p class="text-gray-800 font-bold mb-6">
                     Crea un widget de estadística que muestre un valor numérico, etiqueta e ícono.
                 </p>
 
-                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mb-6">
-                    <p class="text-sm text-blue-800">
-                        <strong>Atributos esperados:</strong> <code class="bg-white px-2 py-1 rounded">label</code>, 
-                        <code class="bg-white px-2 py-1 rounded">value</code>, 
-                        <code class="bg-white px-2 py-1 rounded">icon</code>,
-                        <code class="bg-white px-2 py-1 rounded">color</code>
+                <div class="bg-neo-pink border-3 border-neo-black p-4 shadow-neo-sm mb-6 text-white">
+                    <p class="text-sm font-bold">
+                        <strong>Atributos esperados:</strong> <code class="bg-neo-black px-2 py-1 rounded border border-white">label</code>,
+                        <code class="bg-neo-black px-2 py-1 rounded border border-white">value</code>,
+                        <code class="bg-neo-black px-2 py-1 rounded border border-white">icon</code>,
+                        <code class="bg-neo-black px-2 py-1 rounded border border-white">color</code>
                     </p>
                 </div>
 
                 <!-- Resultado esperado -->
                 <div class="grid md:grid-cols-4 gap-6 mb-6">
-                    <stat-widget 
-                        label="Usuarios" 
-                        value="12,543" 
-                        icon="👥" 
-                        color="blue">
-                    </stat-widget>
-                    <stat-widget 
-                        label="Ingresos" 
-                        value="$45K" 
-                        icon="💰" 
-                        color="green">
-                    </stat-widget>
-                    <stat-widget 
-                        label="Pedidos" 
-                        value="892" 
-                        icon="📦" 
-                        color="purple">
-                    </stat-widget>
-                    <stat-widget 
-                        label="Rating" 
-                        value="4.8★" 
-                        icon="⭐" 
-                        color="yellow">
-                    </stat-widget>
+                    <stat-widget label="Usuarios" value="12,543" icon="👥" color="blue"></stat-widget>
+                    <stat-widget label="Ingresos" value="$45K" icon="💰" color="green"></stat-widget>
+                    <stat-widget label="Pedidos" value="892" icon="📦" color="purple"></stat-widget>
+                    <stat-widget label="Rating" value="4.8★" icon="⭐" color="yellow"></stat-widget>
                 </div>
             </div>
         </section>
 
         <!-- Componente 3: Todo Item -->
         <section class="max-w-4xl mx-auto mb-16">
-            <div class="bg-white rounded-xl shadow-lg p-6">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">✅ Componente 3: Todo Item (Interactivo)</h2>
-                <p class="text-gray-600 mb-6">
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-6">
+                <h2 class="text-2xl font-black text-neo-black mb-4 uppercase">✅ Componente 3: Todo Item</h2>
+                <p class="text-gray-800 font-bold mb-6">
                     Crea un ítem de lista de tareas que pueda marcarse como completado al hacer click.
                 </p>
 
-                <div class="bg-purple-50 border-l-4 border-purple-500 p-4 rounded mb-6">
-                    <p class="text-sm text-purple-800 mb-2">
-                        <strong>Atributos esperados:</strong> <code class="bg-white px-2 py-1 rounded">text</code>
+                <div class="bg-neo-purple border-3 border-neo-black p-4 shadow-neo-sm mb-6 text-white">
+                    <p class="text-sm font-bold mb-2">
+                        <strong>Atributos:</strong> <code class="bg-neo-black px-2 py-1 rounded border border-white">text</code>
                     </p>
-                    <p class="text-sm text-purple-800">
-                        <strong>Funcionalidad:</strong> Al hacer click debe alternar entre completado/no completado
+                    <p class="text-sm font-bold">
+                        <strong>Funcionalidad:</strong> Click para toggle completado
                     </p>
                 </div>
 
@@ -183,35 +152,35 @@
 
         <!-- Componente 4: Rating Stars -->
         <section class="max-w-4xl mx-auto mb-16">
-            <div class="bg-white rounded-xl shadow-lg p-6">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">⭐ Componente 4: Rating Stars</h2>
-                <p class="text-gray-600 mb-6">
-                    Crea un componente de calificación con estrellas que muestre visualmente el rating.
+            <div class="bg-neo-white border-3 border-neo-black shadow-neo p-6">
+                <h2 class="text-2xl font-black text-neo-black mb-4 uppercase">⭐ Componente 4: Rating Stars</h2>
+                <p class="text-gray-800 font-bold mb-6">
+                    Crea un componente de calificación con estrellas.
                 </p>
 
-                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded mb-6">
-                    <p class="text-sm text-yellow-800">
-                        <strong>Atributos esperados:</strong> <code class="bg-white px-2 py-1 rounded">rating</code> (1-5), 
-                        <code class="bg-white px-2 py-1 rounded">max</code> (default: 5)
+                <div class="bg-neo-yellow border-3 border-neo-black p-4 shadow-neo-sm mb-6 text-neo-black">
+                    <p class="text-sm font-bold">
+                        <strong>Atributos:</strong> <code class="bg-white px-2 py-1 rounded border border-neo-black">rating</code> (1-5),
+                        <code class="bg-white px-2 py-1 rounded border border-neo-black">max</code> (default: 5)
                     </p>
                 </div>
 
                 <!-- Resultado esperado -->
-                <div class="space-y-4 max-w-md mx-auto mb-6">
+                <div class="space-y-4 max-w-md mx-auto mb-6 font-bold">
                     <div class="flex items-center justify-between">
-                        <span class="text-gray-700">Excelente:</span>
+                        <span class="text-neo-black">Excelente:</span>
                         <rating-stars rating="5" max="5"></rating-stars>
                     </div>
                     <div class="flex items-center justify-between">
-                        <span class="text-gray-700">Muy bueno:</span>
+                        <span class="text-neo-black">Muy bueno:</span>
                         <rating-stars rating="4" max="5"></rating-stars>
                     </div>
                     <div class="flex items-center justify-between">
-                        <span class="text-gray-700">Bueno:</span>
+                        <span class="text-neo-black">Bueno:</span>
                         <rating-stars rating="3" max="5"></rating-stars>
                     </div>
                     <div class="flex items-center justify-between">
-                        <span class="text-gray-700">Regular:</span>
+                        <span class="text-neo-black">Regular:</span>
                         <rating-stars rating="2" max="5"></rating-stars>
                     </div>
                 </div>
@@ -220,71 +189,13 @@
 
         <!-- Zona de código -->
         <section class="max-w-4xl mx-auto mb-16">
-            <div class="bg-gray-900 text-white rounded-xl p-6">
-                <h2 class="text-2xl font-bold mb-4 text-emerald-400">💻 Tu Código Aquí</h2>
-                <p class="text-gray-300 mb-6">Completa los componentes en el archivo JavaScript:</p>
+            <div class="bg-neo-black border-3 border-neo-black shadow-neo p-6 text-white relative">
+                 <div class="absolute top-0 left-0 bg-neo-green border-b-2 border-r-2 border-neo-black px-2 py-1 text-xs font-bold uppercase text-neo-black">Code</div>
+                <h2 class="text-2xl font-black mb-4 text-neo-yellow uppercase mt-4">💻 Tu Código Aquí</h2>
+                <p class="text-white font-bold mb-6">Completa los componentes en el archivo JavaScript:</p>
                 
-                <div class="bg-gray-800 rounded-lg p-4 overflow-x-auto">
-                    <pre class="text-sm"><code><span class="text-gray-400">// ═══════════════════════════════════════════════════════════</span>
-<span class="text-gray-400">// COMPONENTE 1: Product Card</span>
-<span class="text-gray-400">// ═══════════════════════════════════════════════════════════</span>
-
-<span class="text-purple-400">class</span> <span class="text-yellow-400">___COMPLETA_AQUI___</span> <span class="text-purple-400">extends</span> <span class="text-yellow-400">HTMLElement</span> {
-  <span class="text-blue-400">connectedCallback</span>() {
-    <span class="text-purple-400">const</span> name = <span class="text-yellow-400">___COMPLETA_AQUI___</span>;
-    <span class="text-purple-400">const</span> price = <span class="text-yellow-400">___COMPLETA_AQUI___</span>;
-    <span class="text-purple-400">const</span> image = <span class="text-yellow-400">___COMPLETA_AQUI___</span>;
-    
-    <span class="text-purple-400">this</span>.<span class="text-blue-400">innerHTML</span> = <span class="text-green-400">`
-      &lt;div class="bg-white rounded-lg shadow-lg 
-                  overflow-hidden hover:shadow-xl 
-                  transition-shadow"&gt;
-        &lt;!-- Aquí tu código HTML --&gt;
-      &lt;/div&gt;
-    `</span>;
-  }
-}
-
-<span class="text-blue-400">customElements</span>.<span class="text-yellow-400">define</span>(<span class="text-green-400">'product-card'</span>, <span class="text-yellow-400">___COMPLETA_AQUI___</span>);
-
-
-<span class="text-gray-400">// ═══════════════════════════════════════════════════════════</span>
-<span class="text-gray-400">// COMPONENTE 2: Stat Widget</span>
-<span class="text-gray-400">// ═══════════════════════════════════════════════════════════</span>
-
-<span class="text-purple-400">class</span> <span class="text-yellow-400">StatWidget</span> <span class="text-purple-400">extends</span> <span class="text-yellow-400">HTMLElement</span> {
-  <span class="text-yellow-400">___COMPLETA_AQUI___</span>
-}
-
-
-<span class="text-gray-400">// ═══════════════════════════════════════════════════════════</span>
-<span class="text-gray-400">// COMPONENTE 3: Todo Item (con interactividad)</span>
-<span class="text-gray-400">// ═══════════════════════════════════════════════════════════</span>
-
-<span class="text-purple-400">class</span> <span class="text-yellow-400">TodoItem</span> <span class="text-purple-400">extends</span> <span class="text-yellow-400">HTMLElement</span> {
-  <span class="text-blue-400">constructor</span>() {
-    <span class="text-yellow-400">___COMPLETA_AQUI___</span>
-    <span class="text-purple-400">this</span>.completed = <span class="text-orange-400">false</span>;
-  }
-  
-  <span class="text-blue-400">connectedCallback</span>() {
-    <span class="text-yellow-400">___COMPLETA_AQUI___</span>
-    
-    <span class="text-gray-400">// Agregar event listener para toggle</span>
-    <span class="text-purple-400">this</span>.<span class="text-blue-400">addEventListener</span>(<span class="text-green-400">'click'</span>, () => {
-      <span class="text-yellow-400">___COMPLETA_AQUI___</span>
-    });
-  }
-}
-
-
-<span class="text-gray-400">// ═══════════════════════════════════════════════════════════</span>
-<span class="text-gray-400">// COMPONENTE 4: Rating Stars</span>
-<span class="text-gray-400">// ═══════════════════════════════════════════════════════════</span>
-
-<span class="text-purple-400">class</span> <span class="text-yellow-400">RatingStars</span> <span class="text-purple-400">extends</span> <span class="text-yellow-400">HTMLElement</span> {
-  <span class="text-yellow-400">___COMPLETA_AQUI___</span>
-}</code></pre>
+                <div class="bg-gray-800 border-2 border-gray-600 p-4 overflow-x-auto font-mono text-sm">
+                    <pre><code>// Ver archivo assets/js/ejercicio-components.js</code></pre>
                 </div>
             </div>
         </section>
@@ -293,23 +204,23 @@
 
     <!-- Help Section -->
     <section class="container mx-auto px-4 py-8 mb-16">
-        <div class="max-w-4xl mx-auto bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl p-8 text-white">
-            <h2 class="text-2xl font-bold mb-4">🆘 ¿Necesitas Ayuda?</h2>
-            <div class="grid md:grid-cols-2 gap-6">
+        <div class="max-w-4xl mx-auto bg-neo-blue border-3 border-neo-black shadow-neo p-8 text-white">
+            <h2 class="text-2xl font-black mb-4 uppercase">🆘 ¿Necesitas Ayuda?</h2>
+            <div class="grid md:grid-cols-2 gap-6 font-bold">
                 <div>
-                    <h3 class="font-bold mb-2">📚 Recursos:</h3>
-                    <ul class="space-y-1 text-blue-100">
+                    <h3 class="mb-2 uppercase text-neo-yellow">📚 Recursos:</h3>
+                    <ul class="space-y-1">
                         <li>• Revisa la guía de Web Components</li>
                         <li>• Mira los ejemplos de demostración</li>
                         <li>• Consulta el archivo de solución</li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="font-bold mb-2">💡 Consejos:</h3>
-                    <ul class="space-y-1 text-blue-100">
-                        <li>• Usa <code class="bg-blue-700 px-1 rounded">this.getAttribute()</code></li>
-                        <li>• Renderiza con <code class="bg-blue-700 px-1 rounded">this.innerHTML</code></li>
-                        <li>• Registra con <code class="bg-blue-700 px-1 rounded">customElements.define()</code></li>
+                    <h3 class="mb-2 uppercase text-neo-yellow">💡 Consejos:</h3>
+                    <ul class="space-y-1">
+                        <li>• Usa <code class="bg-neo-black px-1 rounded border border-white">this.getAttribute()</code></li>
+                        <li>• Renderiza con <code class="bg-neo-black px-1 rounded border border-white">this.innerHTML</code></li>
+                        <li>• Registra con <code class="bg-neo-black px-1 rounded border border-white">customElements.define()</code></li>
                     </ul>
                 </div>
             </div>
@@ -317,8 +228,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-8">
-        <div class="container mx-auto px-4 text-center">
+    <footer class="bg-neo-black text-white py-8 border-t-4 border-neo-black">
+        <div class="container mx-auto px-4 text-center font-mono">
             <p class="text-sm">Hecho con ❤️ para estudiantes | Tailwind CSS Playground</p>
         </div>
     </footer>
